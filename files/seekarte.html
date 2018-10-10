@@ -1,0 +1,653 @@
+﻿<!doctype html>
+<html>
+	<head>
+
+<!-- Leaflet -->
+
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+
+<!-- Bootstrap -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+
+	 <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+   crossorigin=""></script>
+
+<!-- irgendwas f�r Mobile Ansicht -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		
+		#map2 { height: 200px;
+				margin: 5px;
+				margin-right: 25px;
+				top: 35px;
+				}
+		
+		#header {
+			position: relative;
+			top: 20px;
+			margin-left: 0px;
+			margin-right:0px;
+			height: 110px;
+			background: #FFFFFF;
+			<!-- box-shadow: rgba(0,0,0,.73) 0 0 5px; -->
+			
+		}
+	
+		#navbar-expand {
+			z-index: 1200;
+		}
+		
+		#myForm {
+			display: block;
+			margin-left: auto;
+			margin-right: 0px;
+		}
+	
+		#mapContainer {
+			position: fixed;
+			top: 90px;
+			left: 30px;
+			bottom: 20px;
+			right: 30px;			
+			overflow: hidden;
+						
+		}
+		
+		#map { min-height: 50vh;
+		}
+		
+		#textContainer {
+			overflow: auto;
+			margin-right: 5px;
+			top: 10px;
+		}
+
+		
+		.row input[type=text] {
+			float: right;
+			padding: 4px;
+			border: none;
+			
+			
+		}
+		
+		.row input[type=text]:focus {
+		outline-color: #343a40;
+		}
+		
+		
+	
+		.autocomplete {
+		  /*the container must be positioned relative:*/
+		  position: relative;
+		  display: inline-block;
+		  
+		  
+		}
+		
+		.autocomplete-items {
+		  position: absolute;
+		  border: 1px solid #383A5B;
+		  border-bottom: none;
+		  border-top: none;
+		  z-index: 99;
+		  /*position the autocomplete items to be the same width as the container:*/
+		  top: 100%;
+		  left: 0;
+		  right: 0;
+		}
+		.autocomplete-items div {
+		  padding: 4px;
+		  cursor: pointer;
+		  background-color: #fff;
+		  border-bottom: 1px solid #383A5B; 
+		}
+		.autocomplete-items div:hover {
+		  /*when hovering an item:*/
+		  background-color: #e9e9e9; 
+		}
+		
+		.autocomplete-active {
+		  /*when navigating through the items using the arrow keys:*/
+		  background-color: #7c7f84 !important; 
+		  color: #ffffff; 
+		  
+		  	}
+		
+	</style>
+
+	</head>
+
+
+
+
+	<body>
+
+	
+<!-- <div class="container-fluid" style="height:100%"> -->
+<div class="row" id="header">
+<div class="col-12">
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar-expand">
+   <a class="navbar-brand" href=""><em>Carta Marina</em></a> <a class="navbar-brand" href=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="seekarte.html">Seekarte</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="beschreibung.html">Beschreibung</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ressourcen.html">Ressourcen</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>    
+	  	
+	  
+    </ul>
+	
+	<form autocomplete="off" id="myForm">
+		<div class="autocomplete">
+			<input type="text" id="myInput" name="myCountry" placeholder="Karte durchsuchen..">  
+		</div>
+	</form>
+	
+	
+	
+	
+	
+  </div> 
+
+
+
+</nav>
+</div>
+</div>
+<!-- </div> -->
+
+<!-- unterhalb Navigation. Karte und Textbox -->
+
+<div class="row" id="mapContainer">
+   <div class="col-lg-6" id='map'></div>
+   <div class="col-lg-6">
+   
+   <div class="row" style="height: 50%"> <!-- verursacht tats�chlich Ver�nderungen im responsiven Design --> 
+   <div class="col" id="textContainer">
+   <h4 id='Ueberschrift'></h4><p id='Infokasten'>Bislang ist nur das Klicken auf Thule, den F�r�ern und das stachelschweinartige Seeungeheuer m�glich.</p>
+   </div>
+   </div>
+   <div class="row" id='map3'>
+   <div class="col" id='map2'>
+   </div>
+   </div>
+   </div>
+   
+</div>
+</div>
+
+
+
+
+	<script>
+
+// ALLES ZUR ERSTELLUNG DER MAP
+// Construct a bounding box for this map that the user cannot
+// move out of
+
+	var 	southWest = L.latLng(1000, 0),
+    		northEast = L.latLng(0, 1350),
+    		bounds = L.latLngBounds(southWest, northEast);
+
+
+	var map = L.map('map', {
+		crs: L.CRS.Simple,
+
+// set that bounding box as maxBounds to restrict moving the map
+		maxBounds: bounds,
+		maxBoundsViscosity: 1.0,
+    		maxZoom: 3,
+    		minZoom: -1,
+		
+		
+	});
+	
+
+// hier sind die map units, im Verh�ltnis zur Originalkarte 
+	var bounds = [[0,0], [1000,1350]];
+	var image = L.imageOverlay('images/Carta_Marina.jpeg', bounds).addTo(map);
+	
+// wenn NICHT auf Vieleck geklickt wird - entfernt Text/Zoom
+	
+	//map.on('click', function() {infoText ("", ""); mymap.setView([63, 0], 3); map.flyTo([564,702], -1)})
+
+// zoom the map to that bounding box
+	map.fitBounds(bounds);
+	
+	
+
+// 2. Karte
+
+
+var mymap = L.map('map2').setView([63, 0], 3);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+
+
+/**
+//erstellt die Karte. Wird von Vieleck abgerufen.
+function createMymap() {
+var mymap = L.map('map2').setView([61.969943, -6.844482], 7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+}
+
+
+
+var mapContainerDIV = document.getElementById("header");
+function hideMymap () {
+	mapContainerDIV.style.visibility = 'hidden'; }
+	
+
+function createDIV () {
+	var diva = document.createElement("diva");	
+	diva.setAttribute("id", "map2");
+	diva.setAttribute("class","col");
+
+	document.getElementById("map3").appendChild(diva);
+} **/
+
+
+
+// Das ist das Vieleck, das abgerufen wird, wenn auf "nix" geklickt wird.
+
+var polyBACK = L.polygon([
+	[0,0], [0,1500], [1000,1500], [1000,0]
+	], {
+	color: 'none',
+	fillColor: 'blue',
+	fillOpacity: 0.0,
+	
+	
+	}
+	)
+polyBACK.addTo(map).bringToBack()
+//polyBACK.on('click', function() {infoText ("", "Bislang ist nur das Klicken auf Thule, den F�r�ern und das stachelschweinartige Seeungeheuer m�glich."); map.flyTo([564,702], -1); })
+polyBACK.on('click', function () {polyClick (meinGarnichts)})
+var meinGarnichts = {
+name: "Garnichts",
+title: "",
+text: "Klick auf Fare oder Thule",
+cartay: "564",
+cartax: "702",
+cartaz: "-1",
+kartey: "63",
+kartex: "0",
+kartez: "3",}
+
+
+
+// Hier haben wir das Polygon �ber den F�r�ern.
+var polyFare = L.polygon([
+	[650, 248],
+	[653, 258],
+	[650, 264],
+	[643, 265],
+	[651, 272],
+	[645, 283],
+	[634, 289],
+	[618, 291],
+	[620, 303],
+	[598, 316],
+	[577, 307],
+	[584, 269],
+	[615, 253],
+	[623, 242],
+	
+	],	{
+	color: 'none',
+	fillColor: 'black',
+	fillOpacity: 0.0,
+	
+	
+	}
+
+)
+
+var meinFare = {
+name: "F�r�er",
+title: "F�r�er",
+text: "Die F�r�er sind eine zu D�nemark geh�rende Gruppe aus 18 Inseln mit autonomer Selbstverwaltung. Die gut 50.000 Inselbewohner � die F�ringer, auch F�r�er genannt � betrachten sich nicht als D�nen, sondern als eigenst�ndiges Volk, das von den Wikingern auf den F�r�ern abstammt. Sie sprechen die f�r�ische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isl�ndischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von F�mjin aus dem Jahr 2005 bilden die F�ringer, wie auch die Gr�nl�nder, eine �gleichberechtigte Nation� innerhalb des K�nigreichs D�nemark. Ihre Inseln genie�en bereits seit 1948 eine weitgehende Autonomie und haben mit dem L�gting eines der �ltesten Parlamente der Welt. Es entsendet regelm��ig zwei Abgeordnete ins d�nische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
+cartay: "620",
+cartax: "270",
+cartaz: "1",
+kartey: "62",
+kartex: "-6.8",
+kartez: "7",}
+
+polyFare.addTo(map).bringToFront()
+//polyFare.on('click', function() {infoText ("F�r�er", "Hier sind die F�r�er."); map.flyTo([620, 270], 1); mymap.setView([61.969943, -6.844482], 7); })
+/*polyFare.addEventListener("click", polyFareClick);
+function polyFareClick() {infoText ("F�r�er", "Hier sind die F�r�er."); map.flyTo([620, 270], 1); mymap.setView([61.969943, -6.844482], 7); }*/
+polyFare.on('click', function () {polyClick (meinFare)})
+polyFare.on('mouseover', function() {highlightME (this)})
+polyFare.on('mouseout', function() {highlightMENOT (this)})
+
+
+//mouse over
+function highlightME (polly) { polly.setStyle({
+        fillOpacity: '0.2'  })}
+
+// mouse out
+function highlightMENOT (polly) { polly.setStyle({
+        fillOpacity: '0.0'  })}
+
+
+// Thule
+
+var polyThule = L.polygon([
+[571.9999961853027,166.6666717529297],[569.2499961853027,170.6666717529297],[565.4999961853027,176.4166717529297],[560.9999961853027,178.9166717529297],[555.2499961853027,175.9166717529297],[552.9999961853027,180.9166717529297],[550.7499961853027,184.6666717529297],[546.9999961853027,186.1666717529297],[542.9999961853027,185.6666717529297],[540.4999961853027,188.1666717529297],[536.9999961853027,188.6666717529297],[535.9999961853027,185.6666717529297],[531.4999961853027,185.6666717529297],[528.2499961853027,187.1666717529297],[528.7499961853027,191.4166717529297],[525.4999961853027,191.6666717529297],[522.9999961853027,190.6666717529297],[522.9999961853027,188.1666717529297],[521.2499961853027,186.1666717529297],[519.9999961853027,182.1666717529297],[524.2499961853027,178.4166717529297],[523.2499961853027,175.9166717529297],[522.9999961853027,171.4166717529297],[524.7499961853027,167.4166717529297],[527.2499961853027,167.6666717529297],[529.9999961853027,171.1666717529297],[534.2499961853027,171.6666717529297],[534.4999961853027,166.4166717529297],[529.7499961853027,165.1666717529297],[527.4999961853027,163.6666717529297],[524.7499961853027,165.1666717529297],[523.2499961853027,162.1666717529297],[522.2499961853027,159.6666717529297],[522.4999961853027,156.1666717529297],[521.7499961853027,155.1666717529297],[520.7499961853027,153.9166717529297],[517.9999961853027,152.1666717529297],[517.9999961853027,147.9166717529297],[517.9999961853027,145.1666717529297],[518.9999961853027,144.1666717529297],[518.9999961853027,142.6666717529297],[517.4999961853027,141.4166717529297],[519.2499961853027,138.4166717529297],[520.2499961853027,136.1666717529297],[522.4999961853027,137.1666717529297],[524.4999961853027,135.6666717529297],[527.2499961853027,136.1666717529297],[526.7499961853027,133.1666717529297],[526.4999961853027,129.1666717529297],[527.7499961853027,123.16667175292969],[527.7499961853027,120.16667175292969],[529.9999961853027,119.16667175292969],[535.4999961853027,118.66667175292969],[538.9999961853027,117.16667175292969],[542.4999961853027,117.41667175292969],[545.7499961853027,119.41667175292969],[546.9999961853027,123.16667175292969],[547.4999961853027,124.16667175292969],[548.2499961853027,123.41667175292969],[549.9999961853027,122.91667175292969],[549.7499961853027,122.16667175292969],[552.4999961853027,123.16667175292969],[552.9999961853027,126.16667175292969],[551.9999961853027,127.16667175292969],[550.4999961853027,127.16667175292969],[548.9999961853027,125.66667175292969],[548.9999961853027,127.91667175292969],[549.9999961853027,130.6666717529297],[551.4999961853027,131.6666717529297],[554.2499961853027,132.9166717529297],[552.2499961853027,134.9166717529297],[553.9999961853027,137.1666717529297],[556.4999961853027,136.1666717529297],[557.2499961853027,135.9166717529297],[557.4999961853027,135.1666717529297],[557.4999961853027,132.6666717529297],[557.7499961853027,130.6666717529297],[556.9999961853027,129.6666717529297],[560.9999961853027,132.9166717529297],[560.9999961853027,135.1666717529297],[561.4999961853027,136.9166717529297],[562.2499961853027,137.6666717529297],[562.9999961853027,139.6666717529297],[562.9999961853027,141.6666717529297],[562.2499961853027,142.6666717529297],[560.9999961853027,145.1666717529297],[560.7499961853027,142.6666717529297],[558.2499961853027,140.1666717529297],[555.4999961853027,139.9166717529297],[558.2499961853027,142.6666717529297],[559.2499961853027,146.6666717529297],[560.2499961853027,148.9166717529297],[560.4999961853027,152.9166717529297],[563.4999961853027,155.1666717529297],[563.9999961853027,157.4166717529297],[563.4999961853027,157.9166717529297],[562.4999961853027,158.9166717529297],[562.7499961853027,160.4166717529297],[563.9999961853027,161.4166717529297],[565.4999961853027,161.4166717529297],[566.2499961853027,163.1666717529297],[568.4999961853027,165.1666717529297],[568.9999961853027,165.1666717529297],[570,165.25],[571.5,164.75],
+	
+	],	{
+	color: 'none',
+	fillColor: 'black',
+	fillOpacity: 0.0,
+	
+	
+	}
+
+)
+polyThule.addTo(map).bringToFront()
+//polyThule.on('click', function() {infoText ("Thule", "Hier ist Thule. weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen "); mymap.setView([0, 0], 7);  map.flyTo([534,148], 1)})
+
+var meinThule = {
+name: "Thule",
+title: "Thule",
+text: "Test",
+cartay: "534",
+cartax: "148",
+cartaz: "1",
+kartey: "0",
+kartex: "0",
+kartez: "7",}
+
+polyThule.on('click', function () {polyClick (meinThule)})
+//polyThule.addEventListener('click', polyClick());
+//function polyThuleClick() {infoText ("Thule", "Hier ist Thule. weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen "); mymap.setView([0, 0], 7);  map.flyTo([534,148], 1)}
+
+
+polyThule.on('mouseover', function() {highlightME (this)})
+polyThule.on('mouseout', function() {highlightMENOT (this)})
+
+
+// allgemeine Funktion
+function polyClick (x)
+{
+	
+	var elem1 = document.getElementById("Ueberschrift");
+	elem1.innerHTML = x.name;
+
+	var elem2 = document.getElementById("Infokasten");
+	elem2.innerHTML = x.text;
+	
+	var a = Number(x.cartay);
+	var b = Number(x.cartax);
+	var c = Number(x.cartaz);
+	var a2 = Number(x.kartey);
+	var b2 = Number(x.kartex);
+	var c2 = Number(x.kartez);
+	map.flyTo([a, b], c);
+	mymap.setView([a2, b2], c2);
+	
+	// map.flyTo([620, 270], 1); mymap.setView([61.969943, -6.844482], 7);
+	
+}
+
+// Stachelschwein.
+
+var polySchwein = L.polygon([[590.2916679382324,60.04166221618652],[589.2916679382324,61.54166221618652],[588.1666679382324,62.16666221618652],[588.1666679382324,66.66666221618652],[589.4166679382324,69.16666221618652],[592.9166679382324,71.79166221618652],[592.4166679382324,74.04166221618652],[591.4166679382324,76.16666221618652],[593.4166679382324,75.91666221618652],[596.9166679382324,77.66666221618652],[596.7916679382324,78.79166221618652],[594.5416679382324,77.91666221618652],[592.2916679382324,78.91666221618652],[591.6666679382324,80.41666221618652],[593.6666679382324,82.04166221618652],[592.9166679382324,82.91666221618652],[595.1666679382324,83.91666221618652],[594.9166679382324,85.16666221618652],[598.2916679382324,85.79166221618652],[596.7916679382324,87.79166221618652],[594.4166679382324,88.29166221618652],[592.2916679382324,88.41666221618652],[594.1666679382324,90.41666221618652],[592.4166679382324,91.16666221618652],[594.4166679382324,94.29166221618652],[592.1666679382324,94.79166221618652],[594.9166679382324,96.91666221618652],[591.2916679382324,97.91666221618652],[596.5416679382324,100.41666221618652],[593.9166679382324,101.66666221618652],[595.7083339691162,102.54166221618652],[594.3333339691162,103.16666221618652],[594.5833339691162,103.91666221618652],[592.0833339691162,104.54166221618652],[590.4583339691162,104.54166221618652],[588.5833339691162,108.91666221618652],[588.5833339691162,113.29166221618652],[590.3333339691162,115.66666221618652],[587.5833339691162,116.79166221618652],[589.0833339691162,117.29166221618652],[585.4583339691162,117.54166221618652],[585.2083339691162,122.54166221618652],[586.3333339691162,128.16666221618652],[589.5833339691162,132.04166221618652],[585.5833339691162,131.54166221618652],[583.0833339691162,130.79166221618652],[581.8333339691162,128.54166221618652],[579.5833339691162,131.29166221618652],[577.9583339691162,132.66666221618652],[576.4583339691162,133.04166221618652],[572.8333339691162,133.04166221618652],[577.4583339691162,127.54166221618652],[577.9583339691162,120.66666221618652],[577.3333339691162,118.91666221618652],[574.3333339691162,119.16666221618652],[571.4583339691162,118.79166221618652],[569.8333339691162,116.29166221618652],[567.4583339691162,115.29166221618652],[567.2083339691162,112.66666221618652],[567.3333339691162,110.29166221618652],[567.5833339691162,107.91666221618652],[568.3333339691162,105.29166221618652],[570.5833339691162,104.66666221618652],[569.9583339691162,101.79166221618652],[570.8333339691162,99.79166221618652],[570.7083339691162,97.29166221618652],[570.9583339691162,94.41666221618652],[571.3333339691162,93.29166221618652],[569.2083339691162,92.91666221618652],[567.4583339691162,91.16666221618652],[566.8333339691162,89.91666221618652],[571.3333339691162,90.04166221618652],[566.7083339691162,89.04166221618652],[569.4583339691162,87.91666221618652],[568.0833339691162,86.29166221618652],[564.8333339691162,85.79166221618652],[566.4583339691162,83.54166221618652],[565.8333339691162,81.29166221618652],[564.2083339691162,81.04166221618652],[564.9999980926514,78.6249942779541],[563.7499980926514,77.8749942779541],[565.3749980926514,76.8749942779541],[563.8749980926514,74.9999942779541],[566.6249980926514,74.7499942779541],[565.7499980926514,71.8749942779541],[566.4999980926514,72.8749942779541],[566.6249980926514,70.6249942779541],[569.3749980926514,71.2499942779541],[568.4999980926514,68.6249942779541],[571.3749980926514,67.8749942779541],[571.9999980926514,70.1249942779541],[572.4999980926514,69.1249942779541],[573.9999980926514,71.1249942779541],[575.2499980926514,72.9999942779541],[576.2499980926514,69.8749942779541],[576.9999980926514,66.3749942779541],[579.4999980926514,62.6249942779541],[582.9999980926514,59.3749942779541],[584.2499980926514,60.2499942779541],[582.3749980926514,62.7499942779541],[583.4999980926514,62.9999942779541],[584.2499980926514,60.8749942779541],[584.7499980926514,59.9999942779541],[586.2499980926514,59.6249942779541],[587.3749980926514,58.8749942779541],[589.2499980926514,59.1249942779541],[589.9999980926514,59.8749942779541]]
+	,{color: 'none',
+	fillColor: 'black',
+	fillOpacity: 0.0,
+	
+	
+	}
+
+)
+
+polySchwein.addTo(map).bringToFront()
+//polySchwein.on('click', function() {infoText ("Meeresungeheuer", "Stachelschweinfisch"); mymap.setView([0, 0], 7);  map.flyTo([583.3333320617676,92.41666412353516], 1)});
+
+polySchwein.addEventListener("click", polySchweinClick);
+
+
+function polySchweinClick() {
+    infoText ("Meeresungeheuer", "Stachelschweinfisch");
+	mymap.setView([0, 0], 7);
+	map.flyTo([583.3333320617676,92.41666412353516], 1)
+}
+
+polySchwein.on('mouseover', function() {highlightME (this)})
+polySchwein.on('mouseout', function() {highlightMENOT (this)})
+
+// bei Zeiten eliminieren.
+function infoText(text1, text2) {
+	var elem1 = document.getElementById("Ueberschrift");
+	elem1.innerHTML = text1;
+
+	var elem2 = document.getElementById("Infokasten");
+	elem2.innerHTML = text2;
+}
+
+
+
+// Suche!
+
+var input = document.getElementById("myInput");  //var input entspricht der Sucheingabe
+
+//Klick funktioniert inklusive Funktion.
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) { mySearch()}
+	})
+
+function mySearch() {    
+    var inputText = String(document.getElementById('myInput').value); //macht String aus der Sucheingabe
+	
+	//var a = countries.indexOf(inputText);					//gibt Position in Array
+	
+	var i;
+	for (i = 0; i < meinCountries.length; i++){
+	if (meinCountries[i].name == inputText){polyClick (meinCountries[i]);
+	}
+	}
+	
+	
+	
+	//var poly_Click = polyCountries[a];
+	
+	//poly_Click();
+	
+	
+	/* Liest L�nder aus und gibt sie mit Zeilenumbruch aus
+	
+	var texttext = "";
+	var i;
+	for (i = 0; i < countries.length; i++)
+	{
+	texttext += countries[i] + "<br>";
+	document.getElementById("Infokasten").innerHTML = texttext;}*/
+	
+	
+	/*
+	if (inputText == "Stachelschwein") 
+	{
+	polySchweinClick();
+	}
+	else if (inputText == "Thule")
+	{
+	polyThuleClick();
+	}
+	else if (inputText == "F�r�er")
+	{
+	polyFareClick();
+	}*/
+}
+
+
+//Daten f�r Autocomplete
+
+//var countries = new Array (meinCountries.name);
+
+var meinCountries = [meinThule, meinFare]; // Ordnet Klick-Funktion zu.
+
+
+
+
+// Alles zur Autocomplete
+
+function autocomplete(inp, countries) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus; 
+  var arr = new Array ();
+  var a;
+  for (a in countries){
+  arr.push(countries[a].name);}
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value: ###*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+			  mySearch();
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+		mySearch();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+      x[i].parentNode.removeChild(x[i]);
+    }
+  }
+}
+/*execute a function when someone clicks in the document:*/
+document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+	
+
+});
+}
+
+autocomplete(document.getElementById("myInput"), meinCountries);
+	</script>
+
+
+<!-- Bootstrap! -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+
+	</body>
+</html>
