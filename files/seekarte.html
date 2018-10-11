@@ -17,8 +17,8 @@
    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
    crossorigin=""></script>
 
-<!-- irgendwas f�r Mobile Ansicht -->
-
+<!-- irgendwas für Mobile Ansicht -->
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -190,9 +190,9 @@
    <div class="col-lg-6" id='map'></div>
    <div class="col-lg-6">
    
-   <div class="row" style="height: 50%"> <!-- verursacht tats�chlich Ver�nderungen im responsiven Design --> 
+   <div class="row" style="height: 50%"> <!-- verursacht tatsächlich Veränderungen im responsiven Design --> 
    <div class="col" id="textContainer">
-   <h4 id='Ueberschrift'></h4><p id='Infokasten'>Bislang ist nur das Klicken auf Thule, den F�r�ern und das stachelschweinartige Seeungeheuer m�glich.</p>
+   <h4 id='Ueberschrift'></h4><p id='Infokasten'>Bislang ist nur das Klicken auf Thule, den Färöern und das stachelschweinartige Seeungeheuer möglich.</p>
    </div>
    </div>
    <div class="row" id='map3'>
@@ -231,7 +231,7 @@
 	});
 	
 
-// hier sind die map units, im Verh�ltnis zur Originalkarte 
+// hier sind die map units, im Verhältnis zur Originalkarte 
 	var bounds = [[0,0], [1000,1350]];
 	var image = L.imageOverlay('images/Carta_Marina.jpeg', bounds).addTo(map);
 	
@@ -250,7 +250,7 @@
 var mymap = L.map('map2').setView([63, 0], 3);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="https://www.mapbox.com/">Mapbox</a>',
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'your.mapbox.access.token'
@@ -262,7 +262,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 function createMymap() {
 var mymap = L.map('map2').setView([61.969943, -6.844482], 7);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="https://www.mapbox.com/">Mapbox</a>',
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'your.mapbox.access.token'
@@ -299,7 +299,7 @@ var polyBACK = L.polygon([
 	}
 	)
 polyBACK.addTo(map).bringToBack()
-//polyBACK.on('click', function() {infoText ("", "Bislang ist nur das Klicken auf Thule, den F�r�ern und das stachelschweinartige Seeungeheuer m�glich."); map.flyTo([564,702], -1); })
+//polyBACK.on('click', function() {infoText ("", "Bislang ist nur das Klicken auf Thule, den Färöern und das stachelschweinartige Seeungeheuer möglich."); map.flyTo([564,702], -1); })
 polyBACK.on('click', function () {polyClick (meinGarnichts)})
 var meinGarnichts = {
 name: "Garnichts",
@@ -314,7 +314,7 @@ kartez: "3",}
 
 
 
-// Hier haben wir das Polygon �ber den F�r�ern.
+// Hier haben wir das Polygon über den Färöern.
 var polyFare = L.polygon([
 	[650, 248],
 	[653, 258],
@@ -342,9 +342,9 @@ var polyFare = L.polygon([
 )
 
 var meinFare = {
-name: "F�r�er",
-title: "F�r�er",
-text: "Die F�r�er sind eine zu D�nemark geh�rende Gruppe aus 18 Inseln mit autonomer Selbstverwaltung. Die gut 50.000 Inselbewohner � die F�ringer, auch F�r�er genannt � betrachten sich nicht als D�nen, sondern als eigenst�ndiges Volk, das von den Wikingern auf den F�r�ern abstammt. Sie sprechen die f�r�ische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isl�ndischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von F�mjin aus dem Jahr 2005 bilden die F�ringer, wie auch die Gr�nl�nder, eine �gleichberechtigte Nation� innerhalb des K�nigreichs D�nemark. Ihre Inseln genie�en bereits seit 1948 eine weitgehende Autonomie und haben mit dem L�gting eines der �ltesten Parlamente der Welt. Es entsendet regelm��ig zwei Abgeordnete ins d�nische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
+name: "Färöer",
+title: "Färöer",
+text: "Die Färöer sind eine zu Dänemark gehörende Gruppe aus 18 Inseln mit autonomer Selbstverwaltung. Die gut 50.000 Inselbewohner – die Färinger, auch Färöer genannt – betrachten sich nicht als Dänen, sondern als eigenständiges Volk, das von den Wikingern auf den Färöern abstammt. Sie sprechen die färöische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isländischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
 cartay: "620",
 cartax: "270",
 cartaz: "1",
@@ -353,9 +353,9 @@ kartex: "-6.8",
 kartez: "7",}
 
 polyFare.addTo(map).bringToFront()
-//polyFare.on('click', function() {infoText ("F�r�er", "Hier sind die F�r�er."); map.flyTo([620, 270], 1); mymap.setView([61.969943, -6.844482], 7); })
+//polyFare.on('click', function() {infoText ("Färöer", "Hier sind die Färöer."); map.flyTo([620, 270], 1); mymap.setView([61.969943, -6.844482], 7); })
 /*polyFare.addEventListener("click", polyFareClick);
-function polyFareClick() {infoText ("F�r�er", "Hier sind die F�r�er."); map.flyTo([620, 270], 1); mymap.setView([61.969943, -6.844482], 7); }*/
+function polyFareClick() {infoText ("Färöer", "Hier sind die Färöer."); map.flyTo([620, 270], 1); mymap.setView([61.969943, -6.844482], 7); }*/
 polyFare.on('click', function () {polyClick (meinFare)})
 polyFare.on('mouseover', function() {highlightME (this)})
 polyFare.on('mouseout', function() {highlightMENOT (this)})
@@ -385,7 +385,7 @@ var polyThule = L.polygon([
 
 )
 polyThule.addTo(map).bringToFront()
-//polyThule.on('click', function() {infoText ("Thule", "Hier ist Thule. weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen "); mymap.setView([0, 0], 7);  map.flyTo([534,148], 1)})
+//polyThule.on('click', function() {infoText ("Thule", "Hier ist Thule. weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen "); mymap.setView([0, 0], 7);  map.flyTo([534,148], 1)})
 
 var meinThule = {
 name: "Thule",
@@ -400,7 +400,7 @@ kartez: "7",}
 
 polyThule.on('click', function () {polyClick (meinThule)})
 //polyThule.addEventListener('click', polyClick());
-//function polyThuleClick() {infoText ("Thule", "Hier ist Thule. weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen weil andere Reiseberichte �ber Britannien und Irland die Insel Thule nicht erw�hnen, sondern stattdessen "); mymap.setView([0, 0], 7);  map.flyTo([534,148], 1)}
+//function polyThuleClick() {infoText ("Thule", "Hier ist Thule. weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen weil andere Reiseberichte über Britannien und Irland die Insel Thule nicht erwähnen, sondern stattdessen "); mymap.setView([0, 0], 7);  map.flyTo([534,148], 1)}
 
 
 polyThule.on('mouseover', function() {highlightME (this)})
@@ -496,7 +496,7 @@ function mySearch() {
 	//poly_Click();
 	
 	
-	/* Liest L�nder aus und gibt sie mit Zeilenumbruch aus
+	/* Liest Länder aus und gibt sie mit Zeilenumbruch aus
 	
 	var texttext = "";
 	var i;
@@ -515,14 +515,14 @@ function mySearch() {
 	{
 	polyThuleClick();
 	}
-	else if (inputText == "F�r�er")
+	else if (inputText == "Färöer")
 	{
 	polyFareClick();
 	}*/
 }
 
 
-//Daten f�r Autocomplete
+//Daten für Autocomplete
 
 //var countries = new Array (meinCountries.name);
 
