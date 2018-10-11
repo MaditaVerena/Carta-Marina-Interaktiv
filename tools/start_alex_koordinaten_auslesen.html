@@ -77,7 +77,7 @@
 
 
 
-document.getElementById('map').style.cursor = 'crosshair'
+document.getElementById('map').style.cursor = 'crosshair';
 
 
 
@@ -97,11 +97,12 @@ function onMapClick(e) {
     		{
     			color: 'none',
 				fillColor: '#fff',
-				fillOpacity: 0.8 
+				fillOpacity: 0.5,
 			});
     	polygon.addTo(map);
     }
 }
+
 
 map.on('click', onMapClick);
 
