@@ -75,19 +75,27 @@ function polyClick(x) {
 }
 
 
+
+
+/* polygons and data sets */
+//
+//
+//
 /* polyBack = click into map; */
+
+/* creates polygon */
 var polyBACK = L.polygon([
     [0, 0], [0, 1500], [1000, 1500], [1000, 0]
 ], {
         color: 'none',
         fillColor: 'blue',
         fillOpacity: 0.0,
-
-
     }
 )
 polyBACK.addTo(map).bringToBack()
 polyBACK.on('click', function () { polyClick(meinGarnichts) })
+
+/* data for textContainer */
 var meinGarnichts = {
     name: "Garnichts",
     title: "",
@@ -100,10 +108,7 @@ var meinGarnichts = {
     kartez: "3",
 }
 
-/* polygons and data sets */
-//
-//
-//
+
 /* Faroe Islands */
 
 /* creates polygon */
