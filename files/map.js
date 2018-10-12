@@ -20,13 +20,13 @@ var map = L.map('map', {
 
 /* map units */
 var bounds = [[0, 0], [1000, 1350]];
-var image = L.imageOverlay('images/Carta_Marina.jpeg', bounds).addTo(map);
+var image = L.imageOverlay('img/Carta_Marina.jpeg', bounds).addTo(map);
 
 /* zoom the map to that bounding box */
 map.fitBounds(bounds);
 
 
-/* MAP 2: web mapping (i.e. google maps) */
+/* map2: web mapping (i.e. google maps) */
 
 var mymap = L.map('map2').setView([63, 0], 3);
 
@@ -55,10 +55,10 @@ function highlightMENOT(polly) {
 /* function which inserts title and text into the textContainer */
 function polyClick(x) {
 
-    var elem1 = document.getElementById("Ueberschrift");
+    var elem1 = document.getElementById("title");
     elem1.innerHTML = x.name;
 
-    var elem2 = document.getElementById("Infokasten");
+    var elem2 = document.getElementById("info");
     elem2.innerHTML = x.text;
 
     var a = Number(x.cartay);
@@ -185,7 +185,6 @@ polyThule.on('mouseout', function () { highlightMENOT(this) })
 
 
 /* search function */
-//
 
 /* collects data sets, necessary for search input! */
 var meinCountries = [meinThule, meinFare];
