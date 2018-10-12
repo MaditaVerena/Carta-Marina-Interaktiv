@@ -4,9 +4,11 @@
 Index erstellen
 css aufräumen
 HTML <> Titel und so in head
+anstelle <br> lieber padding oder so
 Klappdings für Zusatzkarte
 Beispieltexte bissi verbessern / ggf. - wenn Zeit - ein repräsentatives Bsp.
 Suchmaske verkleinern?
+Anpassung der Navigation. Siehe to-do-search-input.png
 
 
 *** done ***
