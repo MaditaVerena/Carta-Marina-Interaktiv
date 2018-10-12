@@ -59,20 +59,29 @@ html, body {
     ;		
 }
 
-#intro-column {
-    vertical-align: bottom;    
-}
-
 #introContainer {
     padding: 45px;
     height: 390px;
     background-image: url("img/Carta_Marina-index.jpeg");
     background-position: center;
     background-size: cover;
-    box-sizing: border-box;
-    
-    
+    box-sizing: border-box;   
 }
+
+#logoContainer {
+    position: absolute;
+    top: 5px;
+    max-width: 500px;
+}
+
+#buttonContainer {
+    position: absolute;
+    top: 270px; 
+}
+
+
+
+
 
 .row input[type=text] {
     float: right;
