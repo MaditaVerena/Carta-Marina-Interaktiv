@@ -59,6 +59,15 @@ html, body {
     ;		
 }
 
+#introContainer {
+    background-image: url("img/Carta_Marina-index.jpeg");
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    height: 390px;
+    box-sizing: border-box;
+}
+
 
 .row input[type=text] {
     float: right;
