@@ -2,6 +2,7 @@
 
 
 Index erstellen
+HTML <> Titel und so in head
 Klappdings für Zusatzkarte
 Beispieltexte bissi verbessern / ggf. - wenn Zeit - ein repräsentatives Bsp.
 Suchmaske verkleinern?
