@@ -1,6 +1,6 @@
 [nach Priorität sortieren]
 
-Formatierung der html-files
+
 Index erstellen
 Klappdings für Zusatzkarte
 Beispieltexte bissi verbessern / ggf. - wenn Zeit - ein repräsentatives Bsp.
@@ -11,3 +11,4 @@ Suchmaske verkleinern?
 JS externialisieren
 CSS sortieren-ordnen
 Kommentare löschen-umformulieren
+Formatierung der html-files
