@@ -26,7 +26,7 @@ var image = L.imageOverlay('img/Carta_Marina.jpeg', bounds).addTo(map);
 map.fitBounds(bounds);
 
 
-/* map2: web mapping (i.e. google maps) */
+/* map2: web mapping (i.e. openstreetmap) */
 
 var mymap = L.map('map2').setView([63, 0], 3);
 
@@ -36,6 +36,22 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     id: 'mapbox.streets',
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
+
+
+document.getElementById("map2").style.display = "none";
+
+function toggleWebmap() {
+    var x = document.getElementById('map2');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+
+
 
 
 /* polygon: mouse over */
