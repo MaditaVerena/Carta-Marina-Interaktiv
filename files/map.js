@@ -38,10 +38,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(mymap);
 
 
-document.getElementById("map2").style.display = "none";
+document.getElementById("map2Container").style.display = "none";
 
 function toggleWebmap() {
-    var x = document.getElementById('map2');
+    var x = document.getElementById('map2Container');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {

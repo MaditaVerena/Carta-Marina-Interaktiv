@@ -3,11 +3,7 @@ html, body {
     margin: 0;
 }
 
-#map2 { height: 200px;
-        margin: 5px;
-        margin-right: 25px;
-        top: 35px;
-        }
+
 
 #header {
     position: relative;
@@ -35,12 +31,15 @@ html, body {
     top: 90px;
     left: 30px;
     bottom: 20px;
-    right: 30px;			
-    overflow: auto;
-                
+    right: 30px;
+    overflow: auto;                
 }
 
 #map { min-height: 50vh;
+}
+
+#textRow{
+    max-height: 60%;
 }
 
 #textContainer {
@@ -74,11 +73,53 @@ html, body {
     max-width: 500px;
 }
 
+
+
 #buttonContainer {
     position: absolute;
     top: 270px; 
 }
 
+
+#mapRow {
+    max-height: 50%;
+    margin-right: 5px;
+    overflow: hidden;
+    bottom: 20px;
+    
+}
+
+#toggleContainer {
+    position: fixed; /*relative*/
+    height: 40px;
+    bottom: 20px;
+    left: 50%;
+    right: 0px;
+    margin-left: 10px; /*200px*/
+    margin-right: 5px;
+    overflow: hidden;
+    
+}
+
+#map2Container {
+    position: fixed; /* position: static; */
+    bottom: 20px;
+    height: 200px;
+    /* width: 50%; */
+    overflow: hidden;
+    margin-left: 0px; /* 200px; */
+    margin-right: 5px;
+    padding: 10px;
+    /* border: 1px solid #383A5B; */
+    
+    
+}
+
+#map2 { 
+    height: 185px;
+    max-width: 45%;
+    margin: 5px;
+    }
 
 
 

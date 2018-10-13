@@ -74,9 +74,10 @@
 	<!-- mapContainer and textContainer -->
 	<div class="row" id="mapContainer">
 		<div class="col-lg-6" id='map'></div>
+
 		<div class="col-lg-6">
 	
-			<div class="row" style="height: 45%">
+			<div class="row" id="textRow">
 	
 				<div class="col" id="textContainer">
 					<h4 id='title'></h4>
@@ -88,13 +89,22 @@
 											 
 				</div>
 			</div>
-			<div class="row">
-				<div class="col">
-						<button type="button" class="btn-warning" onclick="toggleWebmap()">Web mapping</button>
-					<div id='map2'></div>
-				</div>
+
+			
+			<div class="row" id="mapRow">
+		
+						<div class="col" id="map2Container">
+							<div id='map2'></div>
+						</div>
+							
 					
+					<div class="col" id="toggleContainer">
+							<button type="button" class="btn-warning" onclick="toggleWebmap()">Web mapping</button>
+					</div>
+			
 			</div>
+
+			
 		</div>
 
 	</div>
