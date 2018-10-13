@@ -72,7 +72,7 @@ function highlightMENOT(polly) {
 function polyClick(x) {
 
     var elem1 = document.getElementById("title");
-    elem1.innerHTML = x.name;
+    elem1.innerHTML = x.name;  /* müsste das nicht title sein */
 
     var elem2 = document.getElementById("info");
     elem2.innerHTML = x.text;
