@@ -161,7 +161,7 @@ var meinFare = {
     cartaz: "1",
     kartey: "62",
     kartex: "-6.8",
-    kartez: "7",
+    kartez: "6",
 }
 
 /* adds to map, click, mouseover, mouseout */
