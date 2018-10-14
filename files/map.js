@@ -74,7 +74,7 @@ function highlightMENOT(polly) {
 function polyClick(x) {
 
     var elem1 = document.getElementById("title");
-    elem1.innerHTML = x.name;  /* müsste das nicht title sein */
+    elem1.innerHTML = (x.name) + " (" + (x.title) + ")";  /* müsste das nicht title sein */
 
     var elem2 = document.getElementById("info");
     elem2.innerHTML = x.text;
@@ -158,8 +158,8 @@ var polyFare = L.polygon([
 
 /* data for textContainer */
 var myFare = {
-    name: ("Färöer"),
-    title: "Färöer",
+    name: "Fare", /* as in map */
+    title: "Färöer", /* modern term */
     text: "Die Färöer sind eine zu <span onclick='polyClick(myDenmark)'>Dänemark</span> gehörende Gruppe. Die gut 50.000 Inselbewohner – die Färinger, auch Färöer genannt – betrachten sich nicht als Dänen, sondern als eigenständiges Volk, das von den Wikingern auf den Färöern abstammt. Sie sprechen die färöische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isländischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten. Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
     cartay: "620",
     cartax: "270",
@@ -187,7 +187,7 @@ var polyThule = L.polygon([
 )
 
 var myThule = {
-    name: "Thule",
+    name: "Tile",
     title: "Thule",
     text: "Test",
     cartay: "534",
@@ -243,7 +243,7 @@ var polyHolsathia = L.polygon([[124.24999618530273,517.6666564941406],[121.99999
 
 var myHolsathia = {
 name: "Holsathia",
-title: "Holsathia",
+title: "Holstein",
 text: "Holstein (dän. und niederdt.: Holsten, lat.: Holsatia) ist der südliche Landesteil des deutschen Landes Schleswig-Holstein und wurde nach einem der drei hier ursprünglich ansässigen Sachsenstämme, den Holsten (eigtl. Holtsaten = „Waldbewohner“; vgl. Altsächs. holt „Gehölz, Wald“ und sāt „Sasse, Bewohner“), benannt.",
 cartay: "104",
 cartax: "552",
@@ -262,7 +262,7 @@ polyHolsathia.on('mouseout', function () { highlightMENOT(this) })
 /* search function */
 
 /* collects data sets, necessary for search input! */
-var myCountries = [myThule, myFare, myDenmark];
+var myCountries = [myThule, myFare, myDenmark, myHolsathia];
 
 
 
@@ -291,6 +291,11 @@ function mySearch() {
         if (myCountries[i].name == inputText) {
             polyClick(myCountries[i]);
         }
+        else {
+            if (myCountries[i].title == inputText) {
+                polyClick(myCountries[i]);
+            }
+        }
     }
 }
 
@@ -301,9 +306,11 @@ function autocomplete(inp, countries) {
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
     var arr = new Array();
+    var arr2 = new Array();
     var a;
     for (a in countries) {
         arr.push(countries[a].name);
+        arr2.push(countries[a].title); /* adds array for titles [Färöer]; not affected by autocomplete! */
     }
     /*execute a function when someone writes in the text field:*/
     inp.addEventListener("input", function (e) {
@@ -326,7 +333,7 @@ function autocomplete(inp, countries) {
                 b = document.createElement("DIV");
                 /*make the matching letters bold:*/
                 b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-                b.innerHTML += arr[i].substr(val.length);
+                b.innerHTML += arr[i].substr(val.length) + " (" + arr2[i] + ")"; /* arr2 adds modern names (title: Färöer) in brackets, is not affected by autocomplete! */
                 /*insert a input field that will hold the current array item's value:*/
                 b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                 /*execute a function when someone clicks on the item value (DIV element):*/
