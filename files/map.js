@@ -28,7 +28,7 @@ map.fitBounds(bounds);
 
 /* map2: web mapping (i.e. openstreetmap) */
 
-var mymap = L.map('map2').setView([63, 0], 3);
+var mymap = L.map('map2').setView([63, 0], 4);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -161,7 +161,7 @@ var meinFare = {
     cartaz: "1",
     kartey: "62",
     kartex: "-6.8",
-    kartez: "6",
+    kartez: "7",
 }
 
 /* adds to map, click, mouseover, mouseout */
