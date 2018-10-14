@@ -38,6 +38,12 @@ html, body {
 #map { min-height: 50vh;
 }
 
+/* sets grab-cursor for polyBack ! */
+.map-noClick {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+
 #textRow{
     overflow: hidden;
 }
@@ -128,6 +134,16 @@ html, body {
     margin-top: 15px; /* border: 1px solid #383A5B; */
     box-shadow: rgba(0,0,0,.73) 0px 5px 20px 1px ;
     }
+
+
+span {
+    cursor: pointer;
+    color: #911d00;
+}
+
+span:hover {
+    text-decoration: underline;
+}
 
 
 

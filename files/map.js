@@ -57,7 +57,8 @@ function toggleWebmap() {
 /* polygon: mouse over */
 function highlightME(polly) {
     polly.setStyle({
-        fillOpacity: '0.2'
+        fillOpacity: '0.1',
+        fillColor: '#911d00'
     })
 }
 
@@ -68,6 +69,7 @@ function highlightMENOT(polly) {
     })
 }
 
+
 /* function which inserts title and text into the textContainer */
 function polyClick(x) {
 
@@ -77,6 +79,7 @@ function polyClick(x) {
     var elem2 = document.getElementById("info");
     elem2.innerHTML = x.text;
 
+/* and zooms into the historical and the modern web map */
     var a = Number(x.cartay);
     var b = Number(x.cartax);
     var c = Number(x.cartaz);
@@ -91,28 +94,30 @@ function polyClick(x) {
 }
 
 
-
-
 /* polygons and data sets */
 //
 //
 //
 /* polyBack = click into map; */
 
-/* creates polygon */
+/* example: creates polygon */
 var polyBACK = L.polygon([
     [0, 0], [0, 1500], [1000, 1500], [1000, 0]
 ], {
         color: 'none',
-        fillColor: 'blue',
+        fillColor: 'black',
         fillOpacity: 0.0,
-    }
+        className: 'map-noClick' /* grab-cursor, see css */
+    } 
 )
+
 polyBACK.addTo(map).bringToBack()
-polyBACK.on('click', function () { polyClick(meinGarnichts) })
+polyBACK.on('click', function () { polyClick(myGarnichts) })
+
+
 
 /* data for textContainer */
-var meinGarnichts = {
+var myGarnichts = {
     name: "Garnichts",
     title: "",
     text: "Klick auf Fare oder Thule",
@@ -152,10 +157,10 @@ var polyFare = L.polygon([
 )
 
 /* data for textContainer */
-var meinFare = {
-    name: "Färöer",
+var myFare = {
+    name: ("Färöer"),
     title: "Färöer",
-    text: "Die Färöer sind eine zu Dänemark gehörende Gruppe aus 18 Inseln mit autonomer Selbstverwaltung. Die gut 50.000 Inselbewohner – die Färinger, auch Färöer genannt – betrachten sich nicht als Dänen, sondern als eigenständiges Volk, das von den Wikingern auf den Färöern abstammt. Sie sprechen die färöische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isländischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
+    text: "Die Färöer sind eine zu <span onclick='polyClick(myDenmark)'>Dänemark</span> gehörende Gruppe. Die gut 50.000 Inselbewohner – die Färinger, auch Färöer genannt – betrachten sich nicht als Dänen, sondern als eigenständiges Volk, das von den Wikingern auf den Färöern abstammt. Sie sprechen die färöische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isländischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten. Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
     cartay: "620",
     cartax: "270",
     cartaz: "1",
@@ -166,10 +171,9 @@ var meinFare = {
 
 /* adds to map, click, mouseover, mouseout */
 polyFare.addTo(map).bringToFront()
-polyFare.on('click', function () { polyClick(meinFare) })
+polyFare.on('click', function () { polyClick(myFare) })
 polyFare.on('mouseover', function () { highlightME(this) })
 polyFare.on('mouseout', function () { highlightMENOT(this) })
-
 
 /* Thule */
 
@@ -182,7 +186,7 @@ var polyThule = L.polygon([
     }
 )
 
-var meinThule = {
+var myThule = {
     name: "Thule",
     title: "Thule",
     text: "Test",
@@ -195,15 +199,70 @@ var meinThule = {
 }
 
 polyThule.addTo(map).bringToFront()
-polyThule.on('click', function () { polyClick(meinThule) })
+polyThule.on('click', function () { polyClick(myThule) })
 polyThule.on('mouseover', function () { highlightME(this) })
 polyThule.on('mouseout', function () { highlightMENOT(this) })
+
+
+
+/* Denmark */
+
+var polyDenmark = L.polygon([[140,492],[228,538],[264,626],[212,646],[178,672],[130,686],[100,672],[98,602],[56,566],[80,504]], {
+        color: 'none',
+        fillColor: 'black',
+        fillOpacity: 0.0,
+    }
+)
+
+var myDenmark = {
+    name: "Dänemark",
+    title: "Dänemark",
+    text: "Dänemark (dänisch Danmark [dɛnmɑʀg]) ist ein Land und souveräner Staat im nördlichen Europa und eine parlamentarische Monarchie. Dänemark wird zusammen mit den Färöern, die wie das Mutterland geographisch zu Nordeuropa gehören, und Grönland, das zu Nordamerika zählt, offiziell Königreich Dänemark genannt. Das Königreich Dänemark ist daher ein interkontinentaler Staat. Das Mutterland, der Teil zwischen der Skandinavischen Halbinsel und Mitteleuropa, umfasst eine Fläche von 43.094 km², wovon 23.872 km² auf die Halbinsel Jütland und der Rest auf Inseln entfallen.",
+    cartay: "146",
+    cartax: "584",
+    cartaz: "1",
+    kartey: "56",
+    kartex: "10",
+    kartez: "6",
+}
+
+polyDenmark.addTo(map).bringToFront()
+polyDenmark.on('click', function () { polyClick(myDenmark) })
+polyDenmark.on('mouseover', function () { highlightME(this) })
+polyDenmark.on('mouseout', function () { highlightMENOT(this) })
+
+
+/* Holsathia */
+
+var polyHolsathia = L.polygon([[124.24999618530273,517.6666564941406],[121.99999618530273,535.1666564941406],[128.49999618530273,553.6666564941406],[134.24999618530273,574.1666564941406],[130.49999618530273,577.4166564941406],[120.49999618530273,582.1666564941406],[113.49999618530273,586.6666564941406],[110.74999618530273,584.4166564941406],[103.24999618530273,582.6666564941406],[97.49999618530273,585.4166564941406],[90.99999618530273,592.9166564941406],[84.24999618530273,593.4166564941406],[82.99999618530273,589.4166564941406],[78.74999618530273,576.6666564941406],[73.24999618530273,572.9166564941406],[64.74999618530273,570.6666564941406],[61.499996185302734,562.1666564941406],[61.999996185302734,546.4166564941406],[68.24999618530273,539.9166564941406],[71.49999618530273,531.9166564941406],[71.74999618530273,527.6666564941406],[70.24999618530273,522.9166564941406],[75.49999618530273,521.4166564941406],[77.24999618530273,514.6666564941406],[90.24999618530273,512.1666564941406],[104.24999618530273,506.6666564941406],[112.99999618530273,504.9166564941406],[120.24999618530273,510.6666564941406],[119.99999618530273,503.4166564941406],[124.49999618530273,499.9166564941406],[126.99999618530273,498.1666564941406],[122.99999618530273,520.4166564941406],[119.99999618530273,530.9166564941406],[121.49999618530273,544.6666564941406]], {
+    color: 'none',
+    fillColor: 'black',
+    fillOpacity: 0.0,
+}
+)
+
+var myHolsathia = {
+name: "Holsathia",
+title: "Holsathia",
+text: "Holstein (dän. und niederdt.: Holsten, lat.: Holsatia) ist der südliche Landesteil des deutschen Landes Schleswig-Holstein und wurde nach einem der drei hier ursprünglich ansässigen Sachsenstämme, den Holsten (eigtl. Holtsaten = „Waldbewohner“; vgl. Altsächs. holt „Gehölz, Wald“ und sāt „Sasse, Bewohner“), benannt.",
+cartay: "104",
+cartax: "552",
+cartaz: "2",
+kartey: "54",
+kartex: "9",
+kartez: "7",
+}
+
+polyHolsathia.addTo(map).bringToFront()
+polyHolsathia.on('click', function () { polyClick(myHolsathia) })
+polyHolsathia.on('mouseover', function () { highlightME(this) })
+polyHolsathia.on('mouseout', function () { highlightMENOT(this) })
 
 
 /* search function */
 
 /* collects data sets, necessary for search input! */
-var meinCountries = [meinThule, meinFare];
+var myCountries = [myThule, myFare, myDenmark];
 
 
 
@@ -228,9 +287,9 @@ function mySearch() {
     //var a = countries.indexOf(inputText);					//gibt Position in Array
 
     var i;
-    for (i = 0; i < meinCountries.length; i++) {
-        if (meinCountries[i].name == inputText) {
-            polyClick(meinCountries[i]);
+    for (i = 0; i < myCountries.length; i++) {
+        if (myCountries[i].name == inputText) {
+            polyClick(myCountries[i]);
         }
     }
 }
@@ -343,4 +402,4 @@ function autocomplete(inp, countries) {
     });
 }
 
-autocomplete(document.getElementById("myInput"), meinCountries);
+autocomplete(document.getElementById("myInput"), myCountries);
