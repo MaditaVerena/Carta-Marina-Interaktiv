@@ -90,13 +90,13 @@ html, body {
 }
 
 #toggleContainer {
-    position: fixed; /*relative*/
+    position: absolute; /*relative*/
     height: 40px;
-    bottom: 20px;
-    left: 50%;
+    bottom: 0px;
+    left: 0%;
     right: 0px;
-    margin-left: 10px; /*200px*/
-    margin-right: 5px;
+    margin-left: 0px; /*200px*/
+    margin-right: 0px;
     overflow: hidden;
     
 }
