@@ -98,12 +98,13 @@ function polyClick(x) {
  * loading Data from json file
  */
 
+var objectsFromData = new Array();
+
  function loadData(){
 
    // alert(data[0].id);
     console.log("Got some data, e.g.: "+data);
 
-    var objectsFromData = new Array();
 
     for (let i = 0; i < data.length; i++) {
         const e = data[i];
@@ -116,7 +117,28 @@ function polyClick(x) {
     console.log(objectsFromData);
 
  }
+
+function addPolysToMap(){
+
+    console.log("adding polys to map");
+
+    for (let i = 0; i < objectsFromData.length; i++) {
+        const e = objectsFromData[i];
+        console.log("adding to map: ");
+        console.log(e);
+        // objectsFromData.push(e);
+
+        var polyTmp = L.polygon(e.poly, { color: 'none',  fillColor: 'black',    fillOpacity: 0.0,});
+        polyTmp.addTo(map).bringToFront();
+        polyTmp.on('click', function () { polyClick() })
+        polyTmp.on('mouseover', function () { highlightME(this) })
+        polyTmp.on('mouseout', function () { highlightMENOT(this) })
+    }
+
+}
+
  loadData();
+ addPolysToMap();
 
 
 /* polygons and data sets */
