@@ -129,6 +129,20 @@ var myGarnichts = {
     kartez: "3",
 }
 
+/******************************************/
+/* Plate A */
+
+
+
+
+
+
+
+
+
+/******************************************/
+
+/* other Plates (should be put in order!) */
 
 /* Faroe Islands */
 
