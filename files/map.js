@@ -100,7 +100,20 @@ function polyClick(x) {
 
  function loadData(){
 
-    alert(data[0].id);
+   // alert(data[0].id);
+    console.log("Got some data, e.g.: "+data);
+
+    var objectsFromData = new Array();
+
+    for (let i = 0; i < data.length; i++) {
+        const e = data[i];
+        console.log("found object: ");
+        console.log(e);
+        objectsFromData.push(e);
+    }
+    
+    console.log("Array finished:");
+    console.log(objectsFromData);
 
     /*var json = (function () {
         var json = null;
@@ -126,6 +139,7 @@ function polyClick(x) {
     var actual_JSON = JSON.parse(response);
     alert("done loading");*/
  }
+ loadData();
 
  /*function loadFromJson(callback){
 

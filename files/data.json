@@ -1,9 +1,38 @@
 var data = [
     {
-        "id": "object_test",
-        "name": "Testus",
-        "title": "Test",
-        "text": "Test",
+        "id": "object_test_001",
+        "name": "Testus primus",
+        "title": "Test 1",
+        "text": "Test bla",
+        "cartay": "534",
+        "cartax": "148",
+        "cartaz": "1",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "7",
+        "poly": [
+            [
+                632,
+                527.6953943005653
+            ],
+            [
+                484,
+                549.691098579163
+            ],
+            [
+                476,
+                741.6536086469248
+            ],
+            [
+                634,
+                695.662590609857
+            ]
+        ]
+    }, {
+        "id": "object_test_002",
+        "name": "Testus secundus",
+        "title": "Test 2",
+        "text": "Test bla x 2",
         "cartay": "534",
         "cartax": "148",
         "cartaz": "1",
