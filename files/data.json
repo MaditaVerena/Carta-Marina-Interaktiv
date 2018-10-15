@@ -1,4 +1,5 @@
-{
+var data = [
+    {
         "id": "object_test",
         "name": "Testus",
         "title": "Test",
@@ -28,3 +29,4 @@
             ]
         ]
     }
+]

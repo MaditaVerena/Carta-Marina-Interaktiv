@@ -99,9 +99,8 @@ function polyClick(x) {
  */
 
  function loadData(){
-     alert("Loading...");
 
-    alert(data);
+    alert(data[0].id);
 
     /*var json = (function () {
         var json = null;
