@@ -214,7 +214,16 @@ var polyShipHamburgen = L.polygon([
                 fillOpacity: 0.0,
             }
         )
-        
+        var polyVestrabord= L.polygon([
+            [871,142.5],[878,124.5],[866.5,111.5],[837.5,105.5],[827,144.5],[861,161.5]
+           
+          ], {
+                  color: 'none',
+                  fillColor: 'black',
+                  fillOpacity: 0.0,
+              }
+          )
+          
     /******************************************/
 
 /* other Plates (should be put in order!) */
