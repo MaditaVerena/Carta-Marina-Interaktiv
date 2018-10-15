@@ -309,7 +309,41 @@ var polyShipHamburgen = L.polygon([
             fillOpacity: 0.0,
         }
     )        
-
+    var polyAbbatiaHelgfiael = L.polygon(
+        [819.5,265.5],[831.5,269.25],[834,259],[838,249.5],[845.5,240.25],[843,237.25],[840.75,236],[824.5,228],[813,230],[811.75,231.75],[811,235.25],[809.75,251.75],[810.5,258.25]
+      ], {
+              color: 'none',
+              fillColor: 'black',
+              fillOpacity: 0.0,
+          }
+      )
+      var polySulfur= L.polygon([
+        [788,157.5],[813.25,167],[818.25,158],[814.5,148],[800.25,136.5]
+           ], {
+                color: 'none',
+                fillColor: 'black',
+                fillOpacity: 0.0,
+            }
+        )
+        var polyVespena = L.polygon([
+            [807.25,178.25],[799,166],[789.5,160.5],[783,161.25],[773.75,182],[778.5,190.5],[793.25,189.25],[797,187.5]
+        ], {
+        
+        color: 'none',
+                fillColor: 'black',
+                fillOpacity: 0.0,
+            }
+        )
+        var polyVestrabord= L.polygon([
+            [871,142.5],[878,124.5],[866.5,111.5],[837.5,105.5],[827,144.5],[861,161.5]
+           
+          ], {
+                  color: 'none',
+                  fillColor: 'black',
+                  fillOpacity: 0.0,
+              }
+          )
+          
     /******************************************/
 
 /* other Plates (should be put in order!) */
