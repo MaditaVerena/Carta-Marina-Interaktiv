@@ -1,4 +1,5 @@
 var data = [
+    /*test object 1*/
     {
         "id": "object_test_001",
         "name": "Testus primus",
@@ -28,7 +29,10 @@ var data = [
                 695.662590609857
             ]
         ]
-    }, {
+    }, 
+
+    /*test object 2*/
+    {
         "id": "object_test_002",
         "name": "Testus secundus",
         "title": "Test 2",
