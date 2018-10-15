@@ -197,7 +197,15 @@ var polyShipHamburgen = L.polygon([
               fillOpacity: 0.0,
           }
       )
-      
+      var polySulfur= L.polygon([
+        [788,157.5],[813.25,167],[818.25,158],[814.5,148],[800.25,136.5]
+           ], {
+                color: 'none',
+                fillColor: 'black',
+                fillOpacity: 0.0,
+            }
+        )
+        
     /******************************************/
 
 /* other Plates (should be put in order!) */
