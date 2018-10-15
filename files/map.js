@@ -99,6 +99,10 @@ function polyClick(x) {
  */
 
  function loadData(){
+     alert("Loading...");
+
+    alert(data);
+
     /*var json = (function () {
         var json = null;
         $.ajax({
@@ -113,9 +117,9 @@ function polyClick(x) {
         return json;
     })();*/
 
-   var json = $.getJSON({'url': "data.json", 'async': false}); 
+ //  var json = $.getJSON({'url': "data.json", 'async': false}); 
   //  json = JSON.parse(json.responseText);
-    alert("bla");
+  //  alert("bla");
 
     /*
     alert("Loading");
