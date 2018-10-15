@@ -205,6 +205,15 @@ var polyShipHamburgen = L.polygon([
                 fillOpacity: 0.0,
             }
         )
+        var polyVespena = L.polygon([
+            [807.25,178.25],[799,166],[789.5,160.5],[783,161.25],[773.75,182],[778.5,190.5],[793.25,189.25],[797,187.5]
+        ], {
+        
+        color: 'none',
+                fillColor: 'black',
+                fillOpacity: 0.0,
+            }
+        )
         
     /******************************************/
 
