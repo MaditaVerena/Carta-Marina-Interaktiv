@@ -99,7 +99,7 @@ function polyClick(x) {
  */
 
  function loadData(){
-    var json = (function () {
+    /*var json = (function () {
         var json = null;
         $.ajax({
             'async': false,
@@ -111,9 +111,9 @@ function polyClick(x) {
             }
         });
         return json;
-    })();
+    })();*/
 
-  // var json = $.getJSON({'url': "data.json", 'async': false}); 
+   var json = $.getJSON({'url': "data.json", 'async': false}); 
   //  json = JSON.parse(json.responseText);
     alert("bla");
 
