@@ -115,45 +115,8 @@ function polyClick(x) {
     console.log("Array finished:");
     console.log(objectsFromData);
 
-    /*var json = (function () {
-        var json = null;
-        $.ajax({
-            'async': false,
-            'global': false,
-            'url': "data.json",
-            'dataType': "json",
-            'success': function (data) {
-                json = data;
-            }
-        });
-        return json;
-    })();*/
-
- //  var json = $.getJSON({'url': "data.json", 'async': false}); 
-  //  json = JSON.parse(json.responseText);
-  //  alert("bla");
-
-    /*
-    alert("Loading");
-    loadFromJson(function(response){});
-    var actual_JSON = JSON.parse(response);
-    alert("done loading");*/
  }
  loadData();
-
- /*function loadFromJson(callback){
-
-    var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'data.json', false);
-    xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-            callback(xobj.responseText);
-          }
-    };
-    xobj.send(null);
- }*/
 
 
 /* polygons and data sets */
