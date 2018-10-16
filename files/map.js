@@ -598,12 +598,6 @@ polySkioll.on('mouseout', function () { highlightMENOT(this) })
 
 /* search function */
 
-/* collects data sets, necessary for search input! */
-var myCountries = [myThule, myFare, myDenmark, myHolsathia];
-
-
-
-
 /* Unklar...
 
 var input = document.getElementById("myInput");
@@ -624,13 +618,13 @@ function mySearch() {
     //var a = countries.indexOf(inputText);					//gibt Position in Array
 
     var i;
-    for (i = 0; i < myCountries.length; i++) {
-        if (myCountries[i].name == inputText) {
-            polyClick(myCountries[i]);
+    for (i = 0; i < objectsFromData.length; i++) {
+        if (objectsFromData[i].name == inputText) {
+            polyClick(objectsFromData[i]);
         }
         else {
-            if (myCountries[i].title == inputText) {
-                polyClick(myCountries[i]);
+            if (objectsFromData[i].title == inputText) {
+                polyClick(objectsFromData[i]);
             }
         }
     }
@@ -638,16 +632,16 @@ function mySearch() {
 
 /* autocomplete */
 
-function autocomplete(inp, countries) {
+function autocomplete(inp, objects) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
     var arr = new Array();
     var arr2 = new Array();
     var a;
-    for (a in countries) {
-        arr.push(countries[a].name);
-        arr2.push(countries[a].title); /* adds array for titles [Färöer]; not affected by autocomplete! */
+    for (a in objects) {
+        arr.push(objects[a].name);
+        arr2.push(objects[a].title); /* adds array for titles [Färöer]; not affected by autocomplete! */
     }
     /*execute a function when someone writes in the text field:*/
     inp.addEventListener("input", function (e) {
@@ -746,4 +740,4 @@ function autocomplete(inp, countries) {
     });
 }
 
-autocomplete(document.getElementById("myInput"), myCountries);
+autocomplete(document.getElementById("myInput"), objectsFromData);
