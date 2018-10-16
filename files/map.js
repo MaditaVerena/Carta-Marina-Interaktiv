@@ -142,13 +142,8 @@ function addPolysToMap(){
  addPolysToMap();
 
 
-/* polygons and data sets */
-//
-//
-//
 /* polyBack = click into map; */
 
-/* example: creates polygon */
 var polyBACK = L.polygon([
     [0, 0], [0, 1500], [1000, 1500], [1000, 0]
 ], {
