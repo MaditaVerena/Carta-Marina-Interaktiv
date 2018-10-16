@@ -146,6 +146,9 @@ span:hover {
 }
 
 
+.blockquote {
+    font-size: 14pt;
+}
 
 
 .row input[type=text] {
