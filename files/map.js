@@ -93,6 +93,17 @@ function polyClick(x) {
 
 }
 
+/* Link-function */
+
+function polyClickbyID(x) {  
+    var i;
+    for (i = 0; i < objectsFromData.length; i++) {
+        if (objectsFromData[i].id == x) {
+            polyClick(objectsFromData[i]);
+        }
+    }
+}
+
 
 /**
  * loading Data from json file
