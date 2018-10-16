@@ -1,10 +1,11 @@
 var data = [
-    /*test object 1*/
+    /*beispiel object */
     {
-        "id": "object_test_001", 
-        "name": "Testus primus",
-        "title": "Test 1",
-        "text": "Test bla",
+        "id": "beispiel_objekt", 
+        "name": "Beispiel Objekt",
+        "title": "bsp.",
+        "text": "Test bla bla bla",
+        "druckplatte": "A",
         "cartay": "534",
         "cartax": "600",
         "cartaz": "1",
@@ -12,56 +13,20 @@ var data = [
         "kartex": "0",
         "kartez": "7",
         "poly": null,
-        "coordinates": [
-            [
-                632,
-                527.6953943005653
-            ],
-            [
-                484,
-                549.691098579163
-            ],
-            [
-                476,
-                741.6536086469248
-            ],
-            [
-                634,
-                695.662590609857
-            ]
-        ]
+        "coordinates": [[632,527.6953943005653],[484,549.691098579163],[476,741.6536086469248],[634,695.662590609857]]
     }, 
 
-    /*test object 2*/
-    {
-        "id": "object_test_002",
-        "name": "Testus secundus",
-        "title": "Test 2",
-        "text": "Test bla x 2",
-        "cartay": "250",
-        "cartax": "300",
-        "cartaz": "1",
-        "kartey": "0",
-        "kartex": "0",
-        "kartez": "7",
-        "poly": null,
-        "coordinates": [
-            [
-                332,
-                227.6953943005653
-            ],
-            [
-                184,
-                249.691098579163
-            ],
-            [
-                176,
-                441.6536086469248
-            ],
-            [
-                334,
-                395.662590609857
-            ]
-        ]
-    }
+    /*Hier alle weiteren Objekte*/
+
+
+    /* ------------ Druckplatte A ------------- */
+
+    /* Orte */
+
+    /* Monster */
+
+    /* Schiffe */
+
+    /* Weiteres */
+    
 ]
