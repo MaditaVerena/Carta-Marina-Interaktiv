@@ -94,13 +94,56 @@ function polyClick(x) {
 }
 
 
-/* polygons and data sets */
-//
-//
-//
+/**
+ * loading Data from json file
+ */
+
+var objectsFromData = new Array();
+
+ function loadData(){
+
+   // alert(data[0].id);
+    console.log("Got some data, e.g.: "+data);
+
+
+    for (let i = 0; i < data.length; i++) {
+        const e = data[i];
+        console.log("found object: ");
+        console.log(e);
+        objectsFromData.push(e);
+    }
+    
+    console.log("Array finished:");
+    console.log(objectsFromData);
+
+ }
+
+function addPolysToMap(){
+
+    console.log("adding polys to map");
+
+    for (let i = 0; i < objectsFromData.length; i++) {
+        const e = objectsFromData[i];
+        console.log("adding to map: ");
+        console.log(e);
+        // objectsFromData.push(e);
+
+        var polyTmp = L.polygon(e.coordinates, { color: 'none',  fillColor: 'black',    fillOpacity: 0.0,});
+        e.poly=polyTmp;
+        polyTmp.addTo(map).bringToFront();
+        polyTmp.on('click', function () { polyClick(e) })
+        polyTmp.on('mouseover', function () { highlightME(this) })
+        polyTmp.on('mouseout', function () { highlightMENOT(this) })
+    }
+
+}
+
+ loadData();
+ addPolysToMap();
+
+
 /* polyBack = click into map; */
 
-/* example: creates polygon */
 var polyBACK = L.polygon([
     [0, 0], [0, 1500], [1000, 1500], [1000, 0]
 ], {
