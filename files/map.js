@@ -128,9 +128,10 @@ function addPolysToMap(){
         console.log(e);
         // objectsFromData.push(e);
 
-        var polyTmp = L.polygon(e.poly, { color: 'none',  fillColor: 'black',    fillOpacity: 0.0,});
+        var polyTmp = L.polygon(e.coordinates, { color: 'none',  fillColor: 'black',    fillOpacity: 0.0,});
+        e.poly=polyTmp;
         polyTmp.addTo(map).bringToFront();
-        polyTmp.on('click', function () { polyClick() })
+        polyTmp.on('click', function () { polyClick(e) })
         polyTmp.on('mouseover', function () { highlightME(this) })
         polyTmp.on('mouseout', function () { highlightMENOT(this) })
     }
