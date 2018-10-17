@@ -39,6 +39,12 @@ html, body {
 #map { min-height: 50vh;
 }
 
+/* sets grab-cursor for polyBack ! */
+.map-noClick {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+
 #textRow{
     overflow: hidden;
     padding: 0px; 
@@ -130,6 +136,19 @@ html, body {
     }
 
 
+span {
+    cursor: pointer;
+    color: #911d00;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+
+.blockquote {
+    font-size: 14pt;
+}
 
 
 .row input[type=text] {
