@@ -6,6 +6,15 @@ var southWest = L.latLng(1000, 0),
     bounds = L.latLngBounds(southWest, northEast);
 
 
+/* map units */
+var bounds = [[0, 0], [1000, 1350]];
+
+
+/* images used for the historical maps */
+var imageCol = L.imageOverlay('img/Carta_Marina.jpeg', bounds);
+var imageBw = L.imageOverlay('img/Carta_Marina_sw.jpeg', bounds);
+
+/* creates the map, into which the maps appear */
 var map = L.map('map', {
     crs: L.CRS.Simple,
 
@@ -14,13 +23,18 @@ var map = L.map('map', {
     maxBoundsViscosity: 1.0,
     maxZoom: 3,
     minZoom: -1,
-
-
+    layers: [imageCol, imageBw],
 });
 
-/* map units */
-var bounds = [[0, 0], [1000, 1350]];
-var image = L.imageOverlay('img/Carta_Marina.jpeg', bounds).addTo(map);
+var baseMaps = {
+    "Carta Marina, Venedig 1539": imageBw,
+    "Carta Marina Lafreri, Rom 1572": imageCol,
+
+};
+
+/*puts layers (and therewith the images) onto the map*/
+L.control.layers(baseMaps).addTo(map);
+
 
 /* zoom the map to that bounding box */
 map.fitBounds(bounds);
@@ -28,7 +42,7 @@ map.fitBounds(bounds);
 
 /* map2: web mapping (i.e. openstreetmap) */
 
-var mymap = L.map('map2').setView([63, 0], 3);
+var mymap = L.map('map2').setView([63, 0], 4);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -42,10 +56,13 @@ document.getElementById("map2Container").style.display = "none";
 
 function toggleWebmap() {
     var x = document.getElementById('map2Container');
+    var y = document.getElementById('textContainer');
     if (x.style.display === 'none') {
         x.style.display = 'block';
+        y.style.display = 'none';
     } else {
         x.style.display = 'none';
+        y.style.display = 'block';
     }
 }
 
@@ -312,16 +329,7 @@ var polyCriptoporticus = L.polygon([
     }
 )
 
-var polyFalcoAlbi = L.polygon([
 
-    [939.5788173675537, 238.66284942626953], [941.5788173675537, 242.16284942626953], [939.0788173675537, 244.16284942626953], [940.5788173675537, 247.66284942626953], [937.0788173675537, 252.16284942626953], [934.0788173675537, 255.66284942626953], [933.5788173675537, 252.66284942626953], [933.5788173675537, 248.66284942626953], [931.0788173675537, 252.66284942626953], [930.0788173675537, 254.66284942626953], [927.0788173675537, 254.66284942626953], [928.5788173675537, 251.66284942626953], [931.5788173675537, 248.16284942626953], [928.5788173675537, 248.16284942626953], [927.0788173675537, 247.66284942626953], [926.5788173675537, 245.66284942626953], [928.5788173675537, 243.66284942626953], [931.5788173675537, 241.66284942626953], [934.0788173675537, 239.66284942626953], [936.5788173675537, 238.66284942626953], [938.0788173675537, 235.66284942626953], [939.5788173675537, 239.16284942626953], [940.0788173675537, 240.16284942626953]
-
-], {
-        color: 'none',
-        fillColor: 'black',
-        fillOpacity: 0.0,
-    }
-)
 
 var polyFischer = L.polygon([
 
