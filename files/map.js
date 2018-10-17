@@ -42,10 +42,13 @@ document.getElementById("map2Container").style.display = "none";
 
 function toggleWebmap() {
     var x = document.getElementById('map2Container');
+    var y = document.getElementById('textContainer');
     if (x.style.display === 'none') {
         x.style.display = 'block';
+        y.style.display = 'none';
     } else {
         x.style.display = 'none';
+        y.style.display = 'block';
     }
 }
 
@@ -155,7 +158,7 @@ var polyFare = L.polygon([
 var meinFare = {
     name: "Färöer",
     title: "Färöer",
-    text: "Die Färöer sind eine zu Dänemark gehörende Gruppe aus 18 Inseln mit autonomer Selbstverwaltung. Die gut 50.000 Inselbewohner – die Färinger, auch Färöer genannt – betrachten sich nicht als Dänen, sondern als eigenständiges Volk, das von den Wikingern auf den Färöern abstammt. Sie sprechen die färöische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isländischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
+    text: "Die Färöer sind eine zu Dänemark gehörende Gruppe aus 18 Inseln mit autonomer Selbstverwaltung. Die gut 50.000 Inselbewohner – die Färinger, auch Färöer genannt – betrachten sich nicht als Dänen, sondern als eigenständiges Volk, das von den Wikingern auf den Färöern abstammt. Sie sprechen die färöische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isländischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten. <br /><u><span onclick='toggleWebmap()'>Zeige osm</span></u>.",
     cartay: "620",
     cartax: "270",
     cartaz: "1",
