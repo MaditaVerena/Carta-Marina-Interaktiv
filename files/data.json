@@ -22,7 +22,21 @@ var data = [
     /* ------------ Druckplatte A ------------- */
 
     /* Orte */
-     
+    {
+        "id": "Huitsark", 
+        "name": "Huitsark",
+        "title": "",
+        "text": "Huitsark ist ein Berg, der zwischen Island und Grönland liegt. Auf dessen Gipfel befindet sich ein Kompass mit Buchstaben aus Blei. Der Kompass wurde von zwei Seeräubern namens Pining und Pothorst erbaut, und soll allen Seeleuten in den Gewässern vor Grönland zum Schutz dienen.",
+        "druckplatte": "A",
+        "cartay": "893",
+        "cartax": "85",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[900.5,74.5],[895,72],[889,70],[886.5,66.5],[883,77.5],[883,86.5],[887.5,93.5],[890,99],[897.5,95],[900,90.5],[902.5,84.5]]
+    },
 
     /* Monster */
     {
@@ -153,8 +167,24 @@ var data = [
         "kartez": "0",
         "poly": null,
         "coordinates":[[778.25,120.75],[776.25,118.75],[773,116.25],[771,115.25],[775.25,103.5],[768.75,108.75],[764.75,111],[760.5,110.5],[760.25,108],[761.25,102.5],[756.5,103.5],[756.5,103.5],[755,103.25],[751.75,103.25],[744.75,102.5],[742.5,100.75],[734.75,102.5],[732.25,104.25],[733.5,109.75],[736.75,116],[735.75,122],[735.75,125.25],[737.5,127.75],[740.25,129.75],[746,133],[756.25,130.25],[758.5,131.75],[759.75,135.75],[764.75,136.75],[766.5,132.75],[766.5,130.25],[766.5,128.25],[766.25,125.5],[768.25,122.5],[770.25,119.25],[774,120],[775.75,121],[774.25,125.75]]
-
     },
+
+    {
+        "id": "ShipBremen", 
+        "name": "Bremen",
+        "title": "Ein Schiff aus Bremen",
+        "text": "Das Hauptnahrungsmittel der Isländer war Fisch, denn sie haben wenig Brot und bauen kaum Getreide an. Fremde Schiffsleute aus unter anderem auch Bremen versorgten die Inselbewohner mit anderen Nahrungsmittel, was ihnen grosse Gewinne einbrachte. ",
+        "druckplatte": "A",
+        "cartay": "802",
+        "cartax": "274",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[801.5,261],[793,252.5],[781.5,257],[781.5,271.5],[789.5,286.5],[813,291.5],[818.5,286],[820,276.5],[814,258],[807.5,255]]
+    },
+
     /* Weiteres */
 
 
