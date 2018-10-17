@@ -20,6 +20,10 @@ html, body {
     z-index: 1200;
 }
 
+.bg-dark {
+    background-color: #101546!important;
+}
+
 #myForm {
     display: block;
     margin-left: auto;
