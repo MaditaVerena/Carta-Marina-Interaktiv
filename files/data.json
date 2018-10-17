@@ -22,9 +22,72 @@ var data = [
     /* ------------ Druckplatte A ------------- */
 
     /* Orte */
+     
 
     /* Monster */
+    {
+        "id": "Trollwal", 
+        "name": "s.n.",
+        "title": "Trollwal",
+        "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. Schiffsleute haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht (Balzamo/Kaiser 2006, S. 52 l). Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. ",
+        "druckplatte": "A",
+        "cartay": "727",
+        "cartax": "400",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[749,382],[745,383],[742,382],[740,377],[738,372],[737,368],[738,364],[735,363],[733,363],[730,365],[727,366],[725,369],[717,381],[715,383],[712,384],[711,380],[708,378],[705,380],[703,384],[706,389],[703,391],[707,400],[708,403],[710,408],[709,412],[707,419],[710,428],[712,430],[716,430],[722,427],[728,424],[733,419],[738,413],[743,406],[743,399],[744,395],[747,393],[750,391],[750,387]]
 
+    },
+
+    {"id": "Walfische", 
+        "name": "s.n.",
+        "title": "Walfische",
+        "text": "Die Walfische waren so gross wie Berge und haben Schiffe umgekippt. Seeleute versuchten sie von ihren Schiffen fernzuhalten, indem sie auf Trompeten spielten und leere Fässer ins Meer warfen.",
+        "druckplatte": "A",
+        "cartay": "718",
+        "cartax": "283",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[740.75,278.5],[738.5,273],[737.25,266.25],[734.5,263.5],[732.75,262.25],[729,265.5],[727,266.5],[725,264],[724.5,262.25],[722.5,260],[721.75,257.25],[719.25,256.5],[718.25,259.75],[717,261.25],[715.5,263.5],[714,268.75],[711,274],[711.25,277.25],[712.5,281.25],[711,280],[710.5,278.25],[709.75,276.75],[707,274.5],[705.25,272.5],[703.5,270.25],[701.25,267.5],[699.25,265],[698.5,263],[695.75,264.25],[694.5,270],[692.75,273.5],[691,278],[691.5,281.75],[692.25,285.75],[693.25,288.5],[696.25,291.25],[700.75,293],[704.5,293.75],[706.25,297],[708.5,301],[711.5,298.5],[713.25,294.5],[713.5,290.5],[714.5,290.25],[715.25,288.25],[715.75,284.75],[717.75,287],[718.75,289.5],[719.75,292.75],[721,294.25],[723.25,294.25],[727.75,293],[730.5,289.5],[732.75,286],[735,286.75],[737,285.5],[738.5,282]]
+
+    }, 
+
+    {"id": "SchwertfischBeiScott", 
+        "name": "s.n.",
+        "title": "Schwertfisch/See-Einhorn",
+        "text": "Das See-Einhorn ist ein Seeungeheuer, welches auf seinem Haupt ein langes Horn trägt, mit welchem es Schiffe durchstechen und zerstören kann. Die Seefahrer hatten jedoch ein wenig Glück, denn das See-Einhorn war relativ langsam, was ihnen oft eine schnelle Flucht vor der Bestie ermöglichte.", 
+        "druckplatte": "A",
+        "cartay": "682",
+        "cartax": "74",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[686.5,80],[687,75],[697.5,67],[686.5,71.5],[683.5,70],[679,66],[677,64],[677,67.5],[676.5,70.5],[676.5,77],[680.5,80]]
+    },
+
+    {
+        "id": "FischBeiShipScot", 
+        "name": "s.n.",
+        "title": "Meerengel/Rochen",
+        "text": "Mystisches Wesen, welcher wegen der Flügel als 'Engel' bezeichnet wird.",
+        "druckplatte": "A",
+        "cartay": "697",
+        "cartax": "145",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "7",
+        "poly": null,
+        "coordinates": [[698.5,119.5],[695.25,122.625],[692.375,123.25],[688.625,123.875],[686.75,126.75],[685.125,128.875],[684.375,133.5],[685.125,136.375],[686.25,139.875],[687.25,142.125],[688.625,143.75],[687.125,143.875],[685.25,144.25],[683.75,143.25],[683.875,145.5],[684.375,147.25],[682.875,148.25],[683.75,150],[683.625,151.75],[682.75,153.125],[682.75,154.875],[684.125,155.375],[684.75,156.25],[685.25,157.625],[685.75,159.75],[687.75,158.75],[689.375,158.25],[691.125,159],[690.75,155.75],[692.25,153.25],[693.875,151.875],[695.375,153.375],[695.25,155.25],[696,156.875],[697.625,157.875],[700,158.625],[700.75,157.875],[701.75,155.125],[701.75,150.125],[704.125,148.75],[706.625,148.75],[708.75,149.5],[711.125,147.75],[712.25,146.875],[710.75,145.125],[711.75,143],[709.625,141.25],[709.125,138.875],[706.75,139.375],[704.875,137.875],[703.375,138.75],[701.25,139.375],[699.125,140],[698,138.5],[696.625,137],[694,135],[690.875,133],[689.75,130.375],[691.125,127.125],[692,126.875],[692.25,128.375],[692.625,129.625],[693.375,131.75],[695,130.125],[695.75,126.125],[697.5,124.375]]
+    },
     /* Schiffe */
 
     /* Weiteres */
