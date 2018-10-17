@@ -154,7 +154,7 @@ var data = [
         "id": "Vespena", 
         "name": "Vespena",
         "title": "Vestmannaeyjar",
-        "text": "Die Vestmannaeyjar (dt. Westmännerinseln) bezeichnen eine Inselgruppe etwa 20 Kilometer südlich der Küste Islands. Die Inselgruppe besteht aus 14 Inseln, 30 Schären (kleine felsige Inseln, die in den Eiszeiten entstanden) und 30 Felsen. Die Inselkette hat einen Vulkanischen Ursprung und besitzt ein eigenes Vulkansystem. Sie erstreckt sich südlich des Eyjafjallajökull bis in den Atlantik hinaus. Die grösste Insel der Gruppe ist Heimaey und ist die einzig ständig bewohnte Insel. Weitere Inseln der Gruppe sind zum Beispiel Surtsey, Brandur sowie Geirfuglasker <span onclick='polyClickbyID(&quot;foglasker&quot;) '>Geirfuglasker>/span>.",
+        "text": "Die Vestmannaeyjar (dt. Westmännerinseln) bezeichnen eine Inselgruppe etwa 20 Kilometer südlich der Küste Islands. Die Inselgruppe besteht aus 14 Inseln, 30 Schären (kleine felsige Inseln, die in den Eiszeiten entstanden) und 30 Felsen. Die Inselkette hat einen Vulkanischen Ursprung und besitzt ein eigenes Vulkansystem. Sie erstreckt sich südlich des Eyjafjallajökull bis in den Atlantik hinaus. Die grösste Insel der Gruppe ist Heimaey und ist die einzig ständig bewohnte Insel. Weitere Inseln der Gruppe sind zum Beispiel Surtsey, Brandur sowie  <span onclick='polyClickbyID(&quot;Foglasker&quot;)'>Geirfuglasker</span>.",
         "druckplatte": "A",
         "cartay": "781",
         "cartax": "166",
@@ -170,16 +170,18 @@ var data = [
         "id": "Holensis", 
         "name": "Holensis",
         "title": "Hólar",
-        "text": "",
+        "text": "Hólar ist ein kleines Dörfchen im Norden von Island, das 76 Einwohner zählt. Von 1106 bis 1801 war es als zweiter Bischofssitz neben Skalholt (link) ein wichtiger Ort in Island. Das katholische Bistum Hólar bestand bis 1550, das heisst bis zur Reformation. Danach wurde es von 1552 bis 1798 evangelisch-lutherisch geführt und im 19. Jahrhundert mit de Bistum Skalholt zusammengelegt. Gegenwärtig befindet sich eine Hochschule für Pferde- und Fischzucht in Hólar. ",
         "druckplatte": "A",
-        "cartay": "534",
-        "cartax": "600",
-        "cartaz": "1",
+        "cartay": "851",
+        "cartax": "272",
+        "cartaz": "2.5",
         "kartey": "0",
         "kartex": "0",
         "kartez": "0",
         "poly": null,
-        "coordinates":
+        "coordinates":[[857.75,268.75],[853.25,268.75],[849.5,268.5],[849.5,271.75],[849.75,275.5],[851,277.75],[855,276.75],[855.25,272.25],[856.5,271.75],[857,270.75]]
+
+    },
     
     
 
