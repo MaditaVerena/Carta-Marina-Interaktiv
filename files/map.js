@@ -119,11 +119,28 @@ function polyClick(x) {
     }
 
 
+/* adds ( ) if there is a title given!*/
+
+if (x.title === "") { alert("empty");
+    }
+
+else { alert("full");
+    var q = x.title.includes("(");
+    console.log(q);
+    if (q === true) {
+    }
+    else {
+        x.title = " (" + x.title + ")";
+    }
+}
+
+
+
 
     /* actual click function */
 
     var elem1 = document.getElementById("title");
-    elem1.innerHTML = (x.name) + " (" + (x.title) + ")";
+    elem1.innerHTML = (x.name) + (x.title);
 
     var elem2 = document.getElementById("info");
     elem2.innerHTML = x.text;
