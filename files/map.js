@@ -248,15 +248,15 @@ polyBACK.on('click', function () { polyClick(myGarnichts) })
 
 /* data for textContainer */
 var myGarnichts = {
-    name: "Garnichts",
+    name: "Carta Marina interaktiv",
     title: "",
-    text: "Klick auf Fare oder Thule",
+    text: "",
     cartay: "564",
     cartax: "702",
     cartaz: "-1",
-    kartey: "63",
-    kartex: "0",
-    kartez: "3",
+    kartey: "",
+    kartex: "",
+    kartez: "",
 }
 
 
