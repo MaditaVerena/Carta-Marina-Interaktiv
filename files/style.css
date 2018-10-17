@@ -41,6 +41,7 @@ html, body {
 
 #textRow{
     overflow: hidden;
+    padding: 0px; 
 }
 
 #textContainer {
@@ -84,26 +85,25 @@ html, body {
 
 #mapRow {
     overflow: hidden;
-  /*  border: 1px solid red; */
+    /*border: 1px solid red;*/
+    padding: 0px; 
 }
 
 #toggleContainer {
     position: absolute; /*relative*/
     width: 100%;
     height: 40px;
-    bottom: 0px;
-    right: 0px;
-    margin-left: 0px; /*200px*/
-    margin-right: 0px;
+    top: 15px;
     z-index: 1200;
     overflow: hidden;
-   /* border: 1px solid black; */
+    padding: 0px;
+    /*border: 1px solid black;*/
 }
 
 #toggleButton {
     /* position: absolute; */
     position: relative;
-    left: 3%;
+    left: 80%;
     /* border: 1px solid green; */
 }
 
@@ -112,11 +112,13 @@ html, body {
     top: 0px;
     bottom: 0px;
     margin-right: 0px;
+    left: 0%;
     width: 100%;     
     overflow: hidden;
     z-index: 1198;
     min-height: 50vh;
     max-height: 100vh;
+    padding: 0px; 
     /* border: 1px solid #383A5B; */
     
     
@@ -124,8 +126,7 @@ html, body {
 
 #map2 { 
     height: 100%;
-    width: 106%;
-    margin-left: -3%;
+    width: 100%;
     }
 
 
