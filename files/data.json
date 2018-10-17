@@ -246,6 +246,26 @@ var data = [
         "poly": null,
         "coordinates":[[848.5,185],[864,173.5],[865,169.5],[849.5,163.5]]
     }, 
+
+    {
+        "id": "Ioekel", 
+        "name": "Ioekel",
+        "title": "Jökel/Snæfellsjökull",
+        "text": "Der Scheeberggletscher (isl. Snæfellsjökull, jökull ist die isl. Bezeichnung für Gletscher) ist ein Schichtvulkan. Er ist 1446 m hoch und 700’000 Jahre alt. Auf seiner Kappe befindet sich ein Gletscher, welche eine Fläche von 10 km <sup> 2 </sup> abdeckt. Das Eis hat eine durchschnittliche Dicke von 30 m. Obwohl der letzte Ausbruch vor 1800 Jahre war, gilt er noch als aktiv. Seit 2001 befindet sich der Vulkan im Snæfellsjökull-Nationalpark. ",
+        "druckplatte": "A",
+        "cartay": "839",
+        "cartax": "114",
+        "cartaz": "2.5",
+        "kartey": "64",
+        "kartex": "23",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[838.125,108.25],[838,111],[837.375,113.75],[837.625,117.125],[837.625,119.375],[839.625,120.125],[840.5,119.25],[841.125,117.75],[841.125,115.5],[841.125,112.75],[841.25,111.25],[841.625,109.125],[840.5,108.125]]
+
+    }, 
+
+
+
     /* Monster */
     {
     
