@@ -302,8 +302,7 @@ var polyShipHamburgen = L.polygon([
                     
 /* western of Falcon */
 var polyIsafjord = L.polygon([
-    [862.5,120.25],[863.5,135.75],[855.25,145],[849.75,140],[845.75,123.75],[848.75,115]]
-], {
+    [862.5,120.25],[863.5,135.75],[855.25,145],[849.75,140],[845.75,123.75],[848.75,115]], {
         color: 'none',
         fillColor: 'black',
         fillOpacity: 0.0,
