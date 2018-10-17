@@ -183,7 +183,21 @@ var data = [
 
     },
     
-    
+    {
+        "id": "Rok", 
+        "name": "Rok",
+        "title": "Reykjavík",
+        "text": "Reykjavík (dt. Rauchbucht) ist die Hauptstadt von Island und ist mit 123’246 Einwohnern die größte Stadt des Landes. Die Stadt liegt im Südwesten der Insel am Fuß der halbinsel Reykjanesskagi. An der Küste der Stadt gibt es viele Höhlen, Meerengen und Halbinseln. An den kürzesten Tagen des Jahres erhält Reykjavík nur knappe vier Stunden Sonnenlicht; dafür sind die Nächte im Sommer so hell wie am Tag.",
+        "druckplatte": "A",
+        "cartay": "810",
+        "cartax": "124",
+        "cartaz": "2.5",
+        "kartey": "64.9",
+        "kartex": "-21.31",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":   [[806.75,117],[803.75,120.25],[803,128],[807.25,135],[812,135.5],[816,133.25],[816.5,129.25],[816.5,123.75],[816.25,119],[813,116]]
+    }, 
 
      
 
