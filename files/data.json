@@ -54,6 +54,21 @@ var data = [
         "coordinates":[[824.5,165.5],[846.5,155],[848,150.5],[841,146],[829,144.5],[819.5,146.5],[819,149.5]]
     }, 
 
+    {
+        "id": "MonsSanctus", 
+        "name": "Mons Sanctus",
+        "title": "Helgefelt",
+        "text": "Beim Berg Helgefelt lieft eine  <span onclick='polyClickbyID(&quot;helgefiael&quot;)'>Abtei</span> die den selben Namen trägt. ",
+        "druckplatte": "A",
+        "cartay": "834",
+        "cartax": "239",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[824,250],[837,243.5],[842.5,241.5],[842.5,240],[841,237],[839,235.5],[833.5,233.5],[832,233],[827.5,233],[824,229.5]]
+    }, 
     /* Monster */
     {
         "id": "Trollwal", 
