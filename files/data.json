@@ -22,9 +22,25 @@ var data = [
     /* ------------ Druckplatte A ------------- */
 
     /* Orte */
+     
 
     /* Monster */
+    {
+        "id": "Trollwal", 
+        "name": "s.n.",
+        "title": "Trollwal.",
+        "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. Schiffsleute haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht (Balzamo/Kaiser 2006, S. 52 l). Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. ",
+        "druckplatte": "A",
+        "cartay": "727",
+        "cartax": "400",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[749,382],[745,383],[742,382],[740,377],[738,372],[737,368],[738,364],[735,363],[733,363],[730,365],[727,366],[725,369],[717,381],[715,383],[712,384],[711,380],[708,378],[705,380],[703,384],[706,389],[703,391],[707,400],[708,403],[710,408],[709,412],[707,419],[710,428],[712,430],[716,430],[722,427],[728,424],[733,419],[738,413],[743,406],[743,399],[744,395],[747,393],[750,391],[750,387]]
 
+    },
     /* Schiffe */
 
     /* Weiteres */
