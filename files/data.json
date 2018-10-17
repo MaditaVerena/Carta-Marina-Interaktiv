@@ -86,6 +86,21 @@ var data = [
         "coordinates":[[821.5,158],[827,140.5],[834,131.5],[832,123.5],[828.5,122.5],[824.5,124.5],[819.5,124],[816.5,119],[814,117],[812,116.5],[808,112.5],[807.5,117],[806,122.5],[804.5,125.5],[803.5,132.5],[803.5,135]]
     }, 
 
+{
+        "id": "MonsCrucis", 
+        "name": "Mons Crucis",
+        "title": "Berg Helga",
+        "text": "Der Vulkan Helga liegt bei einer Abtei und Rings um ihn herum stehen viele grosse Steintafeln, auf denen die Taten der alten Helden geschildert sind.",
+        "druckplatte": "A",
+        "cartay": "869",
+        "cartax": "231",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[860.5,246],[880,236],[887.5,230],[877.5,225.5],[870.5,222.5],[858.5,219],[856.5,213.5],[854,237.5]]
+},  
     /* Monster */
     {
         "id": "Trollwal", 
