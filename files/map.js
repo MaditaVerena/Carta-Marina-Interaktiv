@@ -121,10 +121,10 @@ function polyClick(x) {
 
 /* adds ( ) if there is a title given!*/
 
-if (x.title === "") { alert("empty");
+if (x.title === "") { 
     }
 
-else { alert("full");
+else { 
     var q = x.title.includes("(");
     console.log(q);
     if (q === true) {
