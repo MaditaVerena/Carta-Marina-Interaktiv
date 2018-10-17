@@ -215,6 +215,37 @@ var data = [
         "coordinates": [[850.5,341.5],[844,338.5],[833.5,338.5],[828.5,335],[823.5,343.5],[826,358],[831.5,369],[836,379.5],[845,373.5],[849,375.5],[849,387.5],[853,398.5],[853,409],[853.5,420.5],[856,430.5],[860,441],[864.5,450],[866,461],[871.5,472],[872,485],[879,491.5],[887,494],[893.5,476],[897,461],[903.5,451.5],[911.5,441.5],[920.5,436.5],[928.5,433],[931.5,426.5],[934,414],[927,404.5],[918.5,407.5],[912.5,401.5],[909.5,402],[905,400.5],[902,398],[891,394.5],[886.5,387.5],[883,390],[876.5,390],[879,384.5],[872,373],[875,368],[876,364],[865,353.5],[860,352.5],[856,353]]
     }, 
 
+    {
+        "id": "Abbatia Helgfiael", 
+        "name": "Abbatia Helgfiael",
+        "title": "Abtei Helgefelt",
+        "text": "In der Abtei, welche den gleichen Namen wie der Berg trägt, werden Fisch und Butter verkauft (Balzamo/Kaiser, 2006, S. 49)",
+        "druckplatte": "A",
+        "cartay": "819",
+        "cartax": "237",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":   [[819.5,265.5],[831.5,269.25],[834,259],[838,249.5],[845.5,240.25],[843,237.25],[840.75,236],[824.5,228],[813,230],[811.75,231.75],[811,235.25],[809.75,251.75],[810.5,258.25]]
+    }, 
+
+    {
+        "id": "Scalholdin", 
+        "name": "Scalholdin",
+        "title": "Skálholt",
+        "text": "von isl. skáli = Wohnhaus und holt = flacher Klippen Höhenzug. Also war Skálholt eine 'Anhöhe, auf der ein Wohnhaus steht'. Dort war im Mittelalter ein wichtiger Bischofssitz. Auch wurde dort im 12. Jh. die erste Lateinschule Islands gegründet. (https://de.wikipedia.org/wiki/Skálholt, Buch “Reallexikon der Germanischen Altertumskunde, Heinrich Beck, Band 28, S. 573)",
+        "druckplatte": "A",
+        "cartay": "850",
+        "cartax": "173",
+        "cartaz": "1",
+        "kartey": "64",
+        "kartex": "20",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[848.5,185],[864,173.5],[865,169.5],[849.5,163.5]]
+    }, 
     /* Monster */
     {
     
