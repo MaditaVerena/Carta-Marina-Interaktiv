@@ -149,7 +149,37 @@ var data = [
         "poly": null,
         "coordinates": [[808,113.75],[807,110.75],[803.5,108.875],[802.125,110.5],[801.125,114.5],[801.25,117.375],[804.25,117.875],[807.25,115]]
     },
-    
+
+    {
+        "id": "Vespena", 
+        "name": "Vespena",
+        "title": "Vestmannaeyjar",
+        "text": "Die Vestmannaeyjar (dt. Westmännerinseln) bezeichnen eine Inselgruppe etwa 20 Kilometer südlich der Küste Islands. Die Inselgruppe besteht aus 14 Inseln, 30 Schären (kleine felsige Inseln, die in den Eiszeiten entstanden) und 30 Felsen. Die Inselkette hat einen Vulkanischen Ursprung und besitzt ein eigenes Vulkansystem. Sie erstreckt sich südlich des Eyjafjallajökull bis in den Atlantik hinaus. Die grösste Insel der Gruppe ist Heimaey und ist die einzig ständig bewohnte Insel. Weitere Inseln der Gruppe sind zum Beispiel Surtsey, Brandur sowie Geirfuglasker <span onclick='polyClickbyID(&quot;foglasker&quot;) '>Geirfuglasker>/span>.",
+        "druckplatte": "A",
+        "cartay": "781",
+        "cartax": "166",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[800,135.75],[800,141.125],[797.5,150.75],[797,155.875],[792.25,160.125],[787.5,163.125],[782.375,165.875],[777.375,176.25],[776,181.375],[775.25,179.875],[775.125,171],[774.875,162.875],[777.625,153.25],[778.25,146.25],[781.625,142.25],[785.625,137.625],[788.625,132.5],[793.25,132],[795.5,132]]
+    },
+
+    {
+        "id": "Holensis", 
+        "name": "Holensis",
+        "title": "Hólar",
+        "text": "",
+        "druckplatte": "A",
+        "cartay": "534",
+        "cartax": "600",
+        "cartaz": "1",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":
     
     
 
