@@ -22,10 +22,280 @@ var data = [
     /* ------------ Druckplatte A ------------- */
 
     /* Orte */
+    {
+        "id": "Huitsark", 
+        "name": "Huitsark",
+        "title": "",
+        "text": "Huitsark ist ein Berg, der zwischen Island und Grönland liegt. Auf dessen Gipfel befindet sich ein Kompass mit Buchstaben aus Blei. Der Kompass wurde von zwei Seeräubern namens Pining und Pothorst erbaut, und soll allen Seeleuten in den Gewässern vor Grönland zum Schutz dienen.",
+        "druckplatte": "A",
+        "cartay": "893",
+        "cartax": "85",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[900.5,74.5],[895,72],[889,70],[886.5,66.5],[883,77.5],[883,86.5],[887.5,93.5],[890,99],[897.5,95],[900,90.5],[902.5,84.5]]
+    },
+
+    {
+        "id": "MonsHekla", 
+        "name": "Mons Hekla",
+        "title": "Berg Hekla",
+        "text": "Der Berg Hekla ist ein Vulkan auf dessen Gipfel ewiger Schnee liegt und an dessen Fuss ein ewiges Feuer im Schwefel brennt. Magnus beschreibt, dass am Abgrund des Berges nach Gottes Gericht die Seelen gepeinigt werden. Hekla (isländ. für Haube) ist ein 1491m hoher Zentralvulkan einer 40km langen Vulkanspalte. Der Vulkan ist mindestens 6600 Jahre alt und gehört zu den drei aktivsten Vulkanen Islands.",
+        "druckplatte": "A",
+        "cartay": "835",
+        "cartax": "152",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[824.5,165.5],[846.5,155],[848,150.5],[841,146],[829,144.5],[819.5,146.5],[819,149.5]]
+    }, 
+
+    {
+        "id": "MonsSanctus", 
+        "name": "Mons Sanctus",
+        "title": "Helgefelt",
+        "text": "Beim Berg Helgefelt lieft eine  <span onclick='polyClickbyID(&quot;helgefiael&quot;)'>Abtei</span> die den selben Namen trägt. ",
+        "druckplatte": "A",
+        "cartay": "834",
+        "cartax": "239",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[824,250],[837,243.5],[842.5,241.5],[842.5,240],[841,237],[839,235.5],[833.5,233.5],[832,233],[827.5,233],[824,229.5]]
+    }, 
+
+    {
+        "id": "Hanafjord", 
+        "name": "Hanafjord",
+        "title": "Hafnarfjörður",
+        "text": "Hafnarfjörður bedeutet zu deutsch soviel wie Hafenfjord und ist eine Stadt im Südwesten von Island. Im Südosten grenzt die Stadt an den Berg Helgafell (link). Bereits im Mittelalter war die Stadt sowohl bei den englischen als auch den deutschen und später dänischen Händlern sehr beliebt, was oft zu Handels Streiten (link) führte. Heutzutage ist der Fischfang der wichtigste Berufszweig der Stadt. Im Stadtinneren kann man viele Lava Hügel finden, von welchen manch ein Isländer glaubt, dass sie von Elfen bewohnt sind.",
+        "druckplatte": "A",
+        "cartay": "828",
+        "cartax": "124",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[821.5,158],[827,140.5],[834,131.5],[832,123.5],[828.5,122.5],[824.5,124.5],[819.5,124],[816.5,119],[814,117],[812,116.5],[808,112.5],[807.5,117],[806,122.5],[804.5,125.5],[803.5,132.5],[803.5,135]]
+    }, 
+
+    {
+        "id": "MonsCrucis", 
+        "name": "Mons Crucis",
+        "title": "Berg Helga",
+        "text": "Der Vulkan Helga liegt bei einer Abtei und Rings um ihn herum stehen viele grosse Steintafeln, auf denen die Taten der alten Helden geschildert sind.",
+        "druckplatte": "A",
+        "cartay": "869",
+        "cartax": "231",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[860.5,246],[880,236],[887.5,230],[877.5,225.5],[870.5,222.5],[858.5,219],[856.5,213.5],[854,237.5]]
+    },
+
+    {
+        "id": "Isafjord", 
+        "name": "Isafjord",
+        "title": "Ísafjörður",
+        "text": "Ísafjörður (dt. Eisfjord) ist eine im Nordwesten gelegene Stadt. Sie wird von den steil abfallenden Berghängen des Eyrarfjall und des Kirkijubolsfjall eingefasst. Die Stadt bildet das Wirtschafts- und Verwaltungszentrum der Westfjorde. Als erster Siedler in Ísafjörður war Helgi Hrolfsson, welcher 920 den Ort erstmals besiedelte. Im 16. Jahrhundert wurde die Stadt vermehrt von deutschen und englischen Händlern als Handelsplatz genutzt. Ausserdem war Ísafjörður einst der grösste Standort der Shrimps-Fischerei Islands und ist auch heutzutage noch bekannt für den Fischfang. ",
+        "druckplatte": "A",
+        "cartay": "862",
+        "cartax": "114",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0", 
+        "poly": null,
+        "coordinates":[[865.5,111],[863.375,105.125],[859.375,104.5],[859,110.5],[859.125,114.5],[859,118.5],[859.375,121.125],[862.375,122.125],[864.625,120.5],[865.375,114.375]]
+    }, 
+    
+    {
+        "id": "VestraBord", 
+        "name": "Vestra Bord",
+        "title": "Vestfirðir",
+        "text": "Die Vestfirðir (dt. Westfjorde) bestehen aus einer Halbinsel mit einer Fläche von 9409 km <sup> 2 </sup>  und befinden sich im Nordwesten Islands. Die Halbinsel ist nur über einen schmalen Landhals mit dem Festland von Island verbunden. Einer der wichtigsten Orte in den Westfjorden ist Isafjördur (link). Die WEstfjorde allein machen etwa 30% der Küstenlinie ganz Islands aus, da die Fjorde tief ins Land hinein reichen und oft auch sehr zerklüftet sind. (Wikipedia)",
+        "druckplatte": "A",
+        "cartay": "864",
+        "cartax": "135",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "7",
+        "poly": null,
+        "coordinates": [[878,127],[872.75,119.75],[868.5,118.75],[866.75,112.25],[862.5,113],[862.5,119.75],[857.75,121.75],[855.75,116.75],[849.25,115],[847.25,120.25],[848.5,128.5],[851.25,138.5],[853.75,146.5],[855.25,153.5],[857.75,158.5],[860,163],[865,157.25],[867.75,150],[869.5,147.75],[869.25,144.5],[871.25,141.5],[873,137.5],[876.25,135.75]]
+    },  
+    
+    {
+        "id": "", 
+        "name": "Beispiel Objekt",
+        "title": "bsp.",
+        "text": "Test bla bla bla",
+        "druckplatte": "A",
+        "cartay": "534",
+        "cartax": "600",
+        "cartaz": "1",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "7",
+        "poly": null,
+        "coordinates": 
 
     /* Monster */
+    {
+    
+    "id": "Trollwal", 
+    "name": "s.n.",
+    "title": "Trollwal",
+    "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. Schiffsleute haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht (Balzamo/Kaiser 2006, S. 52 l). Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. ",
+    "druckplatte": "A",
+    "cartay": "727",
+    "cartax": "400",
+    "cartaz": "2.5",
+    "kartey": "0",
+    "kartex": "0",
+    "kartez": "0",
+    "poly": null,
+    "coordinates":[[749,382],[745,383],[742,382],[740,377],[738,372],[737,368],[738,364],[735,363],[733,363],[730,365],[727,366],[725,369],[717,381],[715,383],[712,384],[711,380],[708,378],[705,380],[703,384],[706,389],[703,391],[707,400],[708,403],[710,408],[709,412],[707,419],[710,428],[712,430],[716,430],[722,427],[728,424],[733,419],[738,413],[743,406],[743,399],[744,395],[747,393],[750,391],[750,387]]
 
+    }, 
+
+    {"id": "Walfische", 
+        "name": "s.n.",
+        "title": "Walfische",
+        "text": "Die Walfische waren so gross wie Berge und haben Schiffe umgekippt. Seeleute versuchten sie von ihren Schiffen fernzuhalten, indem sie auf Trompeten spielten und leere Fässer ins Meer warfen.",
+        "druckplatte": "A",
+        "cartay": "718",
+        "cartax": "283",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[740.75,278.5],[738.5,273],[737.25,266.25],[734.5,263.5],[732.75,262.25],[729,265.5],[727,266.5],[725,264],[724.5,262.25],[722.5,260],[721.75,257.25],[719.25,256.5],[718.25,259.75],[717,261.25],[715.5,263.5],[714,268.75],[711,274],[711.25,277.25],[712.5,281.25],[711,280],[710.5,278.25],[709.75,276.75],[707,274.5],[705.25,272.5],[703.5,270.25],[701.25,267.5],[699.25,265],[698.5,263],[695.75,264.25],[694.5,270],[692.75,273.5],[691,278],[691.5,281.75],[692.25,285.75],[693.25,288.5],[696.25,291.25],[700.75,293],[704.5,293.75],[706.25,297],[708.5,301],[711.5,298.5],[713.25,294.5],[713.5,290.5],[714.5,290.25],[715.25,288.25],[715.75,284.75],[717.75,287],[718.75,289.5],[719.75,292.75],[721,294.25],[723.25,294.25],[727.75,293],[730.5,289.5],[732.75,286],[735,286.75],[737,285.5],[738.5,282]]
+
+    }, 
+
+    {"id": "SchwertfischBeiScott", 
+        "name": "s.n.",
+        "title": "Schwertfisch/See-Einhorn",
+        "text": "Das See-Einhorn ist ein Seeungeheuer, welches auf seinem Haupt ein langes Horn trägt, mit welchem es Schiffe durchstechen und zerstören kann. Die Seefahrer hatten jedoch ein wenig Glück, denn das See-Einhorn war relativ langsam, was ihnen oft eine schnelle Flucht vor der Bestie ermöglichte.", 
+        "druckplatte": "A",
+        "cartay": "682",
+        "cartax": "74",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[686.5,80],[687,75],[697.5,67],[686.5,71.5],[683.5,70],[679,66],[677,64],[677,67.5],[676.5,70.5],[676.5,77],[680.5,80]]
+    },
+
+    {
+        "id": "FischBeiShipScot", 
+        "name": "s.n.",
+        "title": "Meerengel/Rochen",
+        "text": "Mystisches Wesen, welcher wegen der Flügel als 'Engel' bezeichnet wird.",
+        "druckplatte": "A",
+        "cartay": "697",
+        "cartax": "145",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates": [[698.5,119.5],[695.25,122.625],[692.375,123.25],[688.625,123.875],[686.75,126.75],[685.125,128.875],[684.375,133.5],[685.125,136.375],[686.25,139.875],[687.25,142.125],[688.625,143.75],[687.125,143.875],[685.25,144.25],[683.75,143.25],[683.875,145.5],[684.375,147.25],[682.875,148.25],[683.75,150],[683.625,151.75],[682.75,153.125],[682.75,154.875],[684.125,155.375],[684.75,156.25],[685.25,157.625],[685.75,159.75],[687.75,158.75],[689.375,158.25],[691.125,159],[690.75,155.75],[692.25,153.25],[693.875,151.875],[695.375,153.375],[695.25,155.25],[696,156.875],[697.625,157.875],[700,158.625],[700.75,157.875],[701.75,155.125],[701.75,150.125],[704.125,148.75],[706.625,148.75],[708.75,149.5],[711.125,147.75],[712.25,146.875],[710.75,145.125],[711.75,143],[709.625,141.25],[709.125,138.875],[706.75,139.375],[704.875,137.875],[703.375,138.75],[701.25,139.375],[699.125,140],[698,138.5],[696.625,137],[694,135],[690.875,133],[689.75,130.375],[691.125,127.125],[692,126.875],[692.25,128.375],[692.625,129.625],[693.375,131.75],[695,130.125],[695.75,126.125],[697.5,124.375]]
+    },
+
+    
     /* Schiffe */
+
+    {
+        "id": "ShipAngli", 
+        "name": "Angli",
+        "title": "Englisches Schiff",
+        "text": "Ein englisches Schiff versuchte hier auf einem <span onclick='polyClickbyID(&quot;Trollwal&quot;) '>Teufelswal</span> zu ankern, da sie die Haut des Wales mit dem Sand einer Insel verwechselten. Zwei unwissende Seeleute kochen sogar eine Mahlzeit auf dem Rumpf des Wales. Dies kann tödliche Folgen für die beiden Matrosen, wie auch die gesamte Besatzung haben. Denn wenn der Wal das Feuer oder den Anker spürt, taucht er in das Meer ab, und reisst das gesamte Schiff mit sich in die Tiefe",
+        "druckplatte": "A",
+        "cartay": "763",
+        "cartax": "344",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[788,342.75],[785.5,341.5],[783,340.75],[781.25,339],[782.75,333.25],[784,327.75],[784,324.5],[783.5,324.5],[782,329],[781.75,333.25],[780.5,336.75],[780,341],[777.5,341.5],[772.25,341.25],[770.75,340.75],[766,340.25],[768.25,336.75],[771,335.75],[773.5,334.25],[771.5,334],[770,333.75],[771.25,330.25],[773,328.5],[769,332.25],[768.5,333.25],[765.5,332.5],[762,331.75],[759.75,330.75],[759.25,327.5],[754.25,327.5],[754,325.5],[752,326.5],[748.25,326.75],[747.5,328],[746,328.75],[745.75,329.5],[745.25,331.5],[744.75,334.25],[743.75,336.5],[743.75,338],[742.5,341.5],[742.75,344],[742.75,347],[742.75,348.75],[742.75,348.75],[743.25,352],[744.75,355.5],[746,357.5],[748.25,359.25],[751.75,360.25],[753.25,360.25],[757.25,361],[760,361],[762.25,366],[765.75,365],[766.5,362.75],[766.25,361.25],[768,362.25],[772.5,364.75],[772.75,366.75],[775,364.75],[773.75,363],[773.75,359],[771.75,359],[768.25,358.25],[766.5,357],[763,352.25],[761.5,351.5],[760,351.25],[763,349.5],[768,347],[776.5,344.75],[777.25,345.5],[777,348],[776.5,350],[774.75,352.75],[776,354.75],[776.75,358.5],[778.5,354.25],[779.25,349],[781,345.5]]
+    },
+
+    {
+        "id": "ShipHamburgen", 
+        "name": "Hamburgen",
+        "title": "Schiff der Hamburger",
+        "text": "Abgebildet sind zwei Schiffe, eines der Hamburger und eines der Schotten, die sich gerade um die besten Plätze für ihren Handel streiten. Dieser Streit wird kriegerisch gelöst, da es den Richter an Land nicht interessiert, was auf dem Meer passiert, sondern nur wie sich die jeweiligen Händler an Land benehmen.",
+        "druckplatte": "A",
+        "cartay": "766",
+        "cartax": "59",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[797,57.25],[792.75,54.5],[790.5,54.25],[790.75,48.5],[790,47.75],[788.5,50.75],[783.75,53],[782,53.5],[778.25,53.25],[776.75,53.75],[774,52.75],[776.5,48.75],[780.5,48],[779.25,46.75],[780.5,42.5],[778.75,43.75],[776.75,45.25],[775.5,46.25],[773,46.25],[771.25,46.25],[768.5,46.5],[767.25,45.25],[768.5,44],[765.5,43],[765.25,43],[763.25,42.75],[760.25,40.75],[757.25,41.25],[754.5,40.5],[752.5,42.5],[751.75,44],[751,46.25],[750.5,49.5],[748.5,54],[748.25,57.25],[749,61.5],[748.5,64.5],[750,67.75],[752,71],[754.25,72.75],[759,74],[762,73.5],[765,74.5],[766.5,76.75],[770.5,76.75],[775.75,75.5],[781.25,76.75],[782.5,76.5],[779.75,74.75],[777.75,73.75],[776.75,72.75],[775.25,71.5],[772.75,70.25],[771.5,69],[769.5,68],[771,66.25],[772.75,68],[775.75,69.5],[779.25,70.75],[783,71.5],[785.5,69.25],[787.5,66.25],[788.5,63.25],[790.25,60.25],[790.75,59.25],[793.25,60.75],[795.25,59.75]]
+    },
+    {
+        "id": "ShipLubicenses", 
+        "name": "Lubicenses",
+        "title": "Ein Schiff aus Lübeck",
+        "text": "Auf dem Schiff Lubicenses kann man sehen, wie ein Matrose Trompete spielt und zwei weitere Matrosen leere Fässer über Bord werfen. Dies waren beides Versuche, die oftmals angreifenden <span onclick=' polyClickbyID(&quot;Walfische&quot;) '>Walfische</span>  abzuwehren, und so dem Tod zu entgehen. ",
+        "druckplatte": "A",
+        "cartay": "737",
+        "cartax": "231",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[773.5,229.75],[767.75,228],[764.25,226.75],[760.75,226],[758.5,217],[756.5,213],[755.5,201],[753.75,201.5],[751.25,203],[750.5,199.25],[746.75,200.25],[742.75,201.75],[736.75,205.75],[733.75,209],[732,212.5],[728.5,213.25],[724.25,214.25],[721.25,216.75],[720.25,218.25],[717.5,221.25],[715.25,228.25],[714.5,232.25],[714.5,238.5],[718.25,242.5],[718.5,247],[716.5,242.5],[716.5,241.25],[717.75,246],[717.75,249],[718.25,251],[720.5,252.25],[723.25,253.5],[727.25,252.5],[729.5,251.75],[731.5,252.5],[733,253.75],[735.25,255],[741.25,252.25],[742.5,253.5],[746.25,251.75],[747.5,253.75],[748.5,254.75],[748,257.75],[746.5,260.25],[749.25,261],[750,257.75],[750,255.25],[750.75,252],[752,249.25],[753.75,248.5],[755.25,249.75],[756.5,252.5],[758.25,253.75],[758.5,252.5],[758.25,250],[758.5,247],[760,244.5],[761,244.5],[761,246.5],[761.75,249],[763,247.75],[764,248.75],[764,246.25],[764,243.75],[763.25,241],[762.5,237.25],[762,232.75],[766,231.25],[769.5,230]]
+    },
+
+    {
+        "id": "Shipscott", 
+        "name": "Scott",
+        "title": "Ein schottisches Schiff",
+        "text": "Abgebildet sind zwei Schiffe, eines der Hamburger und eines der Schotten, die sich gerade um die besten Plätze für ihren Handel streiten. Dieser Streit wird kriegerisch gelöst, da es den Richter an Land nicht interessiert, was auf dem Meer passiert, sondern nur wie sich die jeweiligen Händler an Land benehmen.",
+        "druckplatte": "A",
+        "cartay": "748",
+        "cartax": "117",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[778.25,120.75],[776.25,118.75],[773,116.25],[771,115.25],[775.25,103.5],[768.75,108.75],[764.75,111],[760.5,110.5],[760.25,108],[761.25,102.5],[756.5,103.5],[756.5,103.5],[755,103.25],[751.75,103.25],[744.75,102.5],[742.5,100.75],[734.75,102.5],[732.25,104.25],[733.5,109.75],[736.75,116],[735.75,122],[735.75,125.25],[737.5,127.75],[740.25,129.75],[746,133],[756.25,130.25],[758.5,131.75],[759.75,135.75],[764.75,136.75],[766.5,132.75],[766.5,130.25],[766.5,128.25],[766.25,125.5],[768.25,122.5],[770.25,119.25],[774,120],[775.75,121],[774.25,125.75]]
+    },
+
+    {
+        "id": "ShipBremen", 
+        "name": "Bremen",
+        "title": "Ein Schiff aus Bremen",
+        "text": "Das Hauptnahrungsmittel der Isländer war Fisch, denn sie haben wenig Brot und bauen kaum Getreide an. Fremde Schiffsleute aus unter anderem auch Bremen versorgten die Inselbewohner mit anderen Nahrungsmittel, was ihnen grosse Gewinne einbrachte. ",
+        "druckplatte": "A",
+        "cartay": "802",
+        "cartax": "274",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[801.5,261],[793,252.5],[781.5,257],[781.5,271.5],[789.5,286.5],[813,291.5],[818.5,286],[820,276.5],[814,258],[807.5,255]]
+    },
 
     /* Weiteres */
 

@@ -6,6 +6,15 @@ var southWest = L.latLng(1000, 0),
     bounds = L.latLngBounds(southWest, northEast);
 
 
+/* map units */
+var bounds = [[0, 0], [1000, 1350]];
+
+
+/* images used for the historical maps */
+var imageCol = L.imageOverlay('img/Carta_Marina.jpeg', bounds);
+var imageBw = L.imageOverlay('img/Carta_Marina_sw.jpeg', bounds);
+
+/* creates the map, into which the maps appear */
 var map = L.map('map', {
     crs: L.CRS.Simple,
 
@@ -14,13 +23,18 @@ var map = L.map('map', {
     maxBoundsViscosity: 1.0,
     maxZoom: 3,
     minZoom: -1,
-
-
+    layers: [imageCol, imageBw],
 });
 
-/* map units */
-var bounds = [[0, 0], [1000, 1350]];
-var image = L.imageOverlay('img/Carta_Marina.jpeg', bounds).addTo(map);
+var baseMaps = {
+    "Carta Marina, Venedig 1539": imageBw,
+    "Carta Marina Lafreri, Rom 1572": imageCol,
+
+};
+
+/*puts layers (and therewith the images) onto the map*/
+L.control.layers(baseMaps).addTo(map);
+
 
 /* zoom the map to that bounding box */
 map.fitBounds(bounds);
@@ -28,7 +42,7 @@ map.fitBounds(bounds);
 
 /* map2: web mapping (i.e. openstreetmap) */
 
-var mymap = L.map('map2').setView([63, 0], 3);
+var mymap = L.map('map2').setView([63, 0], 4);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -42,10 +56,13 @@ document.getElementById("map2Container").style.display = "none";
 
 function toggleWebmap() {
     var x = document.getElementById('map2Container');
+    var y = document.getElementById('textContainer');
     if (x.style.display === 'none') {
         x.style.display = 'block';
+        y.style.display = 'none';
     } else {
         x.style.display = 'none';
+        y.style.display = 'block';
     }
 }
 
@@ -272,8 +289,25 @@ var polyShipHamburgen = L.polygon([
                     }
                 )
             
+           var polyFischBeiShipScot = L.polygon([
 
+                 [698.5,119.5],[695.25,122.625],[692.375,123.25],[688.625,123.875],[686.75,126.75],[685.125,128.875],[684.375,133.5],[685.125,136.375],[686.25,139.875],[687.25,142.125],[688.625,143.75],[687.125,143.875],[685.25,144.25],[683.75,143.25],[683.875,145.5],[684.375,147.25],[682.875,148.25],[683.75,150],[683.625,151.75],[682.75,153.125],[682.75,154.875],[684.125,155.375],[684.75,156.25],[685.25,157.625],[685.75,159.75],[687.75,158.75],[689.375,158.25],[691.125,159],[690.75,155.75],[692.25,153.25],[693.875,151.875],[695.375,153.375],[695.25,155.25],[696,156.875],[697.625,157.875],[700,158.625],[700.75,157.875],[701.75,155.125],[701.75,150.125],[704.125,148.75],[706.625,148.75],[708.75,149.5],[711.125,147.75],[712.25,146.875],[710.75,145.125],[711.75,143],[709.625,141.25],[709.125,138.875],[706.75,139.375],[704.875,137.875],[703.375,138.75],[701.25,139.375],[699.125,140],[698,138.5],[696.625,137],[694,135],[690.875,133],[689.75,130.375],[691.125,127.125],[692,126.875],[692.25,128.375],[692.625,129.625],[693.375,131.75],[695,130.125],[695.75,126.125],[697.5,124.375]
+                    
+                ], {
+                         color: 'none',
+                         fillColor: 'black',
+                         fillOpacity: 0.0,
+                    }
+                 )
+                    
 /* western of Falcon */
+var polyIsafjord = L.polygon([
+    [862.5,120.25],[863.5,135.75],[855.25,145],[849.75,140],[845.75,123.75],[848.75,115]], {
+        color: 'none',
+        fillColor: 'black',
+        fillOpacity: 0.0,
+    }
+)
 
 
 
@@ -302,16 +336,7 @@ var polyCriptoporticus = L.polygon([
     }
 )
 
-var polyFalcoAlbi = L.polygon([
 
-    [939.5788173675537, 238.66284942626953], [941.5788173675537, 242.16284942626953], [939.0788173675537, 244.16284942626953], [940.5788173675537, 247.66284942626953], [937.0788173675537, 252.16284942626953], [934.0788173675537, 255.66284942626953], [933.5788173675537, 252.66284942626953], [933.5788173675537, 248.66284942626953], [931.0788173675537, 252.66284942626953], [930.0788173675537, 254.66284942626953], [927.0788173675537, 254.66284942626953], [928.5788173675537, 251.66284942626953], [931.5788173675537, 248.16284942626953], [928.5788173675537, 248.16284942626953], [927.0788173675537, 247.66284942626953], [926.5788173675537, 245.66284942626953], [928.5788173675537, 243.66284942626953], [931.5788173675537, 241.66284942626953], [934.0788173675537, 239.66284942626953], [936.5788173675537, 238.66284942626953], [938.0788173675537, 235.66284942626953], [939.5788173675537, 239.16284942626953], [940.0788173675537, 240.16284942626953]
-
-], {
-        color: 'none',
-        fillColor: 'black',
-        fillOpacity: 0.0,
-    }
-)
 
 var polyFischer = L.polygon([
 
