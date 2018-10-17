@@ -104,19 +104,51 @@ var data = [
 
     {
         "id": "Isafjord", 
-        "name": "Ísafjörður",
-        "title": "Isafjord",
+        "name": "Isafjord",
+        "title": "Ísafjörður",
         "text": "Ísafjörður (dt. Eisfjord) ist eine im Nordwesten gelegene Stadt. Sie wird von den steil abfallenden Berghängen des Eyrarfjall und des Kirkijubolsfjall eingefasst. Die Stadt bildet das Wirtschafts- und Verwaltungszentrum der Westfjorde. Als erster Siedler in Ísafjörður war Helgi Hrolfsson, welcher 920 den Ort erstmals besiedelte. Im 16. Jahrhundert wurde die Stadt vermehrt von deutschen und englischen Händlern als Handelsplatz genutzt. Ausserdem war Ísafjörður einst der grösste Standort der Shrimps-Fischerei Islands und ist auch heutzutage noch bekannt für den Fischfang. ",
         "druckplatte": "A",
-        "cartay": "861",
-        "cartax": "122",
+        "cartay": "862",
+        "cartax": "114",
         "cartaz": "2.5",
         "kartey": "0",
         "kartex": "0",
         "kartez": "0", 
         "poly": null,
-        "coordinates":[[862.5,120.25],[863.5,135.75],[855.25,145],[849.75,140],[845.75,123.75],[848.75,115]]
+        "coordinates":[[865.5,111],[863.375,105.125],[859.375,104.5],[859,110.5],[859.125,114.5],[859,118.5],[859.375,121.125],[862.375,122.125],[864.625,120.5],[865.375,114.375]]
+    }, 
+    
+    {
+        "id": "VestraBord", 
+        "name": "Vestra Bord",
+        "title": "Vestfirðir",
+        "text": "Die Vestfirðir (dt. Westfjorde) bestehen aus einer Halbinsel mit einer Fläche von 9409 km <sup> 2 </sup>  und befinden sich im Nordwesten Islands. Die Halbinsel ist nur über einen schmalen Landhals mit dem Festland von Island verbunden. Einer der wichtigsten Orte in den Westfjorden ist Isafjördur (link). Die WEstfjorde allein machen etwa 30% der Küstenlinie ganz Islands aus, da die Fjorde tief ins Land hinein reichen und oft auch sehr zerklüftet sind. (Wikipedia)",
+        "druckplatte": "A",
+        "cartay": "864",
+        "cartax": "135",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "7",
+        "poly": null,
+        "coordinates": [[878,127],[872.75,119.75],[868.5,118.75],[866.75,112.25],[862.5,113],[862.5,119.75],[857.75,121.75],[855.75,116.75],[849.25,115],[847.25,120.25],[848.5,128.5],[851.25,138.5],[853.75,146.5],[855.25,153.5],[857.75,158.5],[860,163],[865,157.25],[867.75,150],[869.5,147.75],[869.25,144.5],[871.25,141.5],[873,137.5],[876.25,135.75]]
     },  
+    
+    {
+        "id": "", 
+        "name": "Beispiel Objekt",
+        "title": "bsp.",
+        "text": "Test bla bla bla",
+        "druckplatte": "A",
+        "cartay": "534",
+        "cartax": "600",
+        "cartaz": "1",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "7",
+        "poly": null,
+        "coordinates": 
+
     /* Monster */
     {
     
