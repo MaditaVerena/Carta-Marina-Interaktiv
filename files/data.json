@@ -69,6 +69,23 @@ var data = [
         "poly": null,
         "coordinates":[[824,250],[837,243.5],[842.5,241.5],[842.5,240],[841,237],[839,235.5],[833.5,233.5],[832,233],[827.5,233],[824,229.5]]
     }, 
+
+    {
+        "id": "Hanafjord", 
+        "name": "Hanafjord",
+        "title": "Hafnarfjörður",
+        "text": "Hafnarfjörður bedeutet zu deutsch soviel wie Hafenfjord und ist eine Stadt im Südwesten von Island. Im Südosten grenzt die Stadt an den Berg Helgafell (link). Bereits im Mittelalter war die Stadt sowohl bei den englischen als auch den deutschen und später dänischen Händlern sehr beliebt, was oft zu Handels Streiten (link) führte. Heutzutage ist der Fischfang der wichtigste Berufszweig der Stadt. Im Stadtinneren kann man viele Lava Hügel finden, von welchen manch ein Isländer glaubt, dass sie von Elfen bewohnt sind.",
+        "druckplatte": "A",
+        "cartay": "828",
+        "cartax": "124",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[821.5,158],[827,140.5],[834,131.5],[832,123.5],[828.5,122.5],[824.5,124.5],[819.5,124],[816.5,119],[814,117],[812,116.5],[808,112.5],[807.5,117],[806,122.5],[804.5,125.5],[803.5,132.5],[803.5,135]]
+    }, 
+
     /* Monster */
     {
         "id": "Trollwal", 
