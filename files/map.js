@@ -6,6 +6,15 @@ var southWest = L.latLng(1000, 0),
     bounds = L.latLngBounds(southWest, northEast);
 
 
+/* map units */
+var bounds = [[0, 0], [1000, 1350]];
+
+
+/* images used for the historical maps */
+var imageCol = L.imageOverlay('img/Carta_Marina.jpeg', bounds);
+var imageBw = L.imageOverlay('img/Carta_Marina_sw.jpeg', bounds);
+
+/* creates the map, into which the maps appear */
 var map = L.map('map', {
     crs: L.CRS.Simple,
 
@@ -14,13 +23,18 @@ var map = L.map('map', {
     maxBoundsViscosity: 1.0,
     maxZoom: 3,
     minZoom: -1,
-
-
+    layers: [imageCol, imageBw],
 });
 
-/* map units */
-var bounds = [[0, 0], [1000, 1350]];
-var image = L.imageOverlay('img/Carta_Marina.jpeg', bounds).addTo(map);
+var baseMaps = {
+    "Carta Marina, Venedig 1539": imageBw,
+    "Carta Marina Lafreri, Rom 1572": imageCol,
+
+};
+
+/*puts layers (and therewith the images) onto the map*/
+L.control.layers(baseMaps).addTo(map);
+
 
 /* zoom the map to that bounding box */
 map.fitBounds(bounds);
