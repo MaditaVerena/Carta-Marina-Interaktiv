@@ -564,7 +564,7 @@ var data = [
         "id": "Fischer", 
         "name": "Fischer",
         "title": "",
-        "text": "In den kleine Seen, welche durch Flüsse mit dem Meer verbunden wurden fischte man.   Er ist ein der drei Fischer, die auf Blatt A  gezeichnet sind. Fisch war die wichtigste Speise der Einwohner von Island (Balzamo/Kaiser, 2006, S.49). Fische waren auch wichtig für das Handeln.",
+        "text": "In den kleine Seen, welche durch Flüsse mit dem Meer verbunden waren, fischte man.   Auf Platte A sind drei Fischer abgebildet. Fisch war die wichtigste Speise der Einwohner von Island <small>(Balzamo/Kaiser, 2006, S.49)</small>, war aber auch sehr wichtig für den Handel.",
         "druckplatte": "A",
         "cartay": "885.5",
         "cartax": "310",
