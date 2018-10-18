@@ -639,6 +639,40 @@ var data = [
     "poly": null,
     "coordinates": [[811.75,209],[809.25,206.25],[809.25,200.25],[809.25,194.5],[813.5,195],[814.25,198.5],[814,203],[813.75,206.5],[811.75,208.75],[850.5,228],[849,230.75],[848.5,237],[850.75,239.5],[854.25,239.5],[854.75,235.75],[854.75,231.25],[854.75,228],[851.25,228.5]]
 }, 
+
+{
+    "id": "ViolineSpielenderMann", 
+    "name": "Violine Spielender Mann",
+    "title": "",
+    "text": "Im damaligen Island waren Violinisten und Musiker generell sehr angesehen, da sie mit den Klängen ihres Instruments Fische und Vögel anlockten, die man dann fing und als Nahrung verwendete. (Balzamo/Kaiser, 2006, S. 49)",
+    "druckplatte": "A",
+    "cartay": "952",
+    "cartax": "364",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[947.1459789276123,359],[950.6459789276123,359],[950.8959789276123,354.75],[955.6459789276123,355.5],[956.8959789276123,353.25],[957.1459789276123,358.25],[959.3959789276123,358.75],[963.1459789276123,357.75],[963.8959789276123,361.25],[963.1459789276123,363.5],[960.8959789276123,362.75],[958.3959789276123,363],[960.8959789276123,365.5],[960.1459789276123,368.25],[959.6459789276123,369.75],[960.1459789276123,370.75],[961.3959789276123,371.5],[960.8959789276123,372.5],[957.8959789276123,371],[955.6459789276123,369.25],[953.3959789276123,369.25],[952.1459789276123,370.5],[948.8959789276123,370.75],[945.8959789276123,372.75],[943.6459789276123,374.5],[942.3959789276123,377.5],[941.6459789276123,374],[945.1459789276123,369.25],[945.6459789276123,367.5],[942.6459789276123,365.25],[939.6459789276123,365.25],[941.3959789276123,362.25],[944.1459789276123,362.75],[946.1459789276123,363]]
+}, 
+
+/*Tiere*/
+
+{
+    "id": "FalcoAlbi", 
+    "name": "Falco Albi",
+    "title": "Der Weisse Falke/Gerfalken",
+    "text": "Das Abbild des weissen Falken zeigt an, dass es in Island dort viele weiße Falken gab. (Balzamo/Kaiser, 2006, S. 49) Höchstwahrscheinlich ist mit dem “weißen Falken” der Gerfalke gemeint, welcher sowohl in weißer, wie auch grauer und schwärzlicher Farbe vorkommt. Der Gerfalke ist die größte Falkenart weltweit und kommt vermehrt in den arktischen Regionen Eurasiens und Nordamerikas vor. Die Falkenart brütet in allen Gebieten Islands, doch im Norden der Insel sind mehr auffindbar. Vor allem im Mittelalter galten sie für sehr wertvoll und waren für die Falknerei sehr begehrt, da sie wegen ihrer Grösse auch sehr kräftig waren. Sie waren für den Handel mit Deutschland wichtig, da der Adel sie für die Falknerei wollte.",
+    "druckplatte": "A",
+    "cartay": "934",
+    "cartax": "245.5",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[939.5788173675537,238.66284942626953],[941.5788173675537,242.16284942626953],[939.0788173675537,244.16284942626953],[940.5788173675537,247.66284942626953],[937.0788173675537,252.16284942626953],[934.0788173675537,255.66284942626953],[933.5788173675537,252.66284942626953],[933.5788173675537,248.66284942626953],[931.0788173675537,252.66284942626953],[930.0788173675537,254.66284942626953],[927.0788173675537,254.66284942626953],[928.5788173675537,251.66284942626953],[931.5788173675537,248.16284942626953],[928.5788173675537,248.16284942626953],[927.0788173675537,247.66284942626953],[926.5788173675537,245.66284942626953],[928.5788173675537,243.66284942626953],[931.5788173675537,241.66284942626953],[934.0788173675537,239.66284942626953],[936.5788173675537,238.66284942626953],[938.0788173675537,235.66284942626953],[939.5788173675537,239.16284942626953],[940.0788173675537,240.16284942626953]]
+}, 
     /* ------------ Druckplatte B ------------- */
 
     /* ------------ Druckplatte C ------------- */
