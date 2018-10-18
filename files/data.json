@@ -673,6 +673,22 @@ var data = [
     "poly": null,
     "coordinates":[[939.5788173675537,238.66284942626953],[941.5788173675537,242.16284942626953],[939.0788173675537,244.16284942626953],[940.5788173675537,247.66284942626953],[937.0788173675537,252.16284942626953],[934.0788173675537,255.66284942626953],[933.5788173675537,252.66284942626953],[933.5788173675537,248.66284942626953],[931.0788173675537,252.66284942626953],[930.0788173675537,254.66284942626953],[927.0788173675537,254.66284942626953],[928.5788173675537,251.66284942626953],[931.5788173675537,248.16284942626953],[928.5788173675537,248.16284942626953],[927.0788173675537,247.66284942626953],[926.5788173675537,245.66284942626953],[928.5788173675537,243.66284942626953],[931.5788173675537,241.66284942626953],[934.0788173675537,239.66284942626953],[936.5788173675537,238.66284942626953],[938.0788173675537,235.66284942626953],[939.5788173675537,239.16284942626953],[940.0788173675537,240.16284942626953]]
 }, 
+
+{
+    "id": "Fuechse", 
+    "name": " Füchse",
+    "title": "",
+    "text": "Die Füchse bedeuten, dass es dort früher viele weisse Füchse gab, daneben aber auch sehr schwarze Füchse. (Balzamo/Kaiser, 2006, S. 49)Der Polarfuchs (auch Eisfuchs, lat. Vulpes lagopus) ist in den nördlichen  Polarregionen beheimatet. Die Polarfüchse wechseln die Farbe ihres Pelzes entsprechend der Jahreszeiten: Im Sommer ist der Pelz eher braun, im Winter weiss. Der Polarfuchs ist ein Beutegreifer und Allesfresser, doch zu den Haupt Beutetieren zählen grösstenteils Lemminge (gehören zur Unterfamilie der Wühlmäuse). Polarfüchse haben eine Lebenserwartung von vier Jahren. Tollwut ist die häufigste tödliche Krankheit, aber sie sind auch von Menschen, Polarwölfen und vereinzelt auch Eisbären bedroht. Nicht zuletzt wegen des Handels mit den wertvollen Polarfuchs Winterfellen ist die Spezies in Skandinavien und Island  selten geworden.",
+    "druckplatte": "A",
+    "cartay": "935",
+    "cartax": "350",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[937.3959789276123,358],[935.6459789276123,360.5],[935.6459789276123,367],[936.8959789276123,376],[937.6459789276123,381],[934.6459789276123,377.75],[934.3959789276123,371.75],[932.8959789276123,371.5],[930.8959789276123,372.25],[933.3959789276123,368.25],[931.6459789276123,364.25],[931.6459789276123,361.25],[931.6459789276123,356.5],[933.8959789276123,358],[936.3959789276123,355.25],[937.6459789276123,354.75],[934.6459789276123,345],[937.3959789276123,346.5],[938.8959789276123,344.5],[936.3959789276123,341.25],[938.1459789276123,334.25],[932.6459789276123,342]]
+}, 
     /* ------------ Druckplatte B ------------- */
 
     /* ------------ Druckplatte C ------------- */
