@@ -527,6 +527,38 @@ var data = [
         "coordinates":[[857.5,311.25],[861.5,311.25],[861.5,311.5],[864.5,312.75],[868.25,314.75],[863.75,316.75],[861.5,318.5],[858.5,318.5],[855.5,318.25],[855.5,315.25],[855.75,311.25]]
     }, 
 
+    {
+        "id": "Zelte", 
+        "name": "Zelte",
+        "title": "",
+        "text": "Die Zelte symbolisieren, dass die Isländer ein Kriegsfreudiges Volk waren, und es nicht scheuten, oft und sehr rasch in den Krieg zu ziehen. (Balzamo/Kaiser, 2006, S. 52)",
+        "druckplatte": "A",
+        "cartay": "932",
+        "cartax": "321",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates": [[931.25,319.25],[931,315.25],[930.5,312.25],[930.5,307.25],[933.75,309],[936,310.25],[938.25,311.75],[936.5,314],[935.25,316.25],[932.75,317.5],[930.75,319.5],[930.75,321],[930.25,323],[931.25,323],[934,324.5],[935,326.25],[938.75,328.75],[934.75,332],[932.5,333.75],[930.75,335],[929.75,330.25],[929.75,325.25],[929.75,330.5],[931,335],[930.5,337.25],[928.25,340.25],[925.75,346],[925,353.75],[923,360.25],[921,365.25],[920.5,370.75],[922,371.25],[924.5,373],[927.75,374.75],[926.75,376],[925,377.5],[923.25,379.75],[921.5,380.5],[920.5,378.5],[920.5,375.25],[920.5,372.5]]
+    }, 
+
+    {
+        "id": "Fischstapel", 
+        "name": "Fischstapel",
+        "title": "",
+        "text": "Die Hauptnahrung der Isländer war Fisch. Sie stapelten grosse Mengen an Fischen in den Häusern und um sie herum unter freiem Himmel und boten sie zum Verkauf an. (Balzamo/Kaiser, 2006, S. 49)",
+        "druckplatte": "A",
+        "cartay": "792",
+        "cartax": "177",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":[[790,159.5],[807,169.5],[807,182.5],[797.5,189],[789.5,192],[778,190],[774.5,183.5],[779,171],[781.5,160.5]]
+
+    }, 
 
     /* ------------ Druckplatte B ------------- */
 
