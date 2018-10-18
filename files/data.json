@@ -574,7 +574,26 @@ var data = [
         "kartez": "",
         "poly": null,
         "coordinates": [[892.25,294],[888.75,291.25],[888.75,286.5],[885.5,286.75],[883.25,292.25],[885,296.25],[888,298.5],[885.5,320.25],[880.5,324.75],[883,329.5],[886.5,331.5],[888,327.25],[887.25,322.75],[887.5,313.75],[887.5,306.75],[888.75,299.25]]
-    },    
+    },  
+    
+    {
+        "id": "Fischwappen", 
+        "name": "Fischwappen",
+        "title": "",
+        "text": "Das Wappen neben dem von Norwegen (Rot) ziert einen gekrönten Fisch. Dies kommt daher, da die niederländischen Kaufleute diesen Fisch sehr schätzten, und dieser Fisch war wahrscheinlich eine Goldkrone wert (Balzamo/Kaiser, 2006, S. 52)",
+        "druckplatte": "A",
+        "cartay": "894.5",
+        "cartax": "256",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":   [[911,245],[913,257],[911,265.5],[907,268.5],[901.25,268.75],[891.25,270.25],[883.5,266.25],[880,261.25],[880.75,252.75],[882.75,248.25],[887.75,245.25],[893.5,244.5],[899.75,245.5],[901.75,244.5],[904,243.25],[908.5,243.25]]
+    }, 
+
+
+
     /* ------------ Druckplatte B ------------- */
 
     /* ------------ Druckplatte C ------------- */
