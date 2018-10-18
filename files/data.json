@@ -170,14 +170,14 @@ var data = [
         "id": "Holensis", 
         "name": "Holensis",
         "title": "Hólar",
-        "text": "Hólar ist ein kleines Dörfchen im Norden von Island, das 76 Einwohner zählt. Von 1106 bis 1801 war es als zweiter Bischofssitz neben Skalholt (link) ein wichtiger Ort in Island. Das katholische Bistum Hólar bestand bis 1550, das heisst bis zur Reformation. Danach wurde es von 1552 bis 1798 evangelisch-lutherisch geführt und im 19. Jahrhundert mit de Bistum Skalholt zusammengelegt. Gegenwärtig befindet sich eine Hochschule für Pferde- und Fischzucht in Hólar. ",
+        "text": "Hólar ist ein kleines Dörfchen im Norden von Island, das 76 Einwohner zählt. Von 1106 bis 1801 war es als zweiter Bischofssitz neben <span onclick='polyClickbyID(&quot;Scalholdin&quot;)'>Skalholt</span> ein wichtiger Ort in Island. Das katholische Bistum Hólar bestand bis 1550, das heisst bis zur Reformation. Danach wurde es von 1552 bis 1798 evangelisch-lutherisch geführt und im 19. Jahrhundert mit de Bistum Skalholt zusammengelegt. Gegenwärtig befindet sich eine Hochschule für Pferde- und Fischzucht in Hólar. ",
         "druckplatte": "A",
         "cartay": "851",
         "cartax": "272",
         "cartaz": "2.5",
-        "kartey": "0",
-        "kartex": "0",
-        "kartez": "0",
+        "kartey": "65.732893, ",
+        "kartex": "-19.112470",
+        "kartez": "4",
         "poly": null,
         "coordinates":[[857.75,268.75],[853.25,268.75],[849.5,268.5],[849.5,271.75],[849.75,275.5],[851,277.75],[855,276.75],[855.25,272.25],[856.5,271.75],[857,270.75]]
 
