@@ -639,6 +639,122 @@ var data = [
     "poly": null,
     "coordinates": [[811.75,209],[809.25,206.25],[809.25,200.25],[809.25,194.5],[813.5,195],[814.25,198.5],[814,203],[813.75,206.5],[811.75,208.75],[850.5,228],[849,230.75],[848.5,237],[850.75,239.5],[854.25,239.5],[854.75,235.75],[854.75,231.25],[854.75,228],[851.25,228.5]]
 }, 
+
+{
+    "id": "ViolineSpielenderMann", 
+    "name": "Violine Spielender Mann",
+    "title": "",
+    "text": "Im damaligen Island waren Violinisten und Musiker generell sehr angesehen, da sie mit den Klängen ihres Instruments Fische und Vögel anlockten, die man dann fing und als Nahrung verwendete. (Balzamo/Kaiser, 2006, S. 49)",
+    "druckplatte": "A",
+    "cartay": "952",
+    "cartax": "364",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[947.1459789276123,359],[950.6459789276123,359],[950.8959789276123,354.75],[955.6459789276123,355.5],[956.8959789276123,353.25],[957.1459789276123,358.25],[959.3959789276123,358.75],[963.1459789276123,357.75],[963.8959789276123,361.25],[963.1459789276123,363.5],[960.8959789276123,362.75],[958.3959789276123,363],[960.8959789276123,365.5],[960.1459789276123,368.25],[959.6459789276123,369.75],[960.1459789276123,370.75],[961.3959789276123,371.5],[960.8959789276123,372.5],[957.8959789276123,371],[955.6459789276123,369.25],[953.3959789276123,369.25],[952.1459789276123,370.5],[948.8959789276123,370.75],[945.8959789276123,372.75],[943.6459789276123,374.5],[942.3959789276123,377.5],[941.6459789276123,374],[945.1459789276123,369.25],[945.6459789276123,367.5],[942.6459789276123,365.25],[939.6459789276123,365.25],[941.3959789276123,362.25],[944.1459789276123,362.75],[946.1459789276123,363]]
+}, 
+
+{
+    "id": "Brunnen", 
+    "name": "Brunnen",
+    "title": "",
+    "text": "Hier sind vier unregelmässig geformte Brunnen, welche verschiedenes Wasser enthalten: entweder heiss, kalt, süss oder giftig. Mit den Brunnen sind wahrscheinlich Kohlensäurequellen gemeint. In einem lateinischen Gedicht über Island wird ein Brunnen erwähnt, aus dem “flüssiges Wachs” fliesst. Das Wort, welches mit ‘Wachs’ übersetzt wurde, war ‘cera’. Aber ‘cera’ wurde mit ‘cerevisia’ (Bier) verwechselt, demnach floss aus dem einen Brunnen Bier. Heute noch nennen die Isländer solche Kohlensäurequellen ölkedur, was übersetzt ‘Bierquellen’ bedeutet. (Erkes, 1927, S. 2; Balzamo/Kaiser, 2006, S. 49)",
+    "druckplatte": "A",
+    "cartay": "810",
+    "cartax": "176",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[816.5,156.75],[814.5,165.75],[815,172],[814.75,179.25],[814,187.25],[810.75,193.25],[808.75,198.75],[806,195.25],[805.75,191.5],[806.75,185],[809.25,174],[808.75,167.75],[809.5,157.25],[812.5,156.25]]
+}, 
+
+/*Tiere*/
+
+{
+    "id": "FalcoAlbi", 
+    "name": "Falco Albi",
+    "title": "Der Weisse Falke/Gerfalken",
+    "text": "Das Abbild des weissen Falken zeigt an, dass es in Island dort viele weiße Falken gab. (Balzamo/Kaiser, 2006, S. 49) Höchstwahrscheinlich ist mit dem “weißen Falken” der Gerfalke gemeint, welcher sowohl in weißer, wie auch grauer und schwärzlicher Farbe vorkommt. Der Gerfalke ist die größte Falkenart weltweit und kommt vermehrt in den arktischen Regionen Eurasiens und Nordamerikas vor. Die Falkenart brütet in allen Gebieten Islands, doch im Norden der Insel sind mehr auffindbar. Vor allem im Mittelalter galten sie für sehr wertvoll und waren für die Falknerei sehr begehrt, da sie wegen ihrer Grösse auch sehr kräftig waren. Sie waren für den Handel mit Deutschland wichtig, da der Adel sie für die Falknerei wollte.",
+    "druckplatte": "A",
+    "cartay": "934",
+    "cartax": "245.5",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[939.5788173675537,238.66284942626953],[941.5788173675537,242.16284942626953],[939.0788173675537,244.16284942626953],[940.5788173675537,247.66284942626953],[937.0788173675537,252.16284942626953],[934.0788173675537,255.66284942626953],[933.5788173675537,252.66284942626953],[933.5788173675537,248.66284942626953],[931.0788173675537,252.66284942626953],[930.0788173675537,254.66284942626953],[927.0788173675537,254.66284942626953],[928.5788173675537,251.66284942626953],[931.5788173675537,248.16284942626953],[928.5788173675537,248.16284942626953],[927.0788173675537,247.66284942626953],[926.5788173675537,245.66284942626953],[928.5788173675537,243.66284942626953],[931.5788173675537,241.66284942626953],[934.0788173675537,239.66284942626953],[936.5788173675537,238.66284942626953],[938.0788173675537,235.66284942626953],[939.5788173675537,239.16284942626953],[940.0788173675537,240.16284942626953]]
+}, 
+
+{
+    "id": "Fuechse", 
+    "name": " Füchse",
+    "title": "",
+    "text": "Die Füchse bedeuten, dass es dort früher viele weisse Füchse gab, daneben aber auch sehr schwarze Füchse. <small> (Balzamo/Kaiser, 2006, S. 49) </small> Der Polarfuchs (auch Eisfuchs, lat. <i>Vulpes lagopus </i>) ist in den nördlichen  Polarregionen beheimatet. <br /> Die Polarfüchse wechseln die Farbe ihres Pelzes entsprechend der Jahreszeiten: Im Sommer ist der Pelz eher braun, im Winter weiss. <br /> Der Polarfuchs ist ein Beutegreifer und Allesfresser, doch zu den Hauptbeutetieren zählen grösstenteils Lemminge (gehören zur Unterfamilie der Wühlmäuse). Polarfüchse haben eine Lebenserwartung von vier Jahren. Tollwut ist die häufigste tödliche Krankheit, aber sie sind auch von Menschen, Polarwölfen und vereinzelt auch Eisbären bedroht. Nicht zuletzt wegen des Handels mit den wertvollen Polarfuchs Winterfellen ist die Spezies in Skandinavien und Island  selten geworden.",
+    "druckplatte": "A",
+    "cartay": "935",
+    "cartax": "350",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[937.3959789276123,358],[935.6459789276123,360.5],[935.6459789276123,367],[936.8959789276123,376],[937.6459789276123,381],[934.6459789276123,377.75],[934.3959789276123,371.75],[932.8959789276123,371.5],[930.8959789276123,372.25],[933.3959789276123,368.25],[931.6459789276123,364.25],[931.6459789276123,361.25],[931.6459789276123,356.5],[933.8959789276123,358],[936.3959789276123,355.25],[937.6459789276123,354.75],[934.6459789276123,345],[937.3959789276123,346.5],[938.8959789276123,344.5],[936.3959789276123,341.25],[938.1459789276123,334.25],[932.6459789276123,342]]
+}, 
+
+{
+    "id": "UrsiAlbi", 
+    "name": "Ursi Albi",
+    "title": "Weissbären/Eisbären",
+    "text": "Diese zwei Bären zeigen an, dass es dort viele weiße Bären gab. (Balzamo/Kaiser, 2006, S. 49)  Höchstwahrscheinlich sind mit “Weissbären” Eisbären gemeint. Eisbären bewohnen die nördlichen Polarregionen und sind die größten an Land lebenden Raubtiere. Eisbäre können bis zu 2,5m lang und 500 kg schwer werden. Eisbären sind sehr gute Schwimmer, doch sie jagen meist an Land. Ihre Hauptbeute sind Robben, vorwiegend Ringelrobben. ",
+    "druckplatte": "A",
+    "cartay": "840",
+    "cartax": "354",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[853.5,358],[851.5,344],[841.5,339],[835,338.5],[826.5,332.5],[825.5,340.5],[825.5,356.5],[829.5,363.5],[834,370.5],[835.5,376],[838.5,378.5],[844.5,370],[849,369]]
+}, 
+
+{
+    "id": "Schwaene", 
+    "name": "Schwäne",
+    "title": "",
+    "text": "Die Schwäne werden vom <span onclick='polyClickbyID(&quot;ViolineSpielenderMann&quot;)'>Violinisten</span> durch die Klänge der Musik angelockt um später gefangen zu werden (Balzamo/Kaiser, 2006, S. 49)",
+    "druckplatte": "A",
+    "cartay": "948",
+    "cartax": "409",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[944,387.75],[944.75,391.75],[945.75,395.75],[950.75,397],[953.75,397],[955.5,394.5],[957,398],[955,399.5],[950.75,399.5],[947.75,402.5],[946,406.75],[947.75,411.5],[951.75,412.75],[954.25,409],[956.25,412.25],[954.25,414],[950.25,414],[946.25,413.75],[950.5,421],[951.25,427.75],[948.25,428],[946.25,426.5],[942.75,418.25],[941.5,412.5],[943.75,409.5],[944.5,406.25],[943.25,404],[943,400.75],[938.25,400.75],[937.5,400],[936.75,398.25],[939,393.25],[941.5,389.75]]
+}, 
+
+{
+    "id": "Ochsen", 
+    "name": "Ochsen",
+    "title": "",
+    "text": "Das Vieh wurde in Sommer von der Weide ferngehalten, weil es sonst an Fettleibigkeit sterben würde (Balzamo/Kaiser, 2006, S. 49).",
+    "druckplatte": "A",
+    "cartay": "841",
+    "cartax": "284.5",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[844.25,276.75],[845.25,281.5],[843.5,285],[843.25,291],[841,292],[839,291.75],[837.75,288],[837.75,285.25],[837.75,282.75],[838,279.75],[841.5,279.75],[841.75,277]]
+}, 
+
+
     /* ------------ Druckplatte B ------------- */
 
     /* ------------ Druckplatte C ------------- */
