@@ -431,18 +431,33 @@ var data = [
     /* Weiteres */
     {
         "id": "WappenNorwegen", 
-        "name": "Norwegische Flagge",
+        "name": "Norwegisches Wappen",
         "title": "",
-        "text": "Die Flagge Norwegens besteht aus einem goldenen Löwen auf rotem Grund. Das norwegische Wappen ist auf der Krte Islands abgebildet, da die ersten Siedler auf Island von Norwegen ausgewandert waren.",
+        "text": "Das Wappen Norwegens besteht aus einem goldenen Löwen auf rotem Grund. Das norwegische Wappen ist auf der Krte Islands abgebildet, da die ersten Siedler auf Island von Norwegen ausgewandert waren.",
         "druckplatte": "A",
-        "cartay": "534",
-        "cartax": "600",
-        "cartaz": "1",
+        "cartay": "895.5",
+        "cartax": "229.5",
+        "cartaz": "2.5",
         "kartey": "",
         "kartex": "",
         "kartez": "",
         "poly": null,
         "coordinates":[[917.75,227.5],[914.75,220.5],[913,213],[889.5,214.75],[882.5,218.25],[880.25,223],[879.25,228.25],[880.5,235.25],[883.75,240.25],[889.5,241.25],[896.5,241],[903.25,241],[913.25,244.75],[912,239.25],[914.75,236.25]]
+    }, 
+
+    {
+        "id": "Butirum", 
+        "name": "Butirum",
+        "title": "Butter",
+        "text": "Butirum ist der lateinische Name für Butter. Die Butter wurde gesalzen und in Fässer verpackt",
+        "druckplatte": "A",
+        "cartay": "",
+        "cartax": "",
+        "cartaz": "",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
     }, 
 
     {
@@ -595,7 +610,7 @@ var data = [
         "id": "Fischwappen", 
         "name": "Fischwappen",
         "title": "",
-        "text": "Das Wappen neben dem von Norwegen (Rot) ziert einen gekrönten Fisch. Dies kommt daher, da die niederländischen Kaufleute diesen Fisch sehr schätzten, und dieser Fisch war wahrscheinlich eine Goldkrone wert <small>(Balzamo/Kaiser, 2006, S. 52).</small>",
+        "text": "Das Wappen neben dem von <span onclick='polyClickbyID(&quot;WappenNorwegen&quot;)'>Norwegen</span> ziert einen gekrönten Fisch. Dies kommt daher, da die niederländischen Kaufleute diesen Fisch sehr schätzten, und dieser Fisch war wahrscheinlich eine Goldkrone wert <small>(Balzamo/Kaiser, 2006, S. 52).</small>",
         "druckplatte": "A",
         "cartay": "894.5",
         "cartax": "256",
