@@ -560,6 +560,21 @@ var data = [
 
     }, 
 
+    {
+        "id": "Fischer", 
+        "name": "Fischer",
+        "title": "",
+        "text": "In den kleine Seen, welche durch Flüsse mit dem Meer verbunden wurden fischte man.   Er ist ein der drei Fischer, die auf Blatt A  gezeichnet sind. Fisch war die wichtigste Speise der Einwohner von Island (Balzamo/Kaiser, 2006, S.49). Fische waren auch wichtig für das Handeln.",
+        "druckplatte": "A",
+        "cartay": "885.5",
+        "cartax": "310",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates": [[892.25,294],[888.75,291.25],[888.75,286.5],[885.5,286.75],[883.25,292.25],[885,296.25],[888,298.5],[885.5,320.25],[880.5,324.75],[883,329.5],[886.5,331.5],[888,327.25],[887.25,322.75],[887.5,313.75],[887.5,306.75],[888.75,299.25]]
+    },    
     /* ------------ Druckplatte B ------------- */
 
     /* ------------ Druckplatte C ------------- */
