@@ -580,7 +580,7 @@ var data = [
         "id": "Fischwappen", 
         "name": "Fischwappen",
         "title": "",
-        "text": "Das Wappen neben dem von Norwegen (Rot) ziert einen gekrönten Fisch. Dies kommt daher, da die niederländischen Kaufleute diesen Fisch sehr schätzten, und dieser Fisch war wahrscheinlich eine Goldkrone wert (Balzamo/Kaiser, 2006, S. 52)",
+        "text": "Das Wappen neben dem von Norwegen (Rot) ziert einen gekrönten Fisch. Dies kommt daher, da die niederländischen Kaufleute diesen Fisch sehr schätzten, und dieser Fisch war wahrscheinlich eine Goldkrone wert <small>(Balzamo/Kaiser, 2006, S. 52).</small>",
         "druckplatte": "A",
         "cartay": "894.5",
         "cartax": "256",
