@@ -223,7 +223,7 @@ var data = [
         "druckplatte": "A",
         "cartay": "819",
         "cartax": "237",
-        "cartaz": "2.5",
+        "cartaz": "3",
         "kartey": "0",
         "kartex": "0",
         "kartez": "0",
@@ -429,6 +429,38 @@ var data = [
     },
 
     /* Weiteres */
+
+    {
+        "id": "Fässer", 
+        "name": "Fässer",
+        "title": "",
+        "text": "Die in der <span onclick='polyClickbyID(&quot;Abbatia Helgfiael&quot;)'>Abtei</span> produzierte Butter wird gesalzen und in Fässe verpackt. Diese sind bis zu neun Meter lang, fünf Meter breit und zwei Meter hoch!",
+        "druckplatte": "A",
+        "cartay": "825",
+        "cartax": "257",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":[[823.875,248.375],[822.875,245.75],[819.375,245.625],[817,248],[817.25,252.625],[819.125,255],[820.5,255.625],[820.75,257.125],[820.75,258.5],[821.625,259.75],[822.5,260.875],[823,260.875],[823,262.5],[822.75,264.875],[824,266.5],[824.875,267.875],[826.5,267.875],[827.75,267.25],[828.75,267.25],[829.375,265.375],[829.875,259.5],[828.875,257.25],[828.875,254.75],[828.125,251.75],[827.375,249.75],[826.125,248.875]]
+    }, 
+
+    {
+        "id": "Cryptoporticus", 
+        "name": "Cryptoporticus",
+        "title": "Kryptoporticus",
+        "text": "Kryptoportikus ist eine Bezeichnung für einen bedeckten Gang: von gr. kryptos = versteckt und lat. porticus = Bogengang. Die Einwohner Islands wohnten in solchen Gängen unter der Erde, um sich vor der bitteren Kälte zu schützen. (Balzamo/Kaiser, 2006, S. 49)",
+        "druckplatte": "A",
+        "cartay": "905",
+        "cartax": "327",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":[[927.5,306.5],[927.75,309.75],[927.75,315],[928,322.25],[925.75,324.25],[924.25,329],[924,333],[925.5,335.75],[925.5,339.25],[922,340.5],[921.25,342],[923.25,345.5],[921.25,349.5],[915.25,352.5],[914,350.75],[913.5,348],[911.5,345.5],[908.5,346.5],[903.25,346.5],[896.5,346.75],[891.5,347],[891.5,344],[891.5,337.5],[889.75,331.5],[890.25,326.25],[891.5,322],[891.75,317.5],[891.5,313.75],[893.5,310.5],[897.25,307.5]]
+    }, 
 
 
     /* ------------ Druckplatte B ------------- */
