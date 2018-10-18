@@ -26,8 +26,7 @@ p {font-family: "Times New Roman"}
 .bg-dark {
     background-color: #bb3446!important;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px
-    
+    font-size: 18px;    
 }
 
 .navbar-dark .navbar-nav .nav-item a {
@@ -150,17 +149,25 @@ span:hover {
 }
 
 /*text-pages*/
-    #contentContainer1, #contentContainer2, #contentContainer3 {
+    #conConCon {
+        position: fixed;
+        top: 90px;
+        left: 30px;
+        bottom: 20px;
+        right: 30px;
+        overflow: auto; 
+    }
+
+#contentContainer1, #contentContainer2, #contentContainer3 {
     position: relative; 
-    left: 30px;
-    right: 30px;			
-    overflow: auto;
     ;		
 }
 
+
 #imgContainer {
-    height: 300px;
-    width: 450px;
+    position: relative;
+    height: 280px;
+    width: 400px;
     background-position: center;
     background-size: cover;
     box-sizing: border-box;  

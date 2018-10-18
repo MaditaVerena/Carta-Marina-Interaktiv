@@ -74,7 +74,7 @@ function toggleWebmap() {
 /* polygon: mouse over */
 function highlightME(polly) {
     polly.setStyle({
-        fillOpacity: '0.2',
+        fillOpacity: '0.1',
         fillColor: '#ba4242'
     })
 }
@@ -205,7 +205,7 @@ function addPolysToMap() {
         console.log(e);
         // objectsFromData.push(e);
 
-        var polyTmp = L.polygon(e.coordinates, { color: 'none', fillColor: 'black', fillOpacity: 0.0, });
+        var polyTmp = L.polygon(e.coordinates, { color: 'none', fillColor: 'red', fillOpacity: 0.0, });
         e.poly = polyTmp;
         polyTmp.addTo(map).bringToFront();
         polyTmp.on('click', function () { polyClick(e) })
@@ -265,9 +265,9 @@ polyBACK.on('click', function () { polyClick(myGarnichts) })
 
 /* data for textContainer */
 var myGarnichts = {
-    name: "Carta Marina interaktiv",
+    name: "<i>Carta Marina interaktiv</i>",
     title: "",
-    text: "",
+    text: "Wussten Sie, dass Sie den Kommentar <i>Ain kurze Auslegung und Verklerung der neuuen Mappen von den alten Goettenreich und andern Nordlenden...</i> (1539) von Olaus Magnus auf Deutsch online nachlesen können? <br /><br />Ein Digitalisat vom Original finden Sie <a href='https://bildsuche.digitale-sammlungen.de/index.html?c=viewer&bandnummer=bsb00021693&pimage=3&v=100&nav=&l=en' target='_blank'><span>hier</span></a>.",
     cartay: "564",
     cartax: "702",
     cartaz: "-1",

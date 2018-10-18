@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
 	 crossorigin="" />
 
-	 <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+	<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
 	 crossorigin=""></script>
 
 	<!-- Bootstrap -->
@@ -16,15 +16,15 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
 	 crossorigin="anonymous">
 
-	
+
 	<!-- mobile viewport -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-<title>Seekarte - Carta Marina Interaktiv</title>
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Seekarte - Carta Marina Interaktiv</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 
@@ -78,41 +78,44 @@
 		<div class="col-lg-6" id='map'></div>
 
 		<div class="col-lg-6">
-	
+
 			<div class="row" id="textRow">
-	
+
 				<div class="col" id="textContainer">
-					
-					<h4 id='title'>Carta Marina interaktiv</h4>
-					<p id='info'>Willkommen bei der Carta Marina! 
-					<br /> Hier kann man ganz viele Orte, Schiffe und Bestien Skandinaviens entdecken und durch einen einfachen Klick auch vieles über diese erfahren. 
-					<br /> Einfach mit der Maus über die Karte fahren und auf ein Rot unterlegtes Objekt klicken. Dann erscheint rechts ein kurzer Informationstext dazu. 
-					<br /> Bei Orten gibt es sogar noch einen Link zur OpenStreetMap, welche die Orte auf der echten Weltkarte anzeigt.
-					<br /> Viel Vergnügen beim Entdecken!
-					<br />  Den Kommentar von Magnus zur Karte auf Altdeutsch übersetzt finden Sie hier: https://bildsuche.digitale-sammlungen.de/index.html?c=viewer&bandnummer=bsb00021693&pimage=3&v=100&nav=&l=en
+
+					<h4 id='title'>Willkommen auf der <i>Carta Marina interaktiv</i>!</h4>
+					<p id='info'>
+						Hier kann man ganz viele Orte, Schiffe und Bestien Skandinaviens entdecken und durch einen einfachen Klick
+						auch vieles über diese erfahren.
+						<br /> Einfach mit der Maus über die Karte fahren und auf ein Rot unterlegtes Objekt klicken. Dann erscheint
+						rechts ein kurzer Informationstext dazu.
+						<br /> Bei Orten gibt es sogar noch einen Link zur OpenStreetMap, welche die Orte auf einer echten Weltkarte
+						anzeigt.
+						<br /><br /> Viel Vergnügen beim Entdecken!
+						
 					</p>
-																				 
+
 
 				</div>
 			</div>
 
-			
+
 			<div class="row" id="mapRow">
-		
-						<div class="col" id="map2Container">
-							<div id='map2'>
 
-									<div id="toggleContainer">
-											<button type="button" class="btn btn-danger" onclick="toggleWebmap()" id="toggleButton">close</button>
-									</div>
+				<div class="col" id="map2Container">
+					<div id='map2'>
 
-							</div>
+						<div id="toggleContainer">
+							<button type="button" class="btn btn-danger" onclick="toggleWebmap()" id="toggleButton">close</button>
 						</div>
-												
-			
+
+					</div>
+				</div>
+
+
 			</div>
 
-			
+
 		</div>
 
 	</div>

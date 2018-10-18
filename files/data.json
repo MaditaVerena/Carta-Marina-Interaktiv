@@ -1,5 +1,5 @@
 var data = [
-    /*beispiel object */
+    /*beispiel object 
     {
         "id": "beispiel_objekt", 
         "name": "Beispiel Objekt",
@@ -14,7 +14,9 @@ var data = [
         "kartez": "7",
         "poly": null,
         "coordinates": [[632,527.6953943005653],[484,549.691098579163],[476,741.6536086469248],[634,695.662590609857]]
-    }, 
+    },  */
+
+
 
     /*Hier alle weiteren Objekte*/
 
@@ -27,22 +29,23 @@ var data = [
         "id": "Island", 
         "name": "Islandia",
         "title": "Island",
-        "text": "Island ist eine grosse vulkanische Insel in Nordeuropa mit der Hauptstadt Reykjavik und liegt südlich des nördlichen Polarkreises. Dort leben ungefähr 350 000 Menschen. Die Landessprache ist Isländisch, die altnordische Wurzeln hat. Die Mehrheit der Einwohner ist katholisch geprägt. <br /> Um 870 n.Chr. wanderten Menschen vom westlichen Norwegen auf die Insel aus. Sie betrieben dort Landwirtschaft und führten die Traditionen und die Bräuche ihres Mutterlandes weiter.  Sie waren unter der Herrschaft von Norwegen, später von Dänemark. Island erhielt die Unabhängigkeit von Dänemark in 1944 und proklamierte die Isländische Republik.<br/> Link zum Gedicht über Island: http://timarit.is/view_page_init.jsp?pageId=4116251",
+        "text": "Island ist eine grosse vulkanische Insel in Nordeuropa mit der Hauptstadt <span onclick='polyClickbyID(&quot;rok&quot;)'>Reykjavík</span> und liegt südlich des nördlichen Polarkreises. Dort leben ungefähr 350 000 Menschen. Die Landessprache ist Isländisch, die altnordische Wurzeln hat. Die Mehrheit der Einwohner ist katholisch geprägt. <br /> Um 870 n.Chr. wanderten Menschen vom westlichen Norwegen auf die Insel aus. Sie betrieben dort Landwirtschaft und führten die Traditionen und die Bräuche ihres Mutterlandes weiter.  Sie waren unter der Herrschaft von Norwegen, später von Dänemark. Island erhielt die Unabhängigkeit von Dänemark in 1944 und proklamierte die Isländische Republik.<br/> Link zum Gedicht über Island: http://timarit.is/view_page_init.jsp?pageId=4116251",
         "druckplatte": "A",
         "cartay": "866",
-        "cartax": "230",
-        "cartaz": "2.5",
+        "cartax": "250",
+        "cartaz": "1",
         "kartey": "",
         "kartex": "",
         "kartez": "",
         "poly": null,
-        "coordinates":[[878.5,241],[867.5,241.5],[866.5,306.5],[876,304.5],[877.5,301.5]]
+        "coordinates":[[802,109],[803,134],[782,143],[781.5,154.5],[779,171.5],[771,184],[787,190.5],[787.5,202.5],[796,206.5],[787,216],[791,237.5],[803,241.5],[797.5,248.5],[802.5,253.5],[809,248],[810.5,259.5],[821,262.5],[821,272.5],[823.5,277.5],[833,284.5],[833.5,295.1666564941406],[840.5,308.1666564941406],[848.5,312.1666564941406],[855,322.1666564941406],[839.5,313.6666564941406],[839.5,323.6666564941406],[840.5,331.1666564941406],[845.5,335.6666564941406],[848,326.1666564941406],[859.5,321.6666564941406],[848.5,333.1666564941406],[854.5,337.1666564941406],[857,346.1666564941406],[875.5,357.6666564941406],[891,380.1666564941406],[903.5,386.1666564941406],[916,384.1666564941406],[922,382.1666564941406],[937,390.6666564941406],[940,387.1666564941406],[938.5,383.1666564941406],[949,378.5],[955,388.5],[962,387],[972.5,364.5],[965,358.5],[969.5,351],[957,343.5],[956,345.5],[944,343],[941,334.5],[947,328.5],[951.5,329],[954,323.5],[948,314],[945,308.5],[940.5,306],[936.5,299.5],[936,289.5],[929,283.5],[930,279],[926.5,275.5],[927,271],[921,270],[917,270.5],[912.5,268.5],[915.5,258.5],[927.5,241.5],[915.1666641235352,223.3333282470703],[909.6666641235352,212.8333282470703],[901.6666641235352,212.8333282470703],[899.1666641235352,209.8333282470703],[904.1666641235352,197.8333282470703],[902.6666641235352,191.3333282470703],[895.6666641235352,191.3333282470703],[896.6666641235352,181.8333282470703],[884.6666641235352,185.8333282470703],[887.1666641235352,175.8333282470703],[884.6666641235352,174.8333282470703],[887.6666641235352,165.3333282470703],[885.6666641235352,162.8333282470703],[897.1666641235352,155.8333282470703],[894.1666641235352,147.3333282470703],[879.6666641235352,142.8333282470703],[877.6666641235352,136.3333282470703],[879.6666641235352,127.83332824707031],[874.1666641235352,118.83332824707031],[868.1666641235352,117.83332824707031],[867.1666641235352,109.83332824707031],[864.1666641235352,113.33332824707031],[863.6666641235352,118.83332824707031],[860.6666641235352,121.33332824707031],[857.1666641235352,119.33332824707031],[855.1666641235352,114.83332824707031],[849.6666641235352,112.33332824707031],[847.6666641235352,116.33332824707031],[846.1666641235352,120.83332824707031],[846.6666641235352,121.83332824707031],[842.6666641235352,117.83332824707031],[842.6666641235352,110.33332824707031],[839.6666641235352,103.83332824707031],[833.6666641235352,109.83332824707031],[833.1666641235352,117.33332824707031],[837.1666641235352,125.33332824707031],[832.6666641235352,122.83332824707031],[827.6666641235352,121.83332824707031],[821.6666641235352,122.83332824707031],[816.6666641235352,119.83332824707031],[812.6666641235352,115.33332824707031]]
     }, 
+
     {
         "id": "Huitsark", 
         "name": "Huitsark",
         "title": "",
-        "text": "Huitsark ist ein Berg, der zwischen Island und Grönland liegt. Auf dessen Gipfel befindet sich ein Kompass mit Buchstaben aus Blei. Der Kompass wurde von zwei Seeräubern namens Pining und Pothorst erbaut, und soll allen Seeleuten in den Gewässern vor Grönland zum Schutz dienen.",
+        "text": "Huitsark ist ein Berg, der zwischen Island und Grönland liegen soll. Auf dessen Gipfel befindet sich ein Kompass mit Buchstaben aus Blei. Der Kompass wurde von zwei Seeräubern namens Pining und Pothorst erbaut und soll allen Seeleuten in den Gewässern vor Grönland zum Schutz dienen. <a href='http://runeberg.org/olmagnus/0156.html' target='_blank'><span>- siehe auch <i>Historia</i> -</span></a>",
         "druckplatte": "A",
         "cartay": "893",
         "cartax": "85",
@@ -70,21 +73,7 @@ var data = [
         "coordinates":[[824.5,165.5],[846.5,155],[848,150.5],[841,146],[829,144.5],[819.5,146.5],[819,149.5]]
     }, 
 
-    {
-        "id": "MonsSanctus", 
-        "name": "Mons Sanctus",
-        "title": "Helgefelt",
-        "text": "Beim Berg Helgefelt lieft eine  <span onclick='polyClickbyID(&quot;helgefiael&quot;)'>Abtei</span> die den selben Namen trägt. ",
-        "druckplatte": "A",
-        "cartay": "834",
-        "cartax": "239",
-        "cartaz": "2.5",
-        "kartey": "0",
-        "kartex": "0",
-        "kartez": "0",
-        "poly": null,
-        "coordinates":[[824,250],[837,243.5],[842.5,241.5],[842.5,240],[841,237],[839,235.5],[833.5,233.5],[832,233],[827.5,233],[824,229.5]]
-    }, 
+  
 
     {
         "id": "Hanafjord", 
@@ -119,14 +108,14 @@ var data = [
     },
 
     {
-        "id": "Isafjord", 
+        "id": "Isafiord", 
         "name": "Isafjord",
         "title": "Ísafjörður",
-        "text": "Ísafjörður (dt. Eisfjord) ist eine im Nordwesten gelegene Stadt. Sie wird von den steil abfallenden Berghängen des Eyrarfjall und des Kirkijubolsfjall eingefasst. Die Stadt bildet das Wirtschafts- und Verwaltungszentrum der Westfjorde. Als erster Siedler in Ísafjörður war Helgi Hrolfsson, welcher 920 den Ort erstmals besiedelte. Im 16. Jahrhundert wurde die Stadt vermehrt von deutschen und englischen Händlern als Handelsplatz genutzt. Ausserdem war Ísafjörður einst der grösste Standort der Shrimps-Fischerei Islands und ist auch heutzutage noch bekannt für den Fischfang. ",
+        "text": "Ísafjörður (dt. Eisfjord) ist eine im Nordwesten gelegene Stadt. Sie wird von den steil abfallenden Berghängen des Eyrarfjall und des Kirkjubólsfjall eingefasst.<br />Die Stadt bildet das Wirtschafts- und Verwaltungszentrum der Westfjorde. Als erster Siedler in Ísafjörður war Helgi Hrolfsson, welcher 920 den Ort erstmals besiedelte. Im 16. Jahrhundert wurde die Stadt vermehrt von deutschen und englischen Händlern als Handelsplatz genutzt. Ausserdem war Ísafjörður einst der grösste Standort der Shrimps-Fischerei Islands und ist auch heutzutage noch bekannt für den Fischfang. ",
         "druckplatte": "A",
         "cartay": "862",
         "cartax": "114",
-        "cartaz": "2.5",
+        "cartaz": "3",
         "kartey": "66.059487",
         "kartex": "-23.162636",
         "kartez": "8", 
@@ -135,10 +124,10 @@ var data = [
     }, 
     
     {
-        "id": "VestraBord", 
-        "name": "Vestra Bord",
+        "id": "Vestrabord", 
+        "name": "Vestrabord",
         "title": "Vestfirðir",
-        "text": "Die Vestfirðir (dt. Westfjorde) bestehen aus einer Halbinsel mit einer Fläche von 9409 km <sup> 2 </sup>  und befinden sich im Nordwesten Islands. Die Halbinsel ist nur über einen schmalen Landhals mit dem Festland von Island verbunden. Einer der wichtigsten Orte in den Westfjorden ist <span onclick='polyClickbyID(&quot;Isafjord&quot;)'>Isafjördur</span>. Die Westfjorde allein machen etwa 30% der Küstenlinie ganz Islands aus, da die Fjorde tief ins Land hinein reichen und oft auch sehr zerklüftet sind.",
+        "text": "Die Vestfirðir (dt. Westfjorde) bestehen aus einer Halbinsel mit einer Fläche von 9.409 km<sup>2</sup>  und befinden sich im Nordwesten Islands. Die Halbinsel ist nur über einen schmalen Landhals mit dem Festland von Island verbunden. Einer der wichtigsten Orte in den Westfjorden ist <span onclick='polyClickbyID(&quot;Isafiord&quot;)'>Ísafjörður</span>. Die Westfjorde allein machen etwa 30% der Küstenlinie ganz Islands aus, da die Fjorde tief ins Land hinein reichen und oft auch sehr zerklüftet sind. <a href='http://runeberg.org/olmagnus/0107.html' target='_blank'><span>- siehe auch <i>Historia</i> -</span></a>",
         "druckplatte": "A",
         "cartay": "864",
         "cartax": "135",
@@ -186,7 +175,7 @@ var data = [
         "id": "Holensis", 
         "name": "Holensis",
         "title": "Hólar",
-        "text": "Hólar ist ein kleines Dörfchen im Norden von Island, das 76 Einwohner zählt. Von 1106 bis 1801 war es als zweiter Bischofssitz neben <span onclick='polyClickbyID(&quot;Scalholdin&quot;)'>Skalholt</span> ein wichtiger Ort in Island. Das katholische Bistum Hólar bestand bis 1550, das heisst bis zur Reformation. Danach wurde es von 1552 bis 1798 evangelisch-lutherisch geführt und im 19. Jahrhundert mit de Bistum Skalholt zusammengelegt. Gegenwärtig befindet sich eine Hochschule für Pferde- und Fischzucht in Hólar. ",
+        "text": "Hólar ist ein kleines Dörfchen im Norden von Island, das 76 Einwohner zählt. Von 1106 bis 1801 war es als zweiter Bischofssitz neben <span onclick='polyClickbyID(&quot;Scalholdin&quot;)'>Skálholt</span> ein wichtiger Ort in Island. Das katholische Bistum Hólar bestand bis 1550, das heisst bis zur Reformation. Danach wurde es von 1552 bis 1798 evangelisch-lutherisch geführt und im 19. Jahrhundert mit dem Bistum Skálholt zusammengelegt. Gegenwärtig befindet sich eine Hochschule für Pferde- und Fischzucht in Hólar. ",
         "druckplatte": "A",
         "cartay": "851",
         "cartax": "272",
@@ -219,14 +208,14 @@ var data = [
         "id": "MareGlaciale", 
         "name": "Mare Glaciale",
         "title": "Eismeer",
-        "text": "Das Mare Glaciale war ein Eismeer (von lat. <i>mare</i> = Meer und <i>galcialis</i> = eisig) im Osten Islands. Es zeigt an, dass dort ein grausames Heulen vom Eis ausgeht, welches dort ans Land stösst. Dies sollte ein Beweis dafür sein, dass dort die Feinde Gottes von der Kälte bestraft werden. <small>(Balzamo/Kaiser, 2006, S. 49)</small>",
+        "text": "Das Mare Glaciale war ein Eismeer (von lat. <i>mare</i> = Meer und <i>glacialis</i> = eisig) im Osten Islands. Es zeigt an, dass dort ein grausames Heulen vom Eis ausgeht, welches dort ans Land stösst. Dies sollte ein Beweis dafür sein, dass dort die Feinde Gottes von der Kälte bestraft werden. <small>(Balzamo/Kaiser, 2006, S. 49)</small>",
         "druckplatte": "A",
         "cartay": "861",
         "cartax": "410",
         "cartaz": "2.5",
         "kartey": "64.138996, ",
         "kartex": "-9.752145",
-        "kartez": "3",
+        "kartez": "5",
         "poly": null,
         "coordinates": [[850.5,341.5],[844,338.5],[833.5,338.5],[828.5,335],[823.5,343.5],[826,358],[831.5,369],[836,379.5],[845,373.5],[849,375.5],[849,387.5],[853,398.5],[853,409],[853.5,420.5],[856,430.5],[860,441],[864.5,450],[866,461],[871.5,472],[872,485],[879,491.5],[887,494],[893.5,476],[897,461],[903.5,451.5],[911.5,441.5],[920.5,436.5],[928.5,433],[931.5,426.5],[934,414],[927,404.5],[918.5,407.5],[912.5,401.5],[909.5,402],[905,400.5],[902,398],[891,394.5],[886.5,387.5],[883,390],[876.5,390],[879,384.5],[872,373],[875,368],[876,364],[865,353.5],[860,352.5],[856,353]]
     }, 
@@ -234,8 +223,8 @@ var data = [
     {
         "id": "Abbatia Helgfiael", 
         "name": "Abbatia Helgfiael",
-        "title": "Abtei Helgefelt",
-        "text": "In der Abtei, welche den gleichen Namen wie der Berg trägt, werden Fisch und Butter verkauft <small>(Balzamo/Kaiser, 2006, S. 49)</small>",
+        "title": "Abtei Helgafell",
+        "text": "In der Abtei, welche den gleichen Namen wie der Berg trägt, werden Fisch und Butter verkauft. <small>(Balzamo/Kaiser, 2006, S. 49)</small>",
         "druckplatte": "A",
         "cartay": "819",
         "cartax": "237",
@@ -247,18 +236,36 @@ var data = [
         "coordinates":   [[819.5,265.5],[831.5,269.25],[834,259],[838,249.5],[845.5,240.25],[843,237.25],[840.75,236],[824.5,228],[813,230],[811.75,231.75],[811,235.25],[809.75,251.75],[810.5,258.25]]
     }, 
 
+    /*inserted so that it is in front of abbatia!*/
+    {
+        "id": "MonsSanctus", 
+        "name": "Mons Sanctus",
+        "title": "Helgafell",
+        "text": "Beim Berg Helgafell lieft eine  <span onclick='polyClickbyID(&quot;helgefiael&quot;)'>Abtei</span>, die den selben Namen trägt. ",
+        "druckplatte": "A",
+        "cartay": "834",
+        "cartax": "239",
+        "cartaz": "2.5",
+        "kartey": "0",
+        "kartex": "0",
+        "kartez": "0",
+        "poly": null,
+        "coordinates":[[824,250],[837,243.5],[842.5,241.5],[842.5,240],[841,237],[839,235.5],[833.5,233.5],[832,233],[827.5,233],[824,229.5]]
+    }, 
+
+
     {
         "id": "Scalholdin", 
         "name": "Scalholdin",
         "title": "Skálholt",
-        "text": "von isl. <i>skáli</i> = Wohnhaus und <i>holt</i> = flacher Klippen Höhenzug. Also war Skálholt eine 'Anhöhe, auf der ein Wohnhaus steht'. Dort war im Mittelalter ein wichtiger Bischofssitz. Auch wurde dort im 12. Jh. die erste Lateinschule Islands gegründet. <small>(“Reallexikon der Germanischen Altertumskunde, Heinrich Beck, Band 28, S. 573)</small>",
+        "text": "von isl. <i>skáli</i> = Wohnhaus und <i>holt</i> = flacher Klippen Höhenzug. Also war Skálholt eine &bdquo;Anhöhe, auf der ein Wohnhaus steht&ldquo;. Dort war im Mittelalter ein wichtiger Bischofssitz. Auch wurde dort im 12. Jh. die erste Lateinschule Islands gegründet. <small>(Reallexikon der Germanischen Altertumskunde, Heinrich Beck, Band 28, S. 573)</small>",
         "druckplatte": "A",
         "cartay": "850",
         "cartax": "173",
-        "cartaz": "1",
+        "cartaz": "3",
         "kartey": "64.126859",
         "kartex": "-20.526326",
-        "kartez": "9",
+        "kartez": "10",
         "poly": null,
         "coordinates":[[848.5,185],[864,173.5],[865,169.5],[849.5,163.5]]
     }, 
@@ -284,14 +291,14 @@ var data = [
         "id": "Nixpre", 
         "name": "Nixpre",
         "title": "Schneegletscher",
-        "text": "Zeigt, dass es dort Gletscher gab: von lat. <i>nix </i> = Schnee und nor. <i>bre</i> = Gletscher. Heute liegt ungefähr dort der Eiríksjökull",
+        "text": "Zeigt, dass es dort Gletscher gab: von lat. <i>nix </i> = Schnee und nor. <i>bre</i> = Gletscher. Heute liegt ungefähr dort der Eiríksjökull.",
         "druckplatte": "A",
         "cartay": "852",
         "cartax": "176",
         "cartaz": "2.5",
         "kartey": "64.775551",
         "kartex": "-20.413687",
-        "kartez": "7",
+        "kartez": "10",
         "poly": null,
         "coordinates": [[849.25,157.25],[849.25,154.25],[849.25,149],[850.5,143.25],[853.25,144.75],[853.5,149.25],[852.75,153.5],[852,158.5],[849.75,157.75],[849.25,162],[847.5,169.5],[846.75,180.75],[848,190.25],[846.25,191.75],[846.25,194],[845.5,199.75],[845.5,204.25],[848.5,205],[850.75,202],[850.75,195.75],[850,191.25],[847.5,190.25]]
     }, 
@@ -300,9 +307,9 @@ var data = [
     {
     
     "id": "Trollwal", 
-    "name": "Trollwal.",
+    "name": "Trollwal",
     "title": "Teufelswal",
-    "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. Schiffsleute haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht <small> (Balzamo/Kaiser 2006, S. 52)</small>. Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. ",
+    "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. <span onclick='polyClickbyID(&quot;ShipAngli&quot;)'>Schiffsleute</span> haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht <small> (Balzamo/Kaiser 2006, S. 52)</small>. Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. <a href='https://bildsuche.digitale-sammlungen.de/index.html?c=viewer&bandnummer=bsb00021693&pimage=00004&einzelsegment=&v=100&l=de' target='_blank'><span>- siehe <i>Ain kurze Auslegung</i> (Druckplatte A, Buchstabe L) -</span></a>",
     "druckplatte": "A",
     "cartay": "727",
     "cartax": "400",
@@ -318,7 +325,7 @@ var data = [
     {"id": "Walfische", 
         "name": "s.n.",
         "title": "Walfische",
-        "text": "Die Walfische waren so gross wie Berge und haben Schiffe umgekippt. Seeleute versuchten sie von ihren Schiffen fernzuhalten, indem sie auf Trompeten spielten und leere Fässer ins Meer warfen.",
+        "text": "Die Walfische waren so gross wie Berge und haben Schiffe umgekippt. <span onclick='polyClickbyID(&quot;ShipLubicenses&quot;)'>Seeleute</span> versuchten sie von ihren Schiffen fernzuhalten, indem sie auf Trompeten spielten und leere Fässer ins Meer warfen.",
         "druckplatte": "A",
         "cartay": "718",
         "cartax": "283",
@@ -331,10 +338,10 @@ var data = [
 
     }, 
 
-    {"id": "SchwertfischBeiScott", 
-        "name": "s.n.",
-        "title": "Schwertfisch/See-Einhorn",
-        "text": "Das See-Einhorn ist ein Seeungeheuer, welches auf seinem Haupt ein langes Horn trägt, mit welchem es Schiffe durchstechen und zerstören kann. Die Seefahrer hatten jedoch ein wenig Glück, denn das See-Einhorn war relativ langsam, was ihnen oft eine schnelle Flucht vor der Bestie ermöglichte.", 
+    {"id": "Monocerote", 
+        "name": "Monocerote",
+        "title": "See-Einhorn",
+        "text": "Das See-Einhorn ist ein Seeungeheuer, welches auf seinem Haupt ein langes Horn trägt, mit welchem es Schiffe durchstechen und zerstören kann. Die Seefahrer hatten jedoch ein wenig Glück, denn das See-Einhorn war relativ langsam, was ihnen oft eine schnelle Flucht vor der Bestie ermöglichte.  <a href='http://runeberg.org/olmagnus/0829.html' target='_blank'><span>- siehe <i>Historia</i> -</span></a>", 
         "druckplatte": "A",
         "cartay": "682",
         "cartax": "74",
@@ -350,7 +357,7 @@ var data = [
         "id": "FischBeiShipScot", 
         "name": "Meerengel",
         "title": "Rochen",
-        "text": "Mystisches Wesen, welches wegen seiner Flügel als 'Engel' bezeichnet wird.",
+        "text": "Mystisches Wesen, welches wegen seiner Flügel als &bdquo;Engel&ldquo; bezeichnet wird.",
         "druckplatte": "A",
         "cartay": "697",
         "cartax": "145",
@@ -368,8 +375,8 @@ var data = [
     {
         "id": "ShipAngli", 
         "name": "Angli",
-        "title": "Englisches Schiff",
-        "text": "Ein englisches Schiff versuchte hier auf einem <span onclick='polyClickbyID(&quot;Trollwal&quot;) '>Teufelswal</span> zu ankern, da sie die Haut des Wales mit dem Sand einer Insel verwechselten. Zwei unwissende Seeleute kochen sogar eine Mahlzeit auf dem Rumpf des Wales. Dies kann tödliche Folgen für die beiden Matrosen, wie auch die gesamte Besatzung haben. Denn wenn der Wal das Feuer oder den Anker spürt, taucht er in das Meer ab, und reisst das gesamte Schiff mit sich in die Tiefe",
+        "title": "",
+        "text": "Ein englisches Schiff versuchte hier auf einem <span onclick='polyClickbyID(&quot;Trollwal&quot;)'>Teufelswal</span> zu ankern, da sie die Haut des Wales mit dem Sand einer Insel verwechselten. Zwei unwissende Seeleute kochen sogar eine Mahlzeit auf dem Rumpf des Wales. Dies kann tödliche Folgen für die beiden Matrosen, wie auch die gesamte Besatzung haben. Denn wenn der Wal das Feuer oder den Anker spürt, taucht er in das Meer ab, und reisst das gesamte Schiff mit sich in die Tiefe",
         "druckplatte": "A",
         "cartay": "763",
         "cartax": "344",
@@ -384,8 +391,8 @@ var data = [
     {
         "id": "ShipHamburgen", 
         "name": "Hamburgen",
-        "title": "Schiff der Hamburger",
-        "text": "Abgebildet sind zwei Schiffe, eines der Hamburger und eines der Schotten, die sich gerade um die besten Plätze für ihren Handel streiten. Dieser Streit wird kriegerisch gelöst, da es den Richter an Land nicht interessiert, was auf dem Meer passiert, sondern nur wie sich die jeweiligen Händler an Land benehmen.",
+        "title": "",
+        "text": "Abgebildet sind zwei Schiffe, eines der <span onclick='polyClickbyID(&quot;ShipHamburgen&quot;)'>Hamburger</span> und eines der <span onclick='polyClickbyID(&quot;ShipScott&quot;)'>Schotten</span>, die sich gerade um die besten Plätze für ihren Handel streiten. Dieser Streit wird kriegerisch gelöst, da es den Richter an Land nicht interessiert, was auf dem Meer passiert, sondern nur wie sich die jeweiligen Händler an Land benehmen.",
         "druckplatte": "A",
         "cartay": "766",
         "cartax": "59",
@@ -399,7 +406,7 @@ var data = [
     {
         "id": "ShipLubicenses", 
         "name": "Lubicenses",
-        "title": "Ein Schiff aus Lübeck",
+        "title": "",
         "text": "Auf dem Schiff Lubicenses kann man sehen, wie ein Matrose Trompete spielt und zwei weitere Matrosen leere Fässer über Bord werfen. Dies waren beides Versuche, die oftmals angreifenden <span onclick=' polyClickbyID(&quot;Walfische&quot;) '>Walfische</span>  abzuwehren, und so dem Tod zu entgehen. ",
         "druckplatte": "A",
         "cartay": "737",
@@ -413,10 +420,10 @@ var data = [
     },
 
     {
-        "id": "Shipscott", 
+        "id": "ShipScott", 
         "name": "Scott",
-        "title": "Ein schottisches Schiff",
-        "text": "Abgebildet sind zwei Schiffe, eines der Hamburger und eines der Schotten, die sich gerade um die besten Plätze für ihren Handel streiten. Dieser Streit wird kriegerisch gelöst, da es den Richter an Land nicht interessiert, was auf dem Meer passiert, sondern nur wie sich die jeweiligen Händler an Land benehmen.",
+        "title": "",
+        "text": "Abgebildet sind zwei Schiffe, eines der <span onclick='polyClickbyID(&quot;ShipHamburgen&quot;)'>Hamburger</span> und eines der <span onclick='polyClickbyID(&quot;ShipScott&quot;)'>Schotten</span>, die sich gerade um die besten Plätze für ihren Handel streiten. Dieser Streit wird kriegerisch gelöst, da es den Richter an Land nicht interessiert, was auf dem Meer passiert, sondern nur wie sich die jeweiligen Händler an Land benehmen.",
         "druckplatte": "A",
         "cartay": "748",
         "cartax": "117",
@@ -431,7 +438,7 @@ var data = [
     {
         "id": "ShipBremen", 
         "name": "Bremen",
-        "title": "Ein Schiff aus Bremen",
+        "title": "",
         "text": "Das Hauptnahrungsmittel der Isländer war Fisch, denn sie hatten wenig Brot und bauten kaum Getreide an. Fremde Schiffsleute aus unter anderem auch Bremen versorgten die Inselbewohner mit anderen Nahrungsmittel, was ihnen grosse Gewinne einbrachte. ",
         "druckplatte": "A",
         "cartay": "802",
@@ -483,7 +490,7 @@ var data = [
         "id": "Criptoporticus", 
         "name": "Criptoporticus",
         "title": "Kryptoporticus",
-        "text": "Kryptoportikus ist eine Bezeichnung für einen bedeckten Gang: von gr. <i>kryptos</i> = versteckt und lat. <i>porticus</i> = Bogengang. Die Einwohner Islands wohnten in solchen Gängen unter der Erde, um sich vor der bitteren Kälte zu schützen. <small> (Balzamo/Kaiser, 2006, S. 49)</small>",
+        "text": "Kryptoportikus ist eine Bezeichnung für einen bedeckten Gang: von gr. <i>kryptos</i> = versteckt und lat. <i>porticus</i> = Bogengang. Die Einwohner Islands wohnten in solchen Gängen unter der Erde, um sich vor der bitteren Kälte zu schützen. <small> (Balzamo/Kaiser, 2006, S. 49)</small> <a href='http://runeberg.org/olmagnus/0326.html' target='_blank'><span>- siehe <i>Historia</i> -</span></a>",
         "druckplatte": "A",
         "cartay": "905",
         "cartax": "327",
@@ -513,10 +520,10 @@ var data = [
     }, 
 
     {
-        "id": "PustendesKind", 
-        "name": "Pustendes Kind",
-        "title": "Der Wind Circius",
-        "text": "Der Wind Circius ist ein Westwind, welchem von Olaus Magnus zerstörerische Kräfte nachgesagt werden: Nicht einmal ein <span onclick='polyClickbyID(&quot;Ritter&quot;)'>«gewappneter Ritter»</span> konnte ihm standhalten, «so stark und ungestüm ist er». Auch ist seine Kraft weit über die Grenzen Islands bekannt: «nicht nur die Einwohner, sondern auch Ausländische» wissen davon. Der Wind soll so kräftig gewesen sein, dass «kein Baum oder Gewächs grünen und aussprossen kann», was dann wohl zu einem Mangel an Holz führte. Deshalb mussten die Isländer oft auf Walknochen zurückgreifen, um zu heizen, kochen und bauen. <small>(Balzamo/Kaiser 2006, S. 119)</small>",
+        "id": "Circius", 
+        "name": "Circius",
+        "title": "",
+        "text": "Der Wind Circius ist ein Westwind, welchem von Olaus Magnus zerstörerische Kräfte nachgesagt werden: Nicht einmal ein <span onclick='polyClickbyID(&quot;Ritter&quot;)'>«gewappneter Ritter»</span> konnte ihm standhalten, «so stark und ungestüm ist er». Auch ist seine Kraft weit über die Grenzen Islands bekannt: «nicht nur die Einwohner, sondern auch Ausländische» wissen davon. Der Wind soll so kräftig gewesen sein, dass «kein Baum oder Gewächs grünen und aussprossen kann», was dann wohl zu einem Mangel an Holz führte. Deshalb mussten die Isländer oft auf Walknochen zurückgreifen, um zu heizen, kochen und bauen. <small>(Balzamo/Kaiser 2006, S. 119)</small> <br /><br /><a href='http://runeberg.org/olmagnus/0107.html' target='_blank'><span>- siehe <i>Historia</i> -</span></a>",
         "druckplatte": "A",
         "cartay": "958",
         "cartax": "261",
@@ -532,7 +539,7 @@ var data = [
         "id": "Ritter", 
         "name": "Ritter",
         "title": "",
-        "text": "Hierbei handelt es sich um einen gewappneten Ritter, der hier angestrengt  versucht dem <span onclick='polyClickbyID(&quot;PustendesKind&quot;)'>Wind Circuis</span> standzuhalten, doch nicht einmal er vermag den Windböen zu trotzen und letztendlich fällt er um. <small> (Balzamo/Kaiser, 2006, S. 52) </small>",
+        "text": "Hierbei handelt es sich um einen gewappneten Ritter, der hier angestrengt  versucht dem <span onclick='polyClickbyID(&quot;Circius&quot;)'>Wind Circius</span> standzuhalten, doch nicht einmal er vermag den Windböen zu trotzen und letztendlich fällt er um. <small> (Balzamo/Kaiser, 2006, S. 52) </small>",
         "druckplatte": "A",
         "cartay": "917",
         "cartax": "289",
@@ -546,7 +553,7 @@ var data = [
     
     {
         "id": "HausAusWalfischknochen", 
-        "name": "Haus Aus Walfischknochen",
+        "name": "Haus aus Walfischknochen",
         "title": "",
         "text": "In Island wurden Häuser und Kirchen früher aus Rippen und Knochen von Walfischen gebaut, da oft Wale in seichten Küstengebieten stecken blieben. <small>(Balzamo/Kaiser, 2006, S. 52)</small>",
         "druckplatte": "A",
@@ -675,9 +682,9 @@ var data = [
 
 {
     "id": "ViolineSpielenderMann", 
-    "name": "Violine Spielender Mann",
+    "name": "Violine spielender Mann",
     "title": "",
-    "text": "Im damaligen Island waren Violinisten und Musiker generell sehr angesehen, da sie mit den Klängen ihres Instruments Fische und Vögel anlockten, die man dann fing und als Nahrung verwendete. (Balzamo/Kaiser, 2006, S. 49)",
+    "text": "Im damaligen Island waren Violinisten und Musiker generell sehr angesehen, da sie mit den Klängen ihres Instruments Fische und Vögel anlockten, die man dann fing und als Nahrung verwendete. <small>(Balzamo/Kaiser, 2006, S. 49)</small>",
     "druckplatte": "A",
     "cartay": "952",
     "cartax": "364",
@@ -711,7 +718,7 @@ var data = [
     "id": "FalcoAlbi", 
     "name": "Falco Albi",
     "title": "Der Weisse Falke/Gerfalke",
-    "text": "Das Abbild des weissen Falken zeigt an, dass es in Island dort viele weiße Falken gab <small>(Balzamo/Kaiser, 2006, S. 49).</small> <br /> Höchstwahrscheinlich ist mit dem “weißen Falken” der Gerfalke gemeint, welcher sowohl in weißer, wie auch grauer und schwärzlicher Farbe vorkommt. <br /> Der Gerfalke ist die größte Falkenart weltweit und kommt vermehrt in den arktischen Regionen Eurasiens und Nordamerikas vor. Die Falkenart brütet in allen Gebieten Islands, doch im Norden der Insel sind mehr auffindbar. Vor allem im Mittelalter galten sie für sehr wertvoll und waren für die Falknerei sehr begehrt, da sie wegen ihrer Grösse auch sehr kräftig waren. Sie waren für den Handel mit Deutschland wichtig, da der Adel sie für die Falknerei wollte.",
+    "text": "Das Abbild des weissen Falken zeigt an, dass es in Island dort viele weisse Falken gab <small>(Balzamo/Kaiser, 2006, S. 49).</small> <br /> Höchstwahrscheinlich ist mit dem &bdquo;weissen Falken&ldquo; der Gerfalke gemeint, welcher sowohl in weisser, wie auch grauer und schwärzlicher Farbe vorkommt. <br /> Der Gerfalke ist die grösste Falkenart weltweit und kommt vermehrt in den arktischen Regionen Eurasiens und Nordamerikas vor. Die Falkenart brütet in allen Gebieten Islands, doch im Norden der Insel sind mehr auffindbar. Vor allem im Mittelalter galten sie für sehr wertvoll und waren für die Falknerei sehr begehrt, da sie wegen ihrer Grösse auch sehr kräftig waren. Sie waren für den Handel mit Deutschland wichtig, da der Adel sie für die Falknerei wollte. <a href='http://runeberg.org/olmagnus/0732.html' target='_blank'><span>- siehe <i>Historia</i> -</span></a>",
     "druckplatte": "A",
     "cartay": "934",
     "cartax": "245.5",
@@ -727,7 +734,7 @@ var data = [
     "id": "Fuechse", 
     "name": " Füchse",
     "title": "",
-    "text": "Die Füchse bedeuten, dass es dort früher viele weisse Füchse gab, daneben aber auch sehr schwarze Füchse. <small> (Balzamo/Kaiser, 2006, S. 49) </small> Der Polarfuchs (auch Eisfuchs, lat. <i>Vulpes lagopus </i>) ist in den nördlichen  Polarregionen beheimatet. <br /> Die Polarfüchse wechseln die Farbe ihres Pelzes entsprechend der Jahreszeiten: Im Sommer ist der Pelz eher braun, im Winter weiss. <br /> Der Polarfuchs ist ein Beutegreifer und Allesfresser, doch zu den Hauptbeutetieren zählen grösstenteils Lemminge (gehören zur Unterfamilie der Wühlmäuse). Polarfüchse haben eine Lebenserwartung von vier Jahren. Tollwut ist die häufigste tödliche Krankheit, aber sie sind auch von Menschen, Polarwölfen und vereinzelt auch Eisbären bedroht. Nicht zuletzt wegen des Handels mit den wertvollen Polarfuchs Winterfellen ist die Spezies in Skandinavien und Island  selten geworden.",
+    "text": "Die Füchse zeigen an, dass es dort früher viele weisse Füchse gab, daneben aber auch sehr schwarze Füchse. <small> (Balzamo/Kaiser, 2006, S. 49) </small><br /><br />Der Polarfuchs (auch Eisfuchs, lat. <i>Vulpes lagopus </i>) ist in den nördlichen Polarregionen beheimatet. Die Polarfüchse wechseln die Farbe ihres Pelzes entsprechend der Jahreszeiten: Im Sommer ist der Pelz eher braun, im Winter weiss. <br /> Der Polarfuchs ist ein Beutegreifer und Allesfresser, doch zu den Hauptbeutetieren zählen grösstenteils Lemminge (gehören zur Unterfamilie der Wühlmäuse). Polarfüchse haben eine Lebenserwartung von vier Jahren. Tollwut ist die häufigste tödliche Krankheit, aber sie sind auch von Menschen, Polarwölfen und vereinzelt auch Eisbären bedroht. Nicht zuletzt wegen des Handels mit den wertvollen Polarfuchs Winterfellen ist die Spezies in Skandinavien und Island  selten geworden.",
     "druckplatte": "A",
     "cartay": "935",
     "cartax": "350",
@@ -743,7 +750,7 @@ var data = [
     "id": "CorvusAlbi", 
     "name": "Corvus Albi",
     "title": "Weisser Rabe",
-    "text": "Der Rabe deutet darauf hin, dass es in Island viele weisse Raben gab, was heute weniger der Fall ist. <small> (Balzamo/Kaiser, 2006, S. 49) </small>",
+    "text": "Der Rabe deutet darauf hin, dass es in Island viele weisse Raben gab, was heute weniger der Fall ist. <small> (Balzamo/Kaiser, 2006, S. 49) </small> <br></br><a href='http://runeberg.org/olmagnus/0235.html' target='_blank'><span>- siehe <i>Historia</i> -</span></a>",
     "druckplatte": "A",
     "cartay": "917.25",
     "cartax": "202.75",
@@ -758,23 +765,23 @@ var data = [
     "id": "UrsiAlbi", 
     "name": "Ursi Albi",
     "title": "Weissbären/Eisbären",
-    "text": "Diese zwei Bären zeigen an, dass es dort viele weiße Bären gab. <small>(Balzamo/Kaiser, 2006, S. 49)</small>  Höchstwahrscheinlich sind mit “Weissbären” Eisbären gemeint. Eisbären bewohnen die nördlichen Polarregionen und sind die größten an Land lebenden Raubtiere. Eisbäre können bis zu 2,5m lang und 500 kg schwer werden. Eisbären sind sehr gute Schwimmer, doch sie jagen meist an Land. Ihre Hauptbeute sind Robben, vorwiegend Ringelrobben. ",
+    "text": "Diese zwei Bären zeigen an, dass es dort viele weiße Bären gab. <small>(Balzamo/Kaiser, 2006, S. 49)</small>  Höchstwahrscheinlich sind mit &bdquo;Weissbären&ldquo; Eisbären gemeint. Eisbären bewohnen die nördlichen Polarregionen und sind die größten an Land lebenden Raubtiere. Eisbäre können bis zu 2,5m lang und 500 kg schwer werden. Eisbären sind sehr gute Schwimmer, doch sie jagen meist an Land. Ihre Hauptbeute sind Robben, vorwiegend Ringelrobben. <a href='http://runeberg.org/olmagnus/0707.html' target='_blank'><span>- siehe <i>Historia</i> -</span></a>",
     "druckplatte": "A",
     "cartay": "840",
     "cartax": "354",
-    "cartaz": "2.5",
+    "cartaz": "2",
     "kartey": "",
     "kartex": "",
     "kartez": "",
     "poly": null,
-    "coordinates":[[853.5,358],[851.5,344],[841.5,339],[835,338.5],[826.5,332.5],[825.5,340.5],[825.5,356.5],[829.5,363.5],[834,370.5],[835.5,376],[838.5,378.5],[844.5,370],[849,369]]
+    "coordinates":[[831.7916660308838,339.70832443237305],[830.5416660308838,352.20832443237305],[833.4166660308838,358.08332443237305],[832.7916660308838,363.70832443237305],[834.7916660308838,364.70832443237305],[839.4166660308838,364.45832443237305],[840.1666660308838,361.20832443237305],[849.2916660308838,361.20832443237305],[850.7916660308838,359.45832443237305],[853.7916660308838,364.45832443237305],[859.7916660308838,366.33332443237305],[860.9583320617676,370.6249885559082],[863.5833320617676,373.3749885559082],[868.9583320617676,374.4999885559082],[873.8333320617676,370.3749885559082],[873.5833320617676,367.6249885559082],[870.9583320617676,362.3749885559082],[863.0833320617676,355.6249885559082],[863.8333320617676,352.6249885559082],[863.7083320617676,351.6249885559082],[860.7083320617676,351.8749885559082],[859.4583320617676,355.3749885559082],[854.9583320617676,351.3749885559082],[851.7083320617676,345.3749885559082],[850.2083320617676,341.6249885559082],[841.4583320617676,340.6249885559082],[874.7916641235352,210.08331966400146],[879.7916641235352,209.4999876022339],[883.6666641235352,209.6249876022339],[885.7916641235352,206.4999876022339],[884.4166641235352,199.3749876022339],[880.5416641235352,191.8749876022339],[871.7916641235352,191.1249876022339],[868.5416641235352,192.9999876022339],[868.0416641235352,206.6249876022339],[868.4166641235352,212.6249876022339],[872.0416641235352,213.3749876022339],[873.5416641235352,214.7499876022339],[841.5416641235352,340.41665172576904]]
 }, 
 
 {
     "id": "Schwaene", 
     "name": "Schwäne",
     "title": "",
-    "text": "Die Schwäne werden vom <span onclick='polyClickbyID(&quot;ViolineSpielenderMann&quot;)'>Violinisten</span> durch die Klänge der Musik angelockt um später gefangen zu werden (Balzamo/Kaiser, 2006, S. 49)",
+    "text": "Die Schwäne werden vom <span onclick='polyClickbyID(&quot;ViolineSpielenderMann&quot;)'>Violinisten</span> durch die Klänge der Musik angelockt um später gefangen zu werden. <small>(Balzamo/Kaiser, 2006, S. 49)</small>",
     "druckplatte": "A",
     "cartay": "948",
     "cartax": "409",
@@ -815,7 +822,7 @@ var data = [
         "id": "fare", 
         "name": "Fare",
         "title": "Färöer",
-        "text": "Die Färöer sind eine zu <span onclick='polyClickbyID(&quot;dania&quot;)'>Dänemark</span> gehörende Gruppe. Die gut 50.000 Inselbewohner – die Färinger, auch Färöer genannt – betrachten sich nicht als Dänen, sondern als eigenständiges Volk, das von den Wikingern auf den Färöern abstammt. Sie sprechen die färöische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isländischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten. Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
+        "text": "[kopiert] Die Färöer sind eine zu <span onclick='polyClickbyID(&quot;dania&quot;)'>Dänemark</span> gehörende Gruppe. Die gut 50.000 Inselbewohner – die Färinger, auch Färöer genannt – betrachten sich nicht als Dänen, sondern als eigenständiges Volk, das von den Wikingern auf den Färöern abstammt. Sie sprechen die färöische Sprache, die aus dem Altwestnordischen entstanden ist und mit dem Isländischen und dem Norwegischen verwandt ist. <br> Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten. Nach dem Vertrag von Fámjin aus dem Jahr 2005 bilden die Färinger, wie auch die Grönländer, eine „gleichberechtigte Nation“ innerhalb des Königreichs Dänemark. Ihre Inseln genießen bereits seit 1948 eine weitgehende Autonomie und haben mit dem Løgting eines der ältesten Parlamente der Welt. Es entsendet regelmäßig zwei Abgeordnete ins dänische Folketing und ist mit zwei Delegierten im Nordischen Rat vertreten.",
         "druckplatte": "D",
         "cartay": "620",
         "cartax": "270",
