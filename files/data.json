@@ -740,6 +740,21 @@ var data = [
 }, 
 
 {
+    "id": "CorvusAlbi", 
+    "name": "Corvus Albi",
+    "title": "Weisser Rabe",
+    "text": "Der Rabe deutet darauf hin, dass es in Island viele weisse Raben gab, was heute weniger der Fall ist. <small> (Balzamo/Kaiser, 2006, S. 49) </small>",
+    "druckplatte": "A",
+    "cartay": "917.25",
+    "cartax": "202.75",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[918.5,201],[909.5,186.5],[904,195],[906.5,201],[913,203],[914.5,205.5]]
+}, 
+{
     "id": "UrsiAlbi", 
     "name": "Ursi Albi",
     "title": "Weissbären/Eisbären",
