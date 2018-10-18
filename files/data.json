@@ -656,6 +656,22 @@ var data = [
     "coordinates":[[947.1459789276123,359],[950.6459789276123,359],[950.8959789276123,354.75],[955.6459789276123,355.5],[956.8959789276123,353.25],[957.1459789276123,358.25],[959.3959789276123,358.75],[963.1459789276123,357.75],[963.8959789276123,361.25],[963.1459789276123,363.5],[960.8959789276123,362.75],[958.3959789276123,363],[960.8959789276123,365.5],[960.1459789276123,368.25],[959.6459789276123,369.75],[960.1459789276123,370.75],[961.3959789276123,371.5],[960.8959789276123,372.5],[957.8959789276123,371],[955.6459789276123,369.25],[953.3959789276123,369.25],[952.1459789276123,370.5],[948.8959789276123,370.75],[945.8959789276123,372.75],[943.6459789276123,374.5],[942.3959789276123,377.5],[941.6459789276123,374],[945.1459789276123,369.25],[945.6459789276123,367.5],[942.6459789276123,365.25],[939.6459789276123,365.25],[941.3959789276123,362.25],[944.1459789276123,362.75],[946.1459789276123,363]]
 }, 
 
+{
+    "id": "Brunnen", 
+    "name": "Brunnen",
+    "title": "",
+    "text": "Hier sind vier unregelmässig geformte Brunnen, welche verschiedenes Wasser enthalten: entweder heiss, kalt, süss oder giftig. Mit den Brunnen sind wahrscheinlich Kohlensäurequellen gemeint. In einem lateinischen Gedicht über Island wird ein Brunnen erwähnt, aus dem “flüssiges Wachs” fliesst. Das Wort, welches mit ‘Wachs’ übersetzt wurde, war ‘cera’. Aber ‘cera’ wurde mit ‘cerevisia’ (Bier) verwechselt, demnach floss aus dem einen Brunnen Bier. Heute noch nennen die Isländer solche Kohlensäurequellen ölkedur, was übersetzt ‘Bierquellen’ bedeutet. (Erkes, 1927, S. 2; Balzamo/Kaiser, 2006, S. 49)",
+    "druckplatte": "A",
+    "cartay": "810",
+    "cartax": "176",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[816.5,156.75],[814.5,165.75],[815,172],[814.75,179.25],[814,187.25],[810.75,193.25],[808.75,198.75],[806,195.25],[805.75,191.5],[806.75,185],[809.25,174],[808.75,167.75],[809.5,157.25],[812.5,156.25]]
+}, 
+
 /*Tiere*/
 
 {
