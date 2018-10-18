@@ -677,8 +677,8 @@ var data = [
 {
     "id": "FalcoAlbi", 
     "name": "Falco Albi",
-    "title": "Der Weisse Falke/Gerfalken",
-    "text": "Das Abbild des weissen Falken zeigt an, dass es in Island dort viele weiße Falken gab. (Balzamo/Kaiser, 2006, S. 49) Höchstwahrscheinlich ist mit dem “weißen Falken” der Gerfalke gemeint, welcher sowohl in weißer, wie auch grauer und schwärzlicher Farbe vorkommt. Der Gerfalke ist die größte Falkenart weltweit und kommt vermehrt in den arktischen Regionen Eurasiens und Nordamerikas vor. Die Falkenart brütet in allen Gebieten Islands, doch im Norden der Insel sind mehr auffindbar. Vor allem im Mittelalter galten sie für sehr wertvoll und waren für die Falknerei sehr begehrt, da sie wegen ihrer Grösse auch sehr kräftig waren. Sie waren für den Handel mit Deutschland wichtig, da der Adel sie für die Falknerei wollte.",
+    "title": "Der Weisse Falke/Gerfalke",
+    "text": "Das Abbild des weissen Falken zeigt an, dass es in Island dort viele weiße Falken gab <small>(Balzamo/Kaiser, 2006, S. 49).</small> <br /> Höchstwahrscheinlich ist mit dem “weißen Falken” der Gerfalke gemeint, welcher sowohl in weißer, wie auch grauer und schwärzlicher Farbe vorkommt. <br /> Der Gerfalke ist die größte Falkenart weltweit und kommt vermehrt in den arktischen Regionen Eurasiens und Nordamerikas vor. Die Falkenart brütet in allen Gebieten Islands, doch im Norden der Insel sind mehr auffindbar. Vor allem im Mittelalter galten sie für sehr wertvoll und waren für die Falknerei sehr begehrt, da sie wegen ihrer Grösse auch sehr kräftig waren. Sie waren für den Handel mit Deutschland wichtig, da der Adel sie für die Falknerei wollte.",
     "druckplatte": "A",
     "cartay": "934",
     "cartax": "245.5",
