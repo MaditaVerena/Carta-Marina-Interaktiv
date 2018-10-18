@@ -742,7 +742,7 @@ var data = [
     "id": "Ochsen", 
     "name": "Ochsen",
     "title": "",
-    "text": "Das Vieh wurde in Sommer von der Weide ferngehalten, weil es sonst an Fettleibigkeit sterben würde (Balzamo/Kaiser, 2006, S. 49).",
+    "text": "Das Vieh wurde in Sommer von der Weide ferngehalten, weil es sonst an Fettleibigkeit sterben würde <small>(Balzamo/Kaiser, 2006, S. 49).</small>",
     "druckplatte": "A",
     "cartay": "841",
     "cartax": "284.5",
