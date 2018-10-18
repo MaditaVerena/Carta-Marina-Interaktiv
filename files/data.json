@@ -689,6 +689,22 @@ var data = [
     "poly": null,
     "coordinates":[[937.3959789276123,358],[935.6459789276123,360.5],[935.6459789276123,367],[936.8959789276123,376],[937.6459789276123,381],[934.6459789276123,377.75],[934.3959789276123,371.75],[932.8959789276123,371.5],[930.8959789276123,372.25],[933.3959789276123,368.25],[931.6459789276123,364.25],[931.6459789276123,361.25],[931.6459789276123,356.5],[933.8959789276123,358],[936.3959789276123,355.25],[937.6459789276123,354.75],[934.6459789276123,345],[937.3959789276123,346.5],[938.8959789276123,344.5],[936.3959789276123,341.25],[938.1459789276123,334.25],[932.6459789276123,342]]
 }, 
+
+{
+    "id": "UrsiAlbi", 
+    "name": "Ursi Albi",
+    "title": "Weissbären/Eisbären",
+    "text": "Diese zwei Bären zeigen an, dass es dort viele weiße Bären gab. (Balzamo/Kaiser, 2006, S. 49)  Höchstwahrscheinlich sind mit “Weissbären” Eisbären gemeint. Eisbären bewohnen die nördlichen Polarregionen und sind die größten an Land lebenden Raubtiere. Eisbäre können bis zu 2,5m lang und 500 kg schwer werden. Eisbären sind sehr gute Schwimmer, doch sie jagen meist an Land. Ihre Hauptbeute sind Robben, vorwiegend Ringelrobben. ",
+    "druckplatte": "A",
+    "cartay": "840",
+    "cartax": "354",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[853.5,358],[851.5,344],[841.5,339],[835,338.5],[826.5,332.5],[825.5,340.5],[825.5,356.5],[829.5,363.5],[834,370.5],[835.5,376],[838.5,378.5],[844.5,370],[849,369]]
+}, 
     /* ------------ Druckplatte B ------------- */
 
     /* ------------ Druckplatte C ------------- */
