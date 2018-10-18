@@ -150,20 +150,18 @@ span:hover {
 }
 
 /*text-pages*/
-    #contentContainer {
-    position: fixed;
-    top: 90px;
+    #contentContainer1, #contentContainer2, #contentContainer3 {
+    position: relative; 
     left: 30px;
-    bottom: 20px;
     right: 30px;			
     overflow: auto;
     ;		
 }
 
 #imgContainer {
-    padding: 45px;
-    height: 390px;
-    width: 500px;
+
+    height: 300px;
+    width: 450px;
     background-position: center;
     background-size: cover;
     box-sizing: border-box;  
