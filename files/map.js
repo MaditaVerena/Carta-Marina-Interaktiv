@@ -300,11 +300,11 @@ function mySearch() {
 
     var i;
     for (i = 0; i < objectsFromData.length; i++) {
-        if (objectsFromData[i].name == inputText) {
+        if (objectsFromData[i].name.toUpperCase() == inputText.toUpperCase()) {
             polyClick(objectsFromData[i]);
         }
         else {
-            if (objectsFromData[i].title == inputText) {
+            if (objectsFromData[i].title.toUpperCase() == inputText.toUpperCase()) {
                 polyClick(objectsFromData[i]);
             }
         }
@@ -375,6 +375,32 @@ function autocomplete(inp, objects) {
                     closeAllLists();
                 });
                 a.appendChild(b);
+            }
+
+
+            /*--- noch problembehaftete Lösung, um nach Titeln zu suchen! ---*/
+
+            else {
+                if (arr2[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                    /*create a DIV element for each matching element:*/
+                    b = document.createElement("DIV");
+                    /*make the matching letters bold:*/
+                    b.innerHTML = "<strong>" + arr2[i].substr(0, val.length) + "</strong>";
+                    b.innerHTML += arr2[i].substr(val.length);
+                    /*insert a input field that will hold the current array item's value:*/
+                    b.innerHTML += "<input type='hidden' value='" + arr2[i] + "'>";
+                    /*execute a function when someone clicks on the item value (DIV element):*/
+                    b.addEventListener("click", function (e) {
+                        /*insert the value for the autocomplete text field:*/
+                        inp.value = this.getElementsByTagName("input")[0].value;
+                        mySearch();
+                        /*close the list of autocompleted values,
+                        (or any other open lists of autocompleted values:*/
+                        closeAllLists();
+                    });
+                    a.appendChild(b);
+                }
+
             }
         }
     });
