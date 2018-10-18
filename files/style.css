@@ -3,6 +3,9 @@ html, body {
     margin: 0;
 }
 
+h4 {font-family: "Arial";}
+p {font-family: "Times New Roman"}
+
 
 /*---Menu---*/
 #header {
@@ -21,6 +24,14 @@ html, body {
 .bg-dark {
     background-color: #101546!important;
 }
+
+.navbar-dark .navbar-nav .nav-item a {
+    color:"";
+}
+.navbar-dark .navbar-nav .nav-item a:hover {
+    color:"";
+}
+.navbar-dark .navbar-nav .nav-item.active a:hover {color:"";}
 
 
 
