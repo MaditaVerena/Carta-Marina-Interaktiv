@@ -515,7 +515,7 @@ var data = [
         "id": "HausAusWalfischknochen", 
         "name": "Haus Aus Walfischknochen",
         "title": "",
-        "text": "In Island wurden Häuser und Kirchen früher aus Rippen und Knochen von Walfischen gebaut, da oft Wale in seichten Küstengebieten stecken blieben. (Balzamo/Kaiser, 2006, S. 52)",
+        "text": "In Island wurden Häuser und Kirchen früher aus Rippen und Knochen von Walfischen gebaut, da oft Wale in seichten Küstengebieten stecken blieben. <small>(Balzamo/Kaiser, 2006, S. 52)</small>",
         "druckplatte": "A",
         "cartay": "861",
         "cartax": "315",
