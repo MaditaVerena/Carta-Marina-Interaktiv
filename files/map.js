@@ -300,11 +300,11 @@ function mySearch() {
 
     var i;
     for (i = 0; i < objectsFromData.length; i++) {
-        if (objectsFromData[i].name == inputText) {
+        if (objectsFromData[i].name.toUpperCase() == inputText.toUpperCase()) {
             polyClick(objectsFromData[i]);
         }
         else {
-            if (objectsFromData[i].title == inputText) {
+            if (objectsFromData[i].title.toUpperCase() == inputText.toUpperCase()) {
                 polyClick(objectsFromData[i]);
             }
         }
