@@ -612,7 +612,7 @@ var data = [
     "id": "Saxa", 
     "name": "Saxa",
     "title": "Felsen",
-    "text": "von lat. saxum = Fels, saxa = Nom. Pl. n.",
+    "text": "von lat. <i>saxum</i> = Fels, saxa = Nom. Pl. n.",
     "druckplatte": "A",
     "cartay": "830",
     "cartax": "176",
