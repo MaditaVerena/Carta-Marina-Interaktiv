@@ -527,7 +527,118 @@ var data = [
         "coordinates":[[857.5,311.25],[861.5,311.25],[861.5,311.5],[864.5,312.75],[868.25,314.75],[863.75,316.75],[861.5,318.5],[858.5,318.5],[855.5,318.25],[855.5,315.25],[855.75,311.25]]
     }, 
 
+    {
+        "id": "Zelte", 
+        "name": "Zelte",
+        "title": "",
+        "text": "Die Zelte symbolisieren, dass die Isländer ein Kriegsfreudiges Volk waren, und es nicht scheuten, oft und sehr rasch in den Krieg zu ziehen. (Balzamo/Kaiser, 2006, S. 52)",
+        "druckplatte": "A",
+        "cartay": "932",
+        "cartax": "321",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates": [[931.25,319.25],[931,315.25],[930.5,312.25],[930.5,307.25],[933.75,309],[936,310.25],[938.25,311.75],[936.5,314],[935.25,316.25],[932.75,317.5],[930.75,319.5],[930.75,321],[930.25,323],[931.25,323],[934,324.5],[935,326.25],[938.75,328.75],[934.75,332],[932.5,333.75],[930.75,335],[929.75,330.25],[929.75,325.25],[929.75,330.5],[931,335],[930.5,337.25],[928.25,340.25],[925.75,346],[925,353.75],[923,360.25],[921,365.25],[920.5,370.75],[922,371.25],[924.5,373],[927.75,374.75],[926.75,376],[925,377.5],[923.25,379.75],[921.5,380.5],[920.5,378.5],[920.5,375.25],[920.5,372.5]]
+    }, 
 
+    {
+        "id": "Fischstapel", 
+        "name": "Fischstapel",
+        "title": "",
+        "text": "Die Hauptnahrung der Isländer war Fisch. Sie stapelten grosse Mengen an Fischen in den Häusern und um sie herum unter freiem Himmel und boten sie zum Verkauf an. (Balzamo/Kaiser, 2006, S. 49)",
+        "druckplatte": "A",
+        "cartay": "792",
+        "cartax": "177",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":[[790,159.5],[807,169.5],[807,182.5],[797.5,189],[789.5,192],[778,190],[774.5,183.5],[779,171],[781.5,160.5]]
+
+    }, 
+
+    {
+        "id": "Fischer", 
+        "name": "Fischer",
+        "title": "",
+        "text": "In den kleine Seen, welche durch Flüsse mit dem Meer verbunden wurden fischte man.   Er ist ein der drei Fischer, die auf Blatt A  gezeichnet sind. Fisch war die wichtigste Speise der Einwohner von Island (Balzamo/Kaiser, 2006, S.49). Fische waren auch wichtig für das Handeln.",
+        "druckplatte": "A",
+        "cartay": "885.5",
+        "cartax": "310",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates": [[892.25,294],[888.75,291.25],[888.75,286.5],[885.5,286.75],[883.25,292.25],[885,296.25],[888,298.5],[885.5,320.25],[880.5,324.75],[883,329.5],[886.5,331.5],[888,327.25],[887.25,322.75],[887.5,313.75],[887.5,306.75],[888.75,299.25]]
+    },  
+    
+    {
+        "id": "Fischwappen", 
+        "name": "Fischwappen",
+        "title": "",
+        "text": "Das Wappen neben dem von Norwegen (Rot) ziert einen gekrönten Fisch. Dies kommt daher, da die niederländischen Kaufleute diesen Fisch sehr schätzten, und dieser Fisch war wahrscheinlich eine Goldkrone wert (Balzamo/Kaiser, 2006, S. 52)",
+        "druckplatte": "A",
+        "cartay": "894.5",
+        "cartax": "256",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":   [[911,245],[913,257],[911,265.5],[907,268.5],[901.25,268.75],[891.25,270.25],[883.5,266.25],[880,261.25],[880.75,252.75],[882.75,248.25],[887.75,245.25],[893.5,244.5],[899.75,245.5],[901.75,244.5],[904,243.25],[908.5,243.25]]
+    }, 
+
+{
+        "id": "Sulfur", 
+        "name": "Sulfur",
+        "title": "Schwefel",
+        "text": "Dies deutet darauf hin, dass es in dieser Region Schwefel gab. Es ist anzunehmen, dass dieser durch Vulkanausbrüche an die Erdoberfläche gelangt ist. Schwefel war für den Handel wichtig, denn er wurde für die Herstellung von Schiesspulver verwendet.",
+        "druckplatte": "A",
+        "cartay": "798",
+        "cartax": "156",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":[[788,157.5],[813.25,167],[818.25,158],[814.5,148],[800.25,136.5]]
+}, 
+
+{
+    "id": "Saxa", 
+    "name": "Saxa",
+    "title": "Felsen",
+    "text": "von lat. saxum = Fels, saxa = Nom. Pl. n.",
+    "druckplatte": "A",
+    "cartay": "830",
+    "cartax": "176",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[835.5,190],[843.5,188.5],[842.5,178.5],[844,172.5],[834.5,174],[832.5,176.5]]
+}, 
+
+{
+    "id": "Chaos", 
+    "name": "Chaos",
+    "title": "Eingang zur Hölle",
+    "text": "von gr. χάος chaos = Zustand völliger Unordnung (Gegenteil zu kosmos). Die Nähe zu den beiden brennenden Berge (Verweis zu mons crucis?) könnte darauf hinweisen, dass die Bodenöffnung bei chaos der Eingang zur Hölle ist.",
+    "druckplatte": "A",
+    "cartay": "813",
+    "cartax": "203",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates": [[811.75,209],[809.25,206.25],[809.25,200.25],[809.25,194.5],[813.5,195],[814.25,198.5],[814,203],[813.75,206.5],[811.75,208.75],[850.5,228],[849,230.75],[848.5,237],[850.75,239.5],[854.25,239.5],[854.75,235.75],[854.75,231.25],[854.75,228],[851.25,228.5]]
+}, 
     /* ------------ Druckplatte B ------------- */
 
     /* ------------ Druckplatte C ------------- */
