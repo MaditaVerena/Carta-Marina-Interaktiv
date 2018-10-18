@@ -22,6 +22,22 @@ var data = [
     /* ------------ Druckplatte A ------------- */
 
     /* Orte */
+
+    {
+        "id": "Island", 
+        "name": "Islandia",
+        "title": "Island",
+        "text": "Island ist eine grosse vulkanische Insel in Nordeuropa mit der Hauptstadt Reykjavik und liegt südlich des nördlichen Polarkreises. Dort leben ungefähr 350 000 Menschen. Die Landessprache ist Isländisch, die altnordische Wurzeln hat. Die Mehrheit der Einwohner ist katholisch geprägt. <br /> Um 870 n.Chr. wanderten Menschen vom westlichen Norwegen auf die Insel aus. Sie betrieben dort Landwirtschaft und führten die Traditionen und die Bräuche ihres Mutterlandes weiter.  Sie waren unter der Herrschaft von Norwegen, später von Dänemark. Island erhielt die Unabhängigkeit von Dänemark in 1944 und proklamierte die Isländische Republik.<br/> Link zum Gedicht über Island: http://timarit.is/view_page_init.jsp?pageId=4116251",
+        "druckplatte": "A",
+        "cartay": "866",
+        "cartax": "230",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":[[878.5,241],[867.5,241.5],[866.5,306.5],[876,304.5],[877.5,301.5]]
+    }, 
     {
         "id": "Huitsark", 
         "name": "Huitsark",
@@ -31,9 +47,9 @@ var data = [
         "cartay": "893",
         "cartax": "85",
         "cartaz": "2.5",
-        "kartey": "0",
-        "kartex": "0",
-        "kartez": "0",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
         "poly": null,
         "coordinates": [[900.5,74.5],[895,72],[889,70],[886.5,66.5],[883,77.5],[883,86.5],[887.5,93.5],[890,99],[897.5,95],[900,90.5],[902.5,84.5]]
     },
@@ -138,14 +154,14 @@ var data = [
         "id": "Foglasker", 
         "name": "Foglasker",
         "title": "Geirfuglasker",
-        "text": "Der Geirfuglasker (dt. Riesenalk-Stein) war ein kleines Inselchen im Südosten Islands, das früher von Riesenalken (einem ausgestorbenen flugunfähigen Seevogel) bewohnt wurde. 1803 wurde die Insel aufgrund eines Vulkanausbruches verschüttet und die überlebenden Riesenalke flohen auf die nahegelegene Insel Eldey, wo sie wenige Jahre später von den Menschen endgültig ausgerottet wurden. (Wikipedia)",
+        "text": "Der Geirfuglasker (dt. Riesenalk-Stein) war ein kleines Inselchen im Südosten Islands, das früher von Riesenalken (einem ausgestorbenen flugunfähigen Seevogel) bewohnt wurde. 1803 wurde die Insel aufgrund eines Vulkanausbruches verschüttet und die überlebenden Riesenalke flohen auf die nahegelegene Insel Eldey, wo sie wenige Jahre später von den Menschen endgültig ausgerottet wurden.",
         "druckplatte": "A",
         "cartay": "805",
         "cartax": "114",
         "cartaz": "2.5",
-        "kartey": "0",
-        "kartex": "0",
-        "kartez": "0",
+        "kartey": "63.720451",
+        "kartex": "-23.146340",
+        "kartez": "8",
         "poly": null,
         "coordinates": [[808,113.75],[807,110.75],[803.5,108.875],[802.125,110.5],[801.125,114.5],[801.25,117.375],[804.25,117.875],[807.25,115]]
     },
@@ -159,9 +175,9 @@ var data = [
         "cartay": "781",
         "cartax": "166",
         "cartaz": "2.5",
-        "kartey": "0",
-        "kartex": "0",
-        "kartez": "0",
+        "kartey": "63.757008",
+        "kartex": "-20.635873",
+        "kartez": "8",
         "poly": null,
         "coordinates": [[800,135.75],[800,141.125],[797.5,150.75],[797,155.875],[792.25,160.125],[787.5,163.125],[782.375,165.875],[777.375,176.25],[776,181.375],[775.25,179.875],[775.125,171],[774.875,162.875],[777.625,153.25],[778.25,146.25],[781.625,142.25],[785.625,137.625],[788.625,132.5],[793.25,132],[795.5,132]]
     },
@@ -284,9 +300,9 @@ var data = [
     {
     
     "id": "Trollwal", 
-    "name": "s.n.",
-    "title": "Trollwal",
-    "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. Schiffsleute haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht (Balzamo/Kaiser 2006, S. 52 l). Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. ",
+    "name": "Trollwal.",
+    "title": "Teufelswal",
+    "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. Schiffsleute haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht <small> (Balzamo/Kaiser 2006, S. 52)</small>. Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. ",
     "druckplatte": "A",
     "cartay": "727",
     "cartax": "400",
@@ -332,9 +348,9 @@ var data = [
 
     {
         "id": "FischBeiShipScot", 
-        "name": "s.n.",
-        "title": "Meerengel/Rochen",
-        "text": "Mystisches Wesen, welcher wegen der Flügel als 'Engel' bezeichnet wird.",
+        "name": "Meerengel",
+        "title": "Rochen",
+        "text": "Mystisches Wesen, welches wegen seiner Flügel als 'Engel' bezeichnet wird.",
         "druckplatte": "A",
         "cartay": "697",
         "cartax": "145",
@@ -416,7 +432,7 @@ var data = [
         "id": "ShipBremen", 
         "name": "Bremen",
         "title": "Ein Schiff aus Bremen",
-        "text": "Das Hauptnahrungsmittel der Isländer war Fisch, denn sie haben wenig Brot und bauen kaum Getreide an. Fremde Schiffsleute aus unter anderem auch Bremen versorgten die Inselbewohner mit anderen Nahrungsmittel, was ihnen grosse Gewinne einbrachte. ",
+        "text": "Das Hauptnahrungsmittel der Isländer war Fisch, denn sie hatten wenig Brot und bauten kaum Getreide an. Fremde Schiffsleute aus unter anderem auch Bremen versorgten die Inselbewohner mit anderen Nahrungsmittel, was ihnen grosse Gewinne einbrachte. ",
         "druckplatte": "A",
         "cartay": "802",
         "cartax": "274",
@@ -429,6 +445,23 @@ var data = [
     },
 
     /* Weiteres */
+    {
+        "id": "WappenNorwegen", 
+        "name": "Norwegisches Wappen",
+        "title": "",
+        "text": "Das Wappen Norwegens besteht aus einem goldenen Löwen auf rotem Grund. Das norwegische Wappen ist auf der Krte Islands abgebildet, da die ersten Siedler auf Island von Norwegen ausgewandert waren.",
+        "druckplatte": "A",
+        "cartay": "895.5",
+        "cartax": "229.5",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":[[917.75,227.5],[914.75,220.5],[913,213],[889.5,214.75],[882.5,218.25],[880.25,223],[879.25,228.25],[880.5,235.25],[883.75,240.25],[889.5,241.25],[896.5,241],[903.25,241],[913.25,244.75],[912,239.25],[914.75,236.25]]
+    }, 
+
+    
 
     {
         "id": "Fässer", 
@@ -547,7 +580,7 @@ var data = [
         "id": "Fischstapel", 
         "name": "Fischstapel",
         "title": "",
-        "text": "Die Hauptnahrung der Isländer war Fisch. Sie stapelten grosse Mengen an Fischen in den Häusern und um sie herum unter freiem Himmel und boten sie zum Verkauf an. (Balzamo/Kaiser, 2006, S. 49)",
+        "text": "Die Hauptnahrung der Isländer war Fisch. Sie stapelten grosse Mengen an Fischen in den Häusern und um sie herum unter freiem Himmel und boten sie zum Verkauf an. <small>(Balzamo/Kaiser, 2006, S. 49)</small>",
         "druckplatte": "A",
         "cartay": "792",
         "cartax": "177",
@@ -580,7 +613,7 @@ var data = [
         "id": "Fischwappen", 
         "name": "Fischwappen",
         "title": "",
-        "text": "Das Wappen neben dem von Norwegen (Rot) ziert einen gekrönten Fisch. Dies kommt daher, da die niederländischen Kaufleute diesen Fisch sehr schätzten, und dieser Fisch war wahrscheinlich eine Goldkrone wert <small>(Balzamo/Kaiser, 2006, S. 52).</small>",
+        "text": "Das Wappen neben dem von <span onclick='polyClickbyID(&quot;WappenNorwegen&quot;)'>Norwegen</span> ziert einen gekrönten Fisch. Dies kommt daher, da die niederländischen Kaufleute diesen Fisch sehr schätzten, und dieser Fisch war wahrscheinlich eine Goldkrone wert <small>(Balzamo/Kaiser, 2006, S. 52).</small>",
         "druckplatte": "A",
         "cartay": "894.5",
         "cartax": "256",
@@ -660,7 +693,7 @@ var data = [
     "id": "Brunnen", 
     "name": "Brunnen",
     "title": "",
-    "text": "Hier sind vier unregelmässig geformte Brunnen, welche verschiedenes Wasser enthalten: entweder heiss, kalt, süss oder giftig. Mit den Brunnen sind wahrscheinlich Kohlensäurequellen gemeint. In einem lateinischen Gedicht über Island wird ein Brunnen erwähnt, aus dem “flüssiges Wachs” fliesst. Das Wort, welches mit ‘Wachs’ übersetzt wurde, war ‘cera’. Aber ‘cera’ wurde mit ‘cerevisia’ (Bier) verwechselt, demnach floss aus dem einen Brunnen Bier. Heute noch nennen die Isländer solche Kohlensäurequellen ölkedur, was übersetzt ‘Bierquellen’ bedeutet. (Erkes, 1927, S. 2; Balzamo/Kaiser, 2006, S. 49)",
+    "text": "Hier sind vier unregelmässig geformte Brunnen, welche verschiedenes Wasser enthalten: entweder heiss, kalt, süss oder giftig. Mit den Brunnen sind wahrscheinlich Kohlensäurequellen gemeint. In einem lateinischen Gedicht über Island wird ein Brunnen erwähnt, aus dem “flüssiges Wachs” fliesst. Das Wort, welches mit ‘Wachs’ übersetzt wurde, war ‘cera’. Aber ‘cera’ wurde mit ‘cerevisia’ (Bier) verwechselt, demnach floss aus dem einen Brunnen Bier. Heute noch nennen die Isländer solche Kohlensäurequellen <i>ölkedur</i>, was übersetzt ‘Bierquellen’ bedeutet. <small>(Erkes, 1927, S. 2; Balzamo/Kaiser, 2006, S. 49)</small>",
     "druckplatte": "A",
     "cartay": "810",
     "cartax": "176",
@@ -707,10 +740,25 @@ var data = [
 }, 
 
 {
+    "id": "CorvusAlbi", 
+    "name": "Corvus Albi",
+    "title": "Weisser Rabe",
+    "text": "Der Rabe deutet darauf hin, dass es in Island viele weisse Raben gab, was heute weniger der Fall ist. <small> (Balzamo/Kaiser, 2006, S. 49) </small>",
+    "druckplatte": "A",
+    "cartay": "917.25",
+    "cartax": "202.75",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[918.5,201],[909.5,186.5],[904,195],[906.5,201],[913,203],[914.5,205.5]]
+}, 
+{
     "id": "UrsiAlbi", 
     "name": "Ursi Albi",
     "title": "Weissbären/Eisbären",
-    "text": "Diese zwei Bären zeigen an, dass es dort viele weiße Bären gab. (Balzamo/Kaiser, 2006, S. 49)  Höchstwahrscheinlich sind mit “Weissbären” Eisbären gemeint. Eisbären bewohnen die nördlichen Polarregionen und sind die größten an Land lebenden Raubtiere. Eisbäre können bis zu 2,5m lang und 500 kg schwer werden. Eisbären sind sehr gute Schwimmer, doch sie jagen meist an Land. Ihre Hauptbeute sind Robben, vorwiegend Ringelrobben. ",
+    "text": "Diese zwei Bären zeigen an, dass es dort viele weiße Bären gab. <small>(Balzamo/Kaiser, 2006, S. 49)</small>  Höchstwahrscheinlich sind mit “Weissbären” Eisbären gemeint. Eisbären bewohnen die nördlichen Polarregionen und sind die größten an Land lebenden Raubtiere. Eisbäre können bis zu 2,5m lang und 500 kg schwer werden. Eisbären sind sehr gute Schwimmer, doch sie jagen meist an Land. Ihre Hauptbeute sind Robben, vorwiegend Ringelrobben. ",
     "druckplatte": "A",
     "cartay": "840",
     "cartax": "354",
