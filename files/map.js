@@ -119,20 +119,20 @@ function polyClick(x) {
     }
 
 
-/* adds ( ) if there is a title given!*/
+    /* adds ( ) if there is a title given!*/
 
-if (x.title === "") { 
+    if (x.title === "") {
     }
 
-else { 
-    var q = x.title.includes("(");
-    console.log(q);
-    if (q === true) {
-    }
     else {
-        x.title = " (" + x.title + ")";
+        var q = x.title.includes("(");
+        console.log(q);
+        if (q === true) {
+        }
+        else {
+            x.title = " (" + x.title + ")";
+        }
     }
-}
 
 
 
@@ -320,6 +320,7 @@ function autocomplete(inp, objects) {
     var arr = new Array();
     var arr2 = new Array();
     var a;
+
     for (a in objects) {
         arr.push(objects[a].name);
         arr2.push(objects[a].title); /* adds array for titles [Färöer]; not affected by autocomplete! */
@@ -345,7 +346,23 @@ function autocomplete(inp, objects) {
                 b = document.createElement("DIV");
                 /*make the matching letters bold:*/
                 b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-                b.innerHTML += arr[i].substr(val.length) + " (" + arr2[i] + ")"; /* arr2 adds modern names (title: Färöer) in brackets, is not affected by autocomplete! */
+
+                /* adds ( ) if there is a title given! */
+
+                if (arr2[i] === "") {
+                }
+
+                else {
+                    var q = arr2[i].includes("(");
+                    console.log(q);
+                    if (q === true) {
+                    }
+                    else {
+                        arr2[i] = " (" + arr2[i] + ")";
+                    }
+                }
+
+                b.innerHTML += arr[i].substr(val.length) + arr2[i]; /* arr2 adds modern names (title: Färöer) in brackets, is not affected by autocomplete! */
                 /*insert a input field that will hold the current array item's value:*/
                 b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                 /*execute a function when someone clicks on the item value (DIV element):*/
