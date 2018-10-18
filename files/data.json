@@ -608,7 +608,37 @@ var data = [
         "coordinates":[[788,157.5],[813.25,167],[818.25,158],[814.5,148],[800.25,136.5]]
 }, 
 
+{
+    "id": "Saxa", 
+    "name": "Saxa",
+    "title": "Felsen",
+    "text": "von lat. saxum = Fels, saxa = Nom. Pl. n.",
+    "druckplatte": "A",
+    "cartay": "830",
+    "cartax": "176",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates":[[835.5,190],[843.5,188.5],[842.5,178.5],[844,172.5],[834.5,174],[832.5,176.5]]
+}, 
 
+{
+    "id": "Chaos", 
+    "name": "Chaos",
+    "title": "Eingang zur Hölle",
+    "text": "von gr. χάος chaos = Zustand völliger Unordnung (Gegenteil zu kosmos). Die Nähe zu den beiden brennenden Berge (Verweis zu mons crucis?) könnte darauf hinweisen, dass die Bodenöffnung bei chaos der Eingang zur Hölle ist.",
+    "druckplatte": "A",
+    "cartay": "813",
+    "cartax": "203",
+    "cartaz": "2.5",
+    "kartey": "",
+    "kartex": "",
+    "kartez": "",
+    "poly": null,
+    "coordinates": [[811.75,209],[809.25,206.25],[809.25,200.25],[809.25,194.5],[813.5,195],[814.25,198.5],[814,203],[813.75,206.5],[811.75,208.75],[850.5,228],[849,230.75],[848.5,237],[850.75,239.5],[854.25,239.5],[854.75,235.75],[854.75,231.25],[854.75,228],[851.25,228.5]]
+}, 
     /* ------------ Druckplatte B ------------- */
 
     /* ------------ Druckplatte C ------------- */
