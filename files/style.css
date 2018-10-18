@@ -64,6 +64,16 @@ span:hover {
 
 /*--- all containers ---*/
 /*intro-page*/
+#contentContainer {
+    position: fixed;
+    top: 90px;
+    left: 30px;
+    bottom: 20px;
+    right: 30px;			
+    overflow: auto;
+    ;		
+}
+
 #introContainer {
     padding: 45px;
     height: 390px;
