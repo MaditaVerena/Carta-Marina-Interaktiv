@@ -4,7 +4,7 @@ html, body {
 }
 
 
-
+/*---Menu---*/
 #header {
     position: relative;
     top: 20px;
@@ -12,8 +12,6 @@ html, body {
     margin-right:0px;
     height: 110px;
     background: #FFFFFF;
-    /* box-shadow: rgba(0,0,0,.73) 0 0 5px; */
-    
 }
 
 #navbar-expand {
@@ -24,52 +22,33 @@ html, body {
     background-color: #101546!important;
 }
 
-#myForm {
-    display: block;
-    margin-left: auto;
-    margin-right: 0px;
+
+
+/*--- text formatting ---*/
+
+span {
+    cursor: pointer;
+    color: #911d00;
 }
 
-#mapContainer {
-    position: fixed;
-    top: 90px;
-    left: 30px;
-    bottom: 20px;
-    right: 30px;
-    overflow: auto;     
-    /* border: 1px solid #383A5B; */        
+span:hover {
+    text-decoration: underline;
 }
 
-#map { min-height: 50vh;
+.blockquote {
+    font-size: 14pt;
 }
 
-/* sets grab-cursor for polyBack ! */
+
+/*sets grab-cursor for polyBack*/
 .map-noClick {
     cursor: -webkit-grab;
     cursor: -moz-grab;
 }
 
-#textRow{
-    overflow: hidden;
-    padding: 0px; 
-}
 
-#textContainer {
-    overflow: auto;
-    margin-right: 5px;
-    top: 10px;
-}
-
-#contentContainer {
-    position: fixed;
-    top: 90px;
-    left: 30px;
-    bottom: 20px;
-    right: 30px;			
-    overflow: auto;
-    ;		
-}
-
+/*--- all containers ---*/
+/*intro-page*/
 #introContainer {
     padding: 45px;
     height: 390px;
@@ -85,36 +64,38 @@ html, body {
     max-width: 500px;
 }
 
-
-
 #buttonContainer {
     position: absolute;
     top: 270px; 
 }
 
+/*map-page*/
+#mapContainer {
+    position: fixed;
+    top: 90px;
+    left: 30px;
+    bottom: 20px;
+    right: 30px;
+    overflow: auto;    
+}
 
-#mapRow {
+#map { min-height: 50vh;
+}
+
+#textRow {
     overflow: hidden;
-    /*border: 1px solid red;*/
     padding: 0px; 
 }
 
-#toggleContainer {
-    position: absolute; /*relative*/
-    width: 100%;
-    height: 40px;
-    top: 15px;
-    z-index: 1200;
-    overflow: hidden;
-    padding: 0px;
-    /*border: 1px solid black;*/
+#textContainer {
+    overflow: auto;
+    margin-right: 5px;
+    top: 10px;
 }
 
-#toggleButton {
-    /* position: absolute; */
-    position: relative;
-    left: 80%;
-    /* border: 1px solid green; */
+#mapRow {
+    overflow: hidden;
+    padding: 0px; 
 }
 
 #map2Container {
@@ -128,10 +109,7 @@ html, body {
     z-index: 1198;
     min-height: 50vh;
     max-height: 100vh;
-    padding: 0px; 
-    /* border: 1px solid #383A5B; */
-    
-    
+    padding: 0px;     
 }
 
 #map2 { 
@@ -139,42 +117,56 @@ html, body {
     width: 100%;
     }
 
-
-span {
-    cursor: pointer;
-    color: #911d00;
+/*close-Button for osm*/
+#toggleContainer {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 15px;
+    z-index: 1200;
+    overflow: hidden;
+    padding: 0px;
 }
 
-span:hover {
-    text-decoration: underline;
+#toggleButton {
+    position: relative;
+    left: 80%;
+}
+
+/*text-pages*/
+#contentContainer {
+    position: fixed;
+    top: 90px;
+    left: 30px;
+    bottom: 20px;
+    right: 30px;			
+    overflow: auto;
+    ;		
 }
 
 
-.blockquote {
-    font-size: 14pt;
-}
+/*---Search---*/
 
+#myForm {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+}
 
 .row input[type=text] {
     float: right;
-    padding: 4px;
-    border: none;
-    
-    
+    padding: 3px;
+    border: none;  
 }
 
 .row input[type=text]:focus {
 outline-color: #343a40;
 }
 
-
-
 .autocomplete {
   /*the container must be positioned relative:*/
   position: relative;
-  display: inline-block;
-  
-  
+  display: inline-block;  
 }
 
 .autocomplete-items {
@@ -188,12 +180,14 @@ outline-color: #343a40;
   left: 0;
   right: 0;
 }
+
 .autocomplete-items div {
   padding: 4px;
   cursor: pointer;
   background-color: #fff;
   border-bottom: 1px solid #383A5B; 
 }
+
 .autocomplete-items div:hover {
   /*when hovering an item:*/
   background-color: #e9e9e9; 
@@ -203,5 +197,4 @@ outline-color: #343a40;
   /*when navigating through the items using the arrow keys:*/
   background-color: #7c7f84 !important; 
   color: #ffffff; 
-  
-      }
+}
