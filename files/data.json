@@ -284,9 +284,9 @@ var data = [
     {
     
     "id": "Trollwal", 
-    "name": "s.n.",
-    "title": "Trollwal",
-    "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. Schiffsleute haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht (Balzamo/Kaiser 2006, S. 52 l). Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. ",
+    "name": "Trollwal.",
+    "title": "Teufelswal",
+    "text": "Der Trollwal (dt. Teufelswal) ist ein in Island vorgefundener Walfisch. Schiffsleute haben manchmal versehentlich ihren Anker auf ihn geworfen, anstatt auf den Meeresboden. Die Seemannschaft wurde danach vom verärgerten Trollwal umgebracht <small> (Balzamo/Kaiser 2006, S. 52)</small>. Wenn der Wal sich an der Meeresoberfläche bewegte, täuschten sich Seefahrer und meinten es wäre eine Insel, denn die Walhaut sieht mit ihrer rauen Haut einem Strand ähnlich. ",
     "druckplatte": "A",
     "cartay": "727",
     "cartax": "400",
