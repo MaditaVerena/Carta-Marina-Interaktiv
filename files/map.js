@@ -27,8 +27,8 @@ var map = L.map('map', {
 });
 
 var baseMaps = {
-    "Carta Marina, Venedig 1539": imageBw,
-    "Carta Marina Lafreri, Rom 1572": imageCol,
+    "Carta Marina": imageBw,
+    "Carta Marina, koloriert": imageCol,
 
 };
 
