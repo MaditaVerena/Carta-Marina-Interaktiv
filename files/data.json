@@ -466,7 +466,7 @@ var data = [
         "id": "Rittergruppe", 
         "name": "Rittergruppe",
         "title": "",
-        "text": "Die drei Ritter symbolisieren, dass die Einwohner Islands oft und sehr rasch bereit waren, wegen geringer Ursache in den Krieg zu ziehen. (Balzamo/Kaiser, 2006, S. 52) ",
+        "text": "Die drei Ritter symbolisieren, dass die Einwohner Islands oft und sehr rasch bereit waren, wegen geringer Ursache in den Krieg zu ziehen. <small>(Balzamo/Kaiser, 2006, S. 52)</small> ",
         "druckplatte": "A",
         "cartay": "904",
         "cartax": "363",
