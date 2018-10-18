@@ -547,7 +547,7 @@ var data = [
         "id": "Fischstapel", 
         "name": "Fischstapel",
         "title": "",
-        "text": "Die Hauptnahrung der Isländer war Fisch. Sie stapelten grosse Mengen an Fischen in den Häusern und um sie herum unter freiem Himmel und boten sie zum Verkauf an. (Balzamo/Kaiser, 2006, S. 49)",
+        "text": "Die Hauptnahrung der Isländer war Fisch. Sie stapelten grosse Mengen an Fischen in den Häusern und um sie herum unter freiem Himmel und boten sie zum Verkauf an. <small>(Balzamo/Kaiser, 2006, S. 49)</small>",
         "druckplatte": "A",
         "cartay": "792",
         "cartax": "177",
