@@ -90,8 +90,57 @@ function highlightMENOT(polly) {
 /* function which inserts title and text into the textContainer */
 function polyClick(x) {
 
+
+    /* At the end of text, it inserts a link to osm-map if there are coordinates in data.json*/
+
+    if (x.kartey === "" && x.kartex === "" && x.kartez === "") {
+        /* it is an object or animal or phantastic, and does not have coordinates for osm */
+        /* if oms is already open, it will be closed and textContainer opened*/
+        var m = document.getElementById('map2Container');
+        var t = document.getElementById('textContainer');
+        if (m.style.display === 'block') {
+            t.style.display = 'block';
+            m.style.display = 'none';
+        } else {
+        }
+    }
+
+    else {
+        /* it is a place with coordinates (if osm is already open, it stays open) */
+        /* it checks first, if link is already inserted (as a result because it was opened before!) */
+
+        var o = x.text.includes(" <br /><br /><span onclick='toggleWebmap()'>Auf OpenStreetMap anschauen.</span>");
+        console.log(o);
+        if (o === true) {
+        }
+        else {
+            x.text = x.text + " <br /><br /><span onclick='toggleWebmap()'>Auf OpenStreetMap anschauen.</span>";
+        }
+    }
+
+
+/* adds ( ) if there is a title given!*/
+
+if (x.title === "") { 
+    }
+
+else { 
+    var q = x.title.includes("(");
+    console.log(q);
+    if (q === true) {
+    }
+    else {
+        x.title = " (" + x.title + ")";
+    }
+}
+
+
+
+
+    /* actual click function */
+
     var elem1 = document.getElementById("title");
-    elem1.innerHTML = (x.name) + " (" + (x.title) + ")"; 
+    elem1.innerHTML = (x.name) + (x.title);
 
     var elem2 = document.getElementById("info");
     elem2.innerHTML = x.text;
@@ -112,7 +161,7 @@ function polyClick(x) {
 
 /* Link-function */
 
-function polyClickbyID(x) {  
+function polyClickbyID(x) {
     var i;
     for (i = 0; i < objectsFromData.length; i++) {
         if (objectsFromData[i].id == x) {
@@ -128,10 +177,10 @@ function polyClickbyID(x) {
 
 var objectsFromData = new Array();
 
- function loadData(){
+function loadData() {
 
-   // alert(data[0].id);
-    console.log("Got some data, e.g.: "+data);
+    // alert(data[0].id);
+    console.log("Got some data, e.g.: " + data);
 
 
     for (let i = 0; i < data.length; i++) {
@@ -140,13 +189,13 @@ var objectsFromData = new Array();
         console.log(e);
         objectsFromData.push(e);
     }
-    
+
     console.log("Array finished:");
     console.log(objectsFromData);
 
- }
+}
 
-function addPolysToMap(){
+function addPolysToMap() {
 
     console.log("adding polys to map");
 
@@ -156,8 +205,8 @@ function addPolysToMap(){
         console.log(e);
         // objectsFromData.push(e);
 
-        var polyTmp = L.polygon(e.coordinates, { color: 'none',  fillColor: 'black',    fillOpacity: 0.0,});
-        e.poly=polyTmp;
+        var polyTmp = L.polygon(e.coordinates, { color: 'none', fillColor: 'black', fillOpacity: 0.0, });
+        e.poly = polyTmp;
         polyTmp.addTo(map).bringToFront();
         polyTmp.on('click', function () { polyClick(e) })
         polyTmp.on('mouseover', function () { highlightME(this) })
@@ -166,8 +215,35 @@ function addPolysToMap(){
 
 }
 
- loadData();
- addPolysToMap();
+loadData();
+addPolysToMap();
+
+
+/* playground: no button 
+
+
+
+
+var n;
+for (n = 0; n < objectsFromData.length; n++) {
+    if (objectsFromData[n].kartey === "" && objectsFromData[n].kartex === "" && objectsFromData[n].kartez === "") {
+        
+    }
+    else {
+        
+            alert("Funzt!");
+        
+    }
+}
+
+
+
+
+
+/***************** */
+
+
+
 
 
 /* polyBack = click into map; */
@@ -189,15 +265,15 @@ polyBACK.on('click', function () { polyClick(myGarnichts) })
 
 /* data for textContainer */
 var myGarnichts = {
-    name: "Garnichts",
+    name: "Carta Marina interaktiv",
     title: "",
-    text: "Klick auf Fare oder Thule",
+    text: "",
     cartay: "564",
     cartax: "702",
     cartaz: "-1",
-    kartey: "63",
-    kartex: "0",
-    kartez: "3",
+    kartey: "",
+    kartex: "",
+    kartez: "",
 }
 
 
