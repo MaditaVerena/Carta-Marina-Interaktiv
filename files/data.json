@@ -332,9 +332,9 @@ var data = [
 
     {
         "id": "FischBeiShipScot", 
-        "name": "s.n.",
-        "title": "Meerengel/Rochen",
-        "text": "Mystisches Wesen, welcher wegen der Flügel als 'Engel' bezeichnet wird.",
+        "name": "Meerengel",
+        "title": "Rochen",
+        "text": "Mystisches Wesen, welches wegen seiner Flügel als 'Engel' bezeichnet wird.",
         "druckplatte": "A",
         "cartay": "697",
         "cartax": "145",
