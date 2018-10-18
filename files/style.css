@@ -6,7 +6,7 @@ html, body {
     
 }
 h4 {font-family: "Times New Roman";}
-p {font-family: "Times New Roman!"} 
+p {font-family: "Times New Roman"} 
 
 
 /*---Menu---*/
@@ -150,7 +150,7 @@ span:hover {
 }
 
 /*text-pages*/
-#contentContainer {
+    #contentContainer {
     position: fixed;
     top: 90px;
     left: 30px;
@@ -160,6 +160,14 @@ span:hover {
     ;		
 }
 
+#imgContainer {
+    padding: 45px;
+    height: 390px;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;  
+}
 
 /*---Search---*/
 
