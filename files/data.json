@@ -592,6 +592,21 @@ var data = [
         "coordinates":   [[911,245],[913,257],[911,265.5],[907,268.5],[901.25,268.75],[891.25,270.25],[883.5,266.25],[880,261.25],[880.75,252.75],[882.75,248.25],[887.75,245.25],[893.5,244.5],[899.75,245.5],[901.75,244.5],[904,243.25],[908.5,243.25]]
     }, 
 
+{
+        "id": "Sulfur", 
+        "name": "Sulfur",
+        "title": "Schwefel",
+        "text": "Dies deutet darauf hin, dass es in dieser Region Schwefel gab. Es ist anzunehmen, dass dieser durch Vulkanausbrüche an die Erdoberfläche gelangt ist. Schwefel war für den Handel wichtig, denn er wurde für die Herstellung von Schiesspulver verwendet.",
+        "druckplatte": "A",
+        "cartay": "798",
+        "cartax": "156",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates":[[788,157.5],[813.25,167],[818.25,158],[814.5,148],[800.25,136.5]]
+}, 
 
 
     /* ------------ Druckplatte B ------------- */
