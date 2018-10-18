@@ -450,7 +450,7 @@ var data = [
         "id": "Criptoporticus", 
         "name": "Criptoporticus",
         "title": "Kryptoporticus",
-        "text": "Kryptoportikus ist eine Bezeichnung für einen bedeckten Gang: von gr. kryptos = versteckt und lat. porticus = Bogengang. Die Einwohner Islands wohnten in solchen Gängen unter der Erde, um sich vor der bitteren Kälte zu schützen. (Balzamo/Kaiser, 2006, S. 49)",
+        "text": "Kryptoportikus ist eine Bezeichnung für einen bedeckten Gang: von gr. <i>kryptos</i> = versteckt und lat. <i>porticus</i> = Bogengang. Die Einwohner Islands wohnten in solchen Gängen unter der Erde, um sich vor der bitteren Kälte zu schützen. <small> (Balzamo/Kaiser, 2006, S. 49)</small>",
         "druckplatte": "A",
         "cartay": "905",
         "cartax": "327",
