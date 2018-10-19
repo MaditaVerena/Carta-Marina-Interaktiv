@@ -267,7 +267,7 @@ polyBACK.on('click', function () { polyClick(myGarnichts) })
 var myGarnichts = {
     name: "<i>Carta Marina interaktiv</i>",
     title: "",
-    text: "Wussten Sie, dass Sie den Kommentar <i>Ain kurze Auslegung und Verklerung der neuuen Mappen von den alten Goettenreich und andern Nordlenden...</i> (1539) von Olaus Magnus auf Deutsch online nachlesen können? <br /><br />Ein Digitalisat vom Original finden Sie <a href='https://bildsuche.digitale-sammlungen.de/index.html?c=viewer&bandnummer=bsb00021693&pimage=3&v=100&nav=&l=en' target='_blank'><span>hier</span></a>.",
+    text: "Wussten Sie, dass Sie den Kommentar <i>Ain kurze Auslegung und Verklerung der neuuen Mappen von den alten Goettenreich und andern Nordlenden...</i> (1539) von Olaus Magnus auf Deutsch online nachlesen können? <br /><br />Ein Digitalisat vom Original finden Sie <a href='https://bildsuche.digitale-sammlungen.de/index.html?c=viewer&bandnummer=bsb00021693&pimage=1&v=100&nav=&l=de' target='_blank'><span>hier</span></a>.",
     cartay: "564",
     cartax: "702",
     cartaz: "-1",
