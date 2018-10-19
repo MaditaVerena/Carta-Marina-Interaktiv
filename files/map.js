@@ -74,7 +74,7 @@ function toggleWebmap() {
 /* polygon: mouse over */
 function highlightME(polly) {
     polly.setStyle({
-        fillOpacity: '0.1',
+        fillOpacity: '0.2',
         fillColor: '#ba4242'
     })
 }
