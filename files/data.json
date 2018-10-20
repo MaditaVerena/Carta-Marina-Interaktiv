@@ -18,7 +18,24 @@ var data = [
 
     /*Hier alle weiteren Objekte*/
 
+   {
+        "id": "300Pedum",
+        "name": "300 Pedum",
+        "title": "Meeresschlange",
+        "text": " Eine grosse Meeresschlange, die ein- bis zweihundert Fuss lang ist und 20 Fuss dick verschlingt nachts vor der Küste Norwegens neben Kälbern, Lämmern und Schweinen auch Tintenfische und Krebse. Die Schlange hat feuerrote glitzernde Augen und ihr Körper ist von schwarzen Schuppen bedeckt. Bei Windstille überfällt sie Seefahrer, reisst sie aus ihren Schiffen heraus und frisst sie. Wenn dies geschieht, war das Olaus Magnus zufolge ein Zeichen dafür, dass dem Königreich ein Unglück zustossen wird, insbesondere dass die Prinzen sterben oder verbannt werden und dies zu furchtbare Kriege führen wird.Der Name ist zusammengesetzt aus dem lateinischen Wort <i>pedum</i> = Fuss (<i>pes, pedis</i> Gen. Pl.) und der Zahl 300, und will damit die Grösse der Bestie veranschaulichen. <small> (Balzamo/Kaiser, 2006, S. 333) </small> ",
+        "druckplatte": "A",
+        "cartay": "724",
+        "cartax": "491",
+        "cartaz": "2.5",
+        "kartey": "",
+        "kartex": "",
+        "kartez": "",
+        "poly": null,
+        "coordinates": [[768,484.5],[755.5,469.5],[751.5,461],[743.5,459],[736.5,461.5],[733.5,464],[726.5,465.5],[723.5,465.5],[715.5,463],[710.5,462.5],[704,465],[697,470.5],[696,480],[696,487.5],[701.5,493.5],[705,498],[704,500.5],[699.5,498.5],[695.5,497],[692,496.5],[687.5,497],[683.5,499.5],[679.5,506.5],[679.5,514],[682,521.5],[686,525.5],[682,530.5],[681,537],[682.5,544],[686.5,547],[688,551],[688,555],[691,551],[692,547],[690.5,544.5],[689,540.5],[687.5,539],[688.5,535],[690.5,530.5],[694,527],[695.5,523.5],[694,520],[692,518],[689.5,516],[688,512.5],[689.5,507.5],[694,505.5],[699.5,511.5],[706.5,511.5],[711,511],[714.5,507.5],[718.5,511],[725.5,513.5],[733.5,513.5],[740,510],[748.5,503.5],[754,500.5],[758.5,497.5],[762,490.5]]
 
+   }, 
+         
+    
     /* ------------ Druckplatte A ------------- */
 
     /* Orte */
